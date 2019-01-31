@@ -1,0 +1,23 @@
+# Editor files #
+################
+*.swp
+
+# Compiled source #
+###################
+
+# Test environment #
+####################
+
+# Internal links #
+##################
+
+# Temporary files #
+###################
+
+# External links #
+##################
+
+# Others #
+##########
+sandbox*/
+
