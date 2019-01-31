@@ -1,4 +1,3 @@
-#modified by JMB/MCH !
 # Copyright 2005-2017 ECMWF.
 #
 # This software is licensed under the terms of the Apache Licence Version 2.0
@@ -29,13 +28,11 @@ alias originatingCentre=centre;
 
 unsigned[2] subCentre  : dump;
 
-# Dangerous ! Silently change the source for the definition of the local use section!
-# Commented by jean-marie.bettems@meteoswiss.ch, reported issue to ECMWF (SUP-1409)
-#_if (subCentre==98 ) {
-#alias centreForLocal=subCentre;
-#} else {
+_if (subCentre==98 ) {
+alias centreForLocal=subCentre;
+} else {
 alias centreForLocal=centre;
-#}
+}
 
 #MasterTablesVersion
 codetable[1] tablesVersion 'grib2/tables/1.0.table' = 19 : edition_specific;
