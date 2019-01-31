@@ -1,0 +1,2941 @@
+ # ADEDO2 
+ '215001' = { 
+               table2Version=250; 
+               indicatorOfParameter=154; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # AEVAP_S 
+ '215002' = { 
+               table2Version=2; 
+               indicatorOfParameter=57; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # ALB_RAD 
+ '215003' = { 
+               table2Version=2; 
+               indicatorOfParameter=84; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # ALHFL_S 
+ '215004' = { 
+               table2Version=2; 
+               indicatorOfParameter=121; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # ALWD_S 
+ '215005' = { 
+               table2Version=201; 
+               indicatorOfParameter=25; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # ALWU_S 
+ '215006' = { 
+               table2Version=201; 
+               indicatorOfParameter=26; 
+               indicatorOfTypeOfLevel=1; 
+               timeRangeIndicator=3; 
+               centre=215;
+           }
+ # APAB_S 
+ '215007' = { 
+               table2Version=201; 
+               indicatorOfParameter=5; 
+               indicatorOfTypeOfLevel=1; 
+               timeRangeIndicator=3; 
+               centre=215;
+           }
+ # ASHFL_S 
+ '215008' = { 
+               table2Version=2; 
+               indicatorOfParameter=122; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # ASOB_S 
+ '215009' = { 
+               table2Version=2; 
+               indicatorOfParameter=111; 
+               indicatorOfTypeOfLevel=1; 
+               timeRangeIndicator=3; 
+               centre=215;
+           }
+ # ASOB_T 
+ '215010' = { 
+               table2Version=2; 
+               indicatorOfParameter=113; 
+               indicatorOfTypeOfLevel=8; 
+               timeRangeIndicator=3; 
+               centre=215;
+           }
+ # ASWDIFD_S 
+ '215011' = { 
+               table2Version=201; 
+               indicatorOfParameter=23; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # ASWDIFU_S 
+ '215012' = { 
+               table2Version=201; 
+               indicatorOfParameter=24; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # ASWDIR_S 
+ '215013' = { 
+               table2Version=201; 
+               indicatorOfParameter=22; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # ATHB_S 
+ '215014' = { 
+               table2Version=2; 
+               indicatorOfParameter=112; 
+               indicatorOfTypeOfLevel=1; 
+               timeRangeIndicator=3; 
+               centre=215;
+           }
+ # ATHB_T 
+ '215015' = { 
+               table2Version=2; 
+               indicatorOfParameter=114; 
+               indicatorOfTypeOfLevel=8; 
+               timeRangeIndicator=3; 
+               centre=215;
+           }
+ # AUMFL_S 
+ '215016' = { 
+               table2Version=2; 
+               indicatorOfParameter=124; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # AUSTRSSO 
+ '215017' = { 
+               table2Version=202; 
+               indicatorOfParameter=231; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # AVDISSSO 
+ '215018' = { 
+               table2Version=202; 
+               indicatorOfParameter=233; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # AVMFL_S 
+ '215019' = { 
+               table2Version=2; 
+               indicatorOfParameter=125; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # AVSTRSSO 
+ '215020' = { 
+               table2Version=202; 
+               indicatorOfParameter=232; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # BAS_CON 
+ '215021' = { 
+               table2Version=201; 
+               indicatorOfParameter=72; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # BOAGAE_WE 
+ '215022' = { 
+               table2Version=250; 
+               indicatorOfParameter=119; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # BOAGAE_SN 
+ '215023' = { 
+               table2Version=250; 
+               indicatorOfParameter=120; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # BOAGAW_WE 
+ '215024' = { 
+               table2Version=250; 
+               indicatorOfParameter=117; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # BOAGAW_SN 
+ '215025' = { 
+               table2Version=250; 
+               indicatorOfParameter=118; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # BRN 
+ '215026' = { 
+               table2Version=203; 
+               indicatorOfParameter=155; 
+               centre=215;
+           }
+ # Ba-140 
+ '215027' = { 
+               table2Version=202; 
+               indicatorOfParameter=227; 
+               centre=215;
+           }
+ # Ba-140_BL 
+ '215028' = { 
+               table2Version=202; 
+               indicatorOfParameter=227; 
+               indicatorOfTypeOfLevel=105; 
+               centre=215;
+           }
+ # Ba-140_DD 
+ '215029' = { 
+               table2Version=202; 
+               indicatorOfParameter=228; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # Ba-140_WD 
+ '215030' = { 
+               table2Version=202; 
+               indicatorOfParameter=229; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # CAPE_3KM 
+ '215031' = { 
+               table2Version=203; 
+               indicatorOfParameter=137; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # CAPE_CON 
+ '215032' = { 
+               table2Version=201; 
+               indicatorOfParameter=241; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # CAPE_ML 
+ '215033' = { 
+               table2Version=201; 
+               indicatorOfParameter=145; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # CAPE_MU 
+ '215034' = { 
+               table2Version=201; 
+               indicatorOfParameter=143; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # CFLDT 
+ '215035' = { 
+               table2Version=250; 
+               indicatorOfParameter=75; 
+               centre=215;
+           }
+ # CEILING 
+ '215036' = { 
+               table2Version=203; 
+               indicatorOfParameter=157; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # CIN_ML 
+ '215037' = { 
+               table2Version=201; 
+               indicatorOfParameter=146; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # CIN_MU 
+ '215038' = { 
+               table2Version=201; 
+               indicatorOfParameter=144; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # CLC 
+ '215039' = { 
+               table2Version=201; 
+               indicatorOfParameter=29; 
+               centre=215;
+           }
+ # CLCH 
+ '215040' = { 
+               table2Version=2; 
+               indicatorOfParameter=75; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # CLCL 
+ '215041' = { 
+               table2Version=2; 
+               indicatorOfParameter=73; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # CLCM 
+ '215042' = { 
+               table2Version=2; 
+               indicatorOfParameter=74; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # CLCT 
+ '215043' = { 
+               table2Version=2; 
+               indicatorOfParameter=71; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # CLCT_MOD 
+ '215044' = { 
+               table2Version=203; 
+               indicatorOfParameter=204; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # CLC_CON 
+ '215045' = { 
+               table2Version=2; 
+               indicatorOfParameter=72; 
+               centre=215;
+           }
+ # CLC_SGS 
+ '215046' = { 
+               table2Version=201; 
+               indicatorOfParameter=30; 
+               centre=215;
+           }
+ # CLDEPTH 
+ '215047' = { 
+               table2Version=203; 
+               indicatorOfParameter=203; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # CLI_RATIO 
+ '215048' = { 
+               table2Version=250; 
+               indicatorOfParameter=58; 
+               centre=215;
+           }
+ # CLW_CON 
+ '215049' = { 
+               table2Version=201; 
+               indicatorOfParameter=61; 
+               centre=215;
+           }
+ # CN_TSTORM 
+ '215050' = { 
+               table2Version=250; 
+               indicatorOfParameter=161; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # CONV_% 
+ '215051' = { 
+               table2Version=250; 
+               indicatorOfParameter=66; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # C_TSTORM 
+ '215052' = { 
+               table2Version=250; 
+               indicatorOfParameter=160; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # C_T_LK 
+ '215053' = { 
+               table2Version=201; 
+               indicatorOfParameter=91; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # Cs-137 
+ '215054' = { 
+               table2Version=202; 
+               indicatorOfParameter=203; 
+               centre=215;
+           }
+ # Cs-137_BL 
+ '215055' = { 
+               table2Version=202; 
+               indicatorOfParameter=203; 
+               indicatorOfTypeOfLevel=105; 
+               centre=215;
+           }
+ # Cs-137_DD 
+ '215056' = { 
+               table2Version=202; 
+               indicatorOfParameter=204; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # Cs-137_WD 
+ '215057' = { 
+               table2Version=202; 
+               indicatorOfParameter=205; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # DBZ 
+ '215058' = { 
+               table2Version=201; 
+               indicatorOfParameter=230; 
+               centre=215;
+           }
+ # DBZ_850 
+ '215059' = { 
+               table2Version=201; 
+               indicatorOfParameter=230; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # DBZ_CMAX 
+ '215060' = { 
+               table2Version=201; 
+               indicatorOfParameter=230; 
+               indicatorOfTypeOfLevel=200; 
+               centre=215;
+           }
+ # DCI 
+ '215061' = { 
+               table2Version=250; 
+               indicatorOfParameter=152; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # DD 
+ '215062' = { 
+               table2Version=2; 
+               indicatorOfParameter=31; 
+               centre=215;
+           }
+ # DD_10M 
+ '215063' = { 
+               table2Version=2; 
+               indicatorOfParameter=31; 
+               indicatorOfTypeOfLevel=105; 
+               level=10; 
+               centre=215;
+           }
+ # DD_ANAI 
+ '215064' = { 
+               table2Version=204; 
+               indicatorOfParameter=22; 
+               centre=215;
+           }
+ # DEPTH_LK 
+ '215065' = { 
+               table2Version=201; 
+               indicatorOfParameter=96; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # DPSDT 
+ '215066' = { 
+               table2Version=2; 
+               indicatorOfParameter=3; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # DP_BS_LK 
+ '215067' = { 
+               table2Version=201; 
+               indicatorOfParameter=93; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # DQVDT 
+ '215068' = { 
+               table2Version=202; 
+               indicatorOfParameter=104; 
+               centre=215;
+           }
+ # DQV_CON 
+ '215069' = { 
+               table2Version=201; 
+               indicatorOfParameter=75; 
+               centre=215;
+           }
+ # DT_CON 
+ '215070' = { 
+               table2Version=201; 
+               indicatorOfParameter=74; 
+               centre=215;
+           }
+ # DURSUN 
+ '215071' = { 
+               table2Version=201; 
+               indicatorOfParameter=20; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # DURSUN_M 
+ '215072' = { 
+               table2Version=250; 
+               indicatorOfParameter=25; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # DURSUN_R 
+ '215073' = { 
+               table2Version=250; 
+               indicatorOfParameter=26; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # DU_CON 
+ '215074' = { 
+               table2Version=201; 
+               indicatorOfParameter=78; 
+               centre=215;
+           }
+ # DV_CON 
+ '215075' = { 
+               table2Version=201; 
+               indicatorOfParameter=79; 
+               centre=215;
+           }
+ # D_RH_2M_K 
+ '215076' = { 
+               table2Version=250; 
+               indicatorOfParameter=53; 
+               indicatorOfTypeOfLevel=105; 
+               level=2; 
+               centre=215;
+           }
+ # D_TD 
+ '215077' = { 
+               table2Version=250; 
+               indicatorOfParameter=18; 
+               centre=215;
+           }
+ # D_TD_2M 
+ '215078' = { 
+               table2Version=250; 
+               indicatorOfParameter=18; 
+               indicatorOfTypeOfLevel=105; 
+               level=2; 
+               centre=215;
+           }
+ # D_TD_2M_K 
+ '215079' = { 
+               table2Version=250; 
+               indicatorOfParameter=21; 
+               indicatorOfTypeOfLevel=105; 
+               level=2; 
+               centre=215;
+           }
+ # D_T_2M_K 
+ '215080' = { 
+               table2Version=250; 
+               indicatorOfParameter=13; 
+               indicatorOfTypeOfLevel=105; 
+               level=2; 
+               centre=215;
+           }
+ # EDR 
+ '215081' = { 
+               table2Version=201; 
+               indicatorOfParameter=151; 
+               centre=215;
+           }
+ # ENTH 
+ '215082' = { 
+               table2Version=250; 
+               indicatorOfParameter=251; 
+               centre=215;
+           }
+ # ENTH_2M 
+ '215083' = { 
+               table2Version=250; 
+               indicatorOfParameter=250; 
+               indicatorOfTypeOfLevel=105; 
+               level=2; 
+               centre=215;
+           }
+ # EVATRA_SUM 
+ '215084' = { 
+               table2Version=201; 
+               indicatorOfParameter=236; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # FC 
+ '215085' = { 
+               table2Version=202; 
+               indicatorOfParameter=113; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # FCOR 
+ '215086' = { 
+               table2Version=2; 
+               indicatorOfParameter=133; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # FETCH_LK 
+ '215087' = { 
+               table2Version=201; 
+               indicatorOfParameter=97; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # FF 
+ '215088' = { 
+               table2Version=2; 
+               indicatorOfParameter=32; 
+               centre=215;
+           }
+ # FF_10M 
+ '215089' = { 
+               table2Version=2; 
+               indicatorOfParameter=32; 
+               indicatorOfTypeOfLevel=105; 
+               level=10; 
+               centre=215;
+           }
+ # FF_ANAI 
+ '215090' = { 
+               table2Version=204; 
+               indicatorOfParameter=21; 
+               centre=215;
+           }
+ # FI 
+ '215091' = { 
+               table2Version=2; 
+               indicatorOfParameter=6; 
+               centre=215;
+           }
+ # FIS 
+ '215092' = { 
+               table2Version=2; 
+               indicatorOfParameter=6; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # FI_ANAI 
+ '215093' = { 
+               table2Version=204; 
+               indicatorOfParameter=24; 
+               centre=215;
+           }
+ # FMAX_10M 
+ '215094' = { 
+               table2Version=250; 
+               indicatorOfParameter=241; 
+               indicatorOfTypeOfLevel=105; 
+               level=10; 
+               centre=215;
+           }
+ # FOR_D 
+ '215095' = { 
+               table2Version=202; 
+               indicatorOfParameter=76; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # FOR_E 
+ '215096' = { 
+               table2Version=202; 
+               indicatorOfParameter=75; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # FRESHSNW 
+ '215097' = { 
+               table2Version=201; 
+               indicatorOfParameter=129; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # FR_ICE 
+ '215098' = { 
+               table2Version=2; 
+               indicatorOfParameter=91; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # FR_LAKE 
+ '215099' = { 
+               table2Version=202; 
+               indicatorOfParameter=55; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # FR_LAND 
+ '215100' = { 
+               table2Version=2; 
+               indicatorOfParameter=81; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # FR_PLANT_B 
+ '215101' = { 
+               table2Version=244; 
+               indicatorOfParameter=5; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # GAMSO_LK 
+ '215102' = { 
+               table2Version=201; 
+               indicatorOfParameter=92; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # GEM 
+ '215103' = { 
+               table2Version=250; 
+               indicatorOfParameter=80; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # GLOB 
+ '215104' = { 
+               table2Version=250; 
+               indicatorOfParameter=111; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # GLOB_DIF 
+ '215105' = { 
+               table2Version=250; 
+               indicatorOfParameter=243; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # GLOB_DIR 
+ '215106' = { 
+               table2Version=250; 
+               indicatorOfParameter=244; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # GLOB_vE 
+ '215107' = { 
+               table2Version=250; 
+               indicatorOfParameter=245; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # GLOB_vN 
+ '215108' = { 
+               table2Version=250; 
+               indicatorOfParameter=248; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # GLOB_vS 
+ '215109' = { 
+               table2Version=250; 
+               indicatorOfParameter=246; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # GLOB_vW 
+ '215110' = { 
+               table2Version=250; 
+               indicatorOfParameter=247; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # GRAU_GSP 
+ '215111' = { 
+               table2Version=201; 
+               indicatorOfParameter=132; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # HAIL_GSP 
+ '215112' = { 
+               table2Version=201; 
+               indicatorOfParameter=135; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # HBAS_CON 
+ '215113' = { 
+               table2Version=201; 
+               indicatorOfParameter=68; 
+               indicatorOfTypeOfLevel=2; 
+               centre=215;
+           }
+ # HBAS_CONI 
+ '215114' = { 
+               table2Version=201; 
+               indicatorOfParameter=70; 
+               indicatorOfTypeOfLevel=2; 
+               centre=215;
+           }
+ # HBAS_SC 
+ '215115' = { 
+               table2Version=201; 
+               indicatorOfParameter=58; 
+               indicatorOfTypeOfLevel=2; 
+               centre=215;
+           }
+ # HCBAS 
+ '215116' = { 
+               table2Version=201; 
+               indicatorOfParameter=86; 
+               indicatorOfTypeOfLevel=2; 
+               centre=215;
+           }
+ # HCTOP 
+ '215117' = { 
+               table2Version=201; 
+               indicatorOfParameter=87; 
+               indicatorOfTypeOfLevel=3; 
+               centre=215;
+           }
+ # HFL 
+ '215118' = { 
+               table2Version=2; 
+               indicatorOfParameter=8; 
+               indicatorOfTypeOfLevel=110; 
+               centre=215;
+           }
+ # HHL 
+ '215119' = { 
+               table2Version=2; 
+               indicatorOfParameter=8; 
+               indicatorOfTypeOfLevel=109; 
+               centre=215;
+           }
+ # HI 
+ '215120' = { 
+               table2Version=250; 
+               indicatorOfParameter=24; 
+               indicatorOfTypeOfLevel=105; 
+               level=2; 
+               centre=215;
+           }
+ # HMO3 
+ '215121' = { 
+               table2Version=202; 
+               indicatorOfParameter=64; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # HORIZON 
+ '215122' = { 
+               table2Version=202; 
+               indicatorOfParameter=96; 
+               indicatorOfTypeOfLevel=110; 
+               centre=215;
+           }
+ # HPBL 
+ '215123' = { 
+               table2Version=203; 
+               indicatorOfParameter=156; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # HSURF 
+ '215124' = { 
+               table2Version=2; 
+               indicatorOfParameter=8; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # HTOP_CON 
+ '215125' = { 
+               table2Version=201; 
+               indicatorOfParameter=69; 
+               indicatorOfTypeOfLevel=3; 
+               centre=215;
+           }
+ # HTOP_CONI 
+ '215126' = { 
+               table2Version=201; 
+               indicatorOfParameter=71; 
+               indicatorOfTypeOfLevel=3; 
+               centre=215;
+           }
+ # HTOP_DC 
+ '215127' = { 
+               table2Version=201; 
+               indicatorOfParameter=82; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # HTOP_SC 
+ '215128' = { 
+               table2Version=201; 
+               indicatorOfParameter=59; 
+               indicatorOfTypeOfLevel=3; 
+               centre=215;
+           }
+ # HZEROCL 
+ '215129' = { 
+               table2Version=201; 
+               indicatorOfParameter=84; 
+               indicatorOfTypeOfLevel=4; 
+               centre=215;
+           }
+ # H_B1_LK 
+ '215130' = { 
+               table2Version=201; 
+               indicatorOfParameter=94; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # H_ICE 
+ '215131' = { 
+               table2Version=2; 
+               indicatorOfParameter=92; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # H_ML_LK 
+ '215132' = { 
+               table2Version=201; 
+               indicatorOfParameter=95; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # H_SNOW 
+ '215133' = { 
+               table2Version=2; 
+               indicatorOfParameter=66; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # I-131a 
+ '215134' = { 
+               table2Version=202; 
+               indicatorOfParameter=200; 
+               centre=215;
+           }
+ # I-131a_BL 
+ '215135' = { 
+               table2Version=202; 
+               indicatorOfParameter=200; 
+               indicatorOfTypeOfLevel=105; 
+               centre=215;
+           }
+ # I-131a_DD 
+ '215136' = { 
+               table2Version=202; 
+               indicatorOfParameter=201; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # I-131a_WD 
+ '215137' = { 
+               table2Version=202; 
+               indicatorOfParameter=202; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # I-131g 
+ '215138' = { 
+               table2Version=202; 
+               indicatorOfParameter=221; 
+               centre=215;
+           }
+ # I-131g_BL 
+ '215139' = { 
+               table2Version=202; 
+               indicatorOfParameter=221; 
+               indicatorOfTypeOfLevel=105; 
+               centre=215;
+           }
+ # I-131g_DD 
+ '215140' = { 
+               table2Version=202; 
+               indicatorOfParameter=222; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # I-131g_WD 
+ '215141' = { 
+               table2Version=202; 
+               indicatorOfParameter=223; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # I-131o 
+ '215142' = { 
+               table2Version=202; 
+               indicatorOfParameter=224; 
+               centre=215;
+           }
+ # I-131o_BL 
+ '215143' = { 
+               table2Version=202; 
+               indicatorOfParameter=224; 
+               indicatorOfTypeOfLevel=105; 
+               centre=215;
+           }
+ # I-131o_DD 
+ '215144' = { 
+               table2Version=202; 
+               indicatorOfParameter=225; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # I-131o_WD 
+ '215145' = { 
+               table2Version=202; 
+               indicatorOfParameter=226; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # KOINDEX 
+ '215146' = { 
+               table2Version=250; 
+               indicatorOfParameter=150; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # Kr-85 
+ '215147' = { 
+               table2Version=202; 
+               indicatorOfParameter=212; 
+               centre=215;
+           }
+ # Kr-85_BL 
+ '215148' = { 
+               table2Version=202; 
+               indicatorOfParameter=212; 
+               indicatorOfTypeOfLevel=105; 
+               centre=215;
+           }
+ # Kr-85_DD 
+ '215149' = { 
+               table2Version=202; 
+               indicatorOfParameter=213; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # Kr-85_WD 
+ '215150' = { 
+               table2Version=202; 
+               indicatorOfParameter=214; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # LAGTIMEU 
+ '215151' = { 
+               table2Version=201; 
+               indicatorOfParameter=161; 
+               centre=215;
+           }
+ # LAGTIMEV 
+ '215152' = { 
+               table2Version=201; 
+               indicatorOfParameter=162; 
+               centre=215;
+           }
+ # LAGTIMEW 
+ '215153' = { 
+               table2Version=201; 
+               indicatorOfParameter=156; 
+               centre=215;
+           }
+ # LAGTIMEX 
+ '215154' = { 
+               table2Version=201; 
+               indicatorOfParameter=151; 
+               centre=215;
+           }
+ # LAGTIMEY 
+ '215155' = { 
+               table2Version=201; 
+               indicatorOfParameter=172; 
+               centre=215;
+           }
+ # LAGTIMEZ 
+ '215156' = { 
+               table2Version=201; 
+               indicatorOfParameter=163; 
+               centre=215;
+           }
+ # LAI 
+ '215157' = { 
+               table2Version=202; 
+               indicatorOfParameter=61; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # LAI_MN 
+ '215158' = { 
+               table2Version=202; 
+               indicatorOfParameter=70; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # LAI_MX 
+ '215159' = { 
+               table2Version=202; 
+               indicatorOfParameter=69; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # LCL_ML 
+ '215160' = { 
+               table2Version=203; 
+               indicatorOfParameter=135; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # LFC_ML 
+ '215161' = { 
+               table2Version=203; 
+               indicatorOfParameter=136; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # LUM 
+ '215162' = { 
+               table2Version=250; 
+               indicatorOfParameter=110; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # LW_IN_T2M 
+ '215163' = { 
+               table2Version=250; 
+               indicatorOfParameter=114; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # LW_IN_TG 
+ '215164' = { 
+               table2Version=250; 
+               indicatorOfParameter=112; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # LW_IN_TS 
+ '215165' = { 
+               table2Version=250; 
+               indicatorOfParameter=113; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # LW_TG_vS 
+ '215166' = { 
+               table2Version=250; 
+               indicatorOfParameter=249; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # MFLX_CON 
+ '215167' = { 
+               table2Version=201; 
+               indicatorOfParameter=240; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # MIXRAT 
+ '215168' = { 
+               table2Version=250; 
+               indicatorOfParameter=253; 
+               centre=215;
+           }
+ # MIXRAT_2M 
+ '215169' = { 
+               table2Version=250; 
+               indicatorOfParameter=252; 
+               indicatorOfTypeOfLevel=105; 
+               level=2; 
+               centre=215;
+           }
+ # MSG_L_CLEAR 
+ '215170' = { 
+               table2Version=250; 
+               indicatorOfParameter=166; 
+               indicatorOfTypeOfLevel=222; 
+               centre=215;
+           }
+ # MSG_L_CLOUD 
+ '215171' = { 
+               table2Version=250; 
+               indicatorOfParameter=165; 
+               indicatorOfTypeOfLevel=222; 
+               centre=215;
+           }
+ # MSG_TB_CLEA 
+ '215172' = { 
+               table2Version=250; 
+               indicatorOfParameter=164; 
+               indicatorOfTypeOfLevel=222; 
+               centre=215;
+           }
+ # MSG_TB_CLOU 
+ '215173' = { 
+               table2Version=250; 
+               indicatorOfParameter=163; 
+               indicatorOfTypeOfLevel=222; 
+               centre=215;
+           }
+ # O3 
+ '215174' = { 
+               table2Version=202; 
+               indicatorOfParameter=180; 
+               centre=215;
+           }
+ # OMEGA 
+ '215175' = { 
+               table2Version=2; 
+               indicatorOfParameter=39; 
+               centre=215;
+           }
+ # P 
+ '215176' = { 
+               table2Version=2; 
+               indicatorOfParameter=1; 
+               centre=215;
+           }
+ # PABS_RAD 
+ '215177' = { 
+               table2Version=201; 
+               indicatorOfParameter=5; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # PDIFF_CON 
+ '215178' = { 
+               table2Version=250; 
+               indicatorOfParameter=70; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # PLCOV 
+ '215179' = { 
+               table2Version=2; 
+               indicatorOfParameter=87; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # PLCOV_MN 
+ '215180' = { 
+               table2Version=202; 
+               indicatorOfParameter=68; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # PLCOV_MX 
+ '215181' = { 
+               table2Version=202; 
+               indicatorOfParameter=67; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # PMSL 
+ '215182' = { 
+               table2Version=2; 
+               indicatorOfParameter=2; 
+               indicatorOfTypeOfLevel=102; 
+               centre=215;
+           }
+ # PMSL_ANAI 
+ '215183' = { 
+               table2Version=204; 
+               indicatorOfParameter=26; 
+               indicatorOfTypeOfLevel=102; 
+               centre=215;
+           }
+ # PP 
+ '215184' = { 
+               table2Version=201; 
+               indicatorOfParameter=139; 
+               centre=215;
+           }
+ # PREF 
+ '215185' = { 
+               table2Version=250; 
+               indicatorOfParameter=2; 
+               centre=215;
+           }
+ # PRG_GSP 
+ '215186' = { 
+               table2Version=201; 
+               indicatorOfParameter=131; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # PRH_GSP 
+ '215187' = { 
+               table2Version=201; 
+               indicatorOfParameter=134; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # PRR_CON 
+ '215188' = { 
+               table2Version=201; 
+               indicatorOfParameter=111; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # PRR_GSP 
+ '215189' = { 
+               table2Version=201; 
+               indicatorOfParameter=100; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # PRS_CON 
+ '215190' = { 
+               table2Version=201; 
+               indicatorOfParameter=112; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # PRS_GSP 
+ '215191' = { 
+               table2Version=201; 
+               indicatorOfParameter=101; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # PS 
+ '215192' = { 
+               table2Version=2; 
+               indicatorOfParameter=1; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # P_ANAI 
+ '215193' = { 
+               table2Version=204; 
+               indicatorOfParameter=25; 
+               centre=215;
+           }
+ # P_BIRCH 
+ '215194' = { 
+               table2Version=244; 
+               indicatorOfParameter=1; 
+               indicatorOfTypeOfLevel=110; 
+               centre=215;
+           }
+ # QC 
+ '215195' = { 
+               table2Version=201; 
+               indicatorOfParameter=31; 
+               centre=215;
+           }
+ # QCVG_CON 
+ '215196' = { 
+               table2Version=201; 
+               indicatorOfParameter=243; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # QC_ANAI 
+ '215197' = { 
+               table2Version=204; 
+               indicatorOfParameter=28; 
+               centre=215;
+           }
+ # QC_RAD 
+ '215198' = { 
+               table2Version=201; 
+               indicatorOfParameter=43; 
+               centre=215;
+           }
+ # QG 
+ '215199' = { 
+               table2Version=201; 
+               indicatorOfParameter=39; 
+               centre=215;
+           }
+ # QH 
+ '215200' = { 
+               table2Version=201; 
+               indicatorOfParameter=98; 
+               centre=215;
+           }
+ # QI 
+ '215201' = { 
+               table2Version=201; 
+               indicatorOfParameter=33; 
+               centre=215;
+           }
+ # QI_RAD 
+ '215202' = { 
+               table2Version=201; 
+               indicatorOfParameter=44; 
+               centre=215;
+           }
+ # QNC 
+ '215203' = { 
+               table2Version=201; 
+               indicatorOfParameter=221; 
+               indicatorOfTypeOfLevel=110; 
+               centre=215;
+           }
+ # QNG 
+ '215204' = { 
+               table2Version=201; 
+               indicatorOfParameter=225; 
+               indicatorOfTypeOfLevel=110; 
+               centre=215;
+           }
+ # QNH 
+ '215205' = { 
+               table2Version=250; 
+               indicatorOfParameter=3; 
+               indicatorOfTypeOfLevel=102; 
+               centre=215;
+           }
+ # QNI 
+ '215206' = { 
+               table2Version=201; 
+               indicatorOfParameter=223; 
+               indicatorOfTypeOfLevel=110; 
+               centre=215;
+           }
+ # QNR 
+ '215207' = { 
+               table2Version=201; 
+               indicatorOfParameter=222; 
+               indicatorOfTypeOfLevel=110; 
+               centre=215;
+           }
+ # QNS 
+ '215208' = { 
+               table2Version=201; 
+               indicatorOfParameter=224; 
+               indicatorOfTypeOfLevel=110; 
+               centre=215;
+           }
+ # QP0_B 
+ '215209' = { 
+               table2Version=244; 
+               indicatorOfParameter=2; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # QR 
+ '215210' = { 
+               table2Version=201; 
+               indicatorOfParameter=35; 
+               centre=215;
+           }
+ # QS 
+ '215211' = { 
+               table2Version=201; 
+               indicatorOfParameter=36; 
+               centre=215;
+           }
+ # QV 
+ '215212' = { 
+               table2Version=2; 
+               indicatorOfParameter=51; 
+               centre=215;
+           }
+ # QVSFLX 
+ '215213' = { 
+               table2Version=202; 
+               indicatorOfParameter=105; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # QV_2M 
+ '215214' = { 
+               table2Version=2; 
+               indicatorOfParameter=51; 
+               indicatorOfTypeOfLevel=105; 
+               level=2; 
+               centre=215;
+           }
+ # QV_ANAI 
+ '215215' = { 
+               table2Version=204; 
+               indicatorOfParameter=27; 
+               centre=215;
+           }
+ # QV_S 
+ '215216' = { 
+               table2Version=2; 
+               indicatorOfParameter=51; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # Q_SEDIM 
+ '215217' = { 
+               table2Version=201; 
+               indicatorOfParameter=99; 
+               centre=215;
+           }
+ # RADSPQUAL 
+ '215218' = { 
+               table2Version=250; 
+               indicatorOfParameter=162; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # RAIN_CON 
+ '215219' = { 
+               table2Version=201; 
+               indicatorOfParameter=113; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # RAIN_GSP 
+ '215220' = { 
+               table2Version=201; 
+               indicatorOfParameter=102; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # RCLD 
+ '215221' = { 
+               table2Version=201; 
+               indicatorOfParameter=140; 
+               centre=215;
+           }
+ # RELHUM 
+ '215222' = { 
+               table2Version=2; 
+               indicatorOfParameter=52; 
+               centre=215;
+           }
+ # RELHUM_2M 
+ '215223' = { 
+               table2Version=2; 
+               indicatorOfParameter=52; 
+               indicatorOfTypeOfLevel=105; 
+               level=2; 
+               centre=215;
+           }
+ # RESID_WSO 
+ '215224' = { 
+               table2Version=201; 
+               indicatorOfParameter=239; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # RHO_SNOW 
+ '215225' = { 
+               table2Version=201; 
+               indicatorOfParameter=133; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # RH_2M_K 
+ '215226' = { 
+               table2Version=250; 
+               indicatorOfParameter=52; 
+               indicatorOfTypeOfLevel=105; 
+               level=2; 
+               centre=215;
+           }
+ # RH_ICE 
+ '215227' = { 
+               table2Version=250; 
+               indicatorOfParameter=16; 
+               centre=215;
+           }
+ # RLAT 
+ '215228' = { 
+               table2Version=202; 
+               indicatorOfParameter=114; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # RLON 
+ '215229' = { 
+               table2Version=202; 
+               indicatorOfParameter=115; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # ROOTDP 
+ '215230' = { 
+               table2Version=202; 
+               indicatorOfParameter=62; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # RUNOFF 
+ '215231' = { 
+               table2Version=2; 
+               indicatorOfParameter=90; 
+               indicatorOfTypeOfLevel=112; 
+               centre=215;
+           }
+ # Ru-103 
+ '215232' = { 
+               table2Version=202; 
+               indicatorOfParameter=194; 
+               centre=215;
+           }
+ # Ru-103_BL 
+ '215233' = { 
+               table2Version=202; 
+               indicatorOfParameter=194; 
+               indicatorOfTypeOfLevel=105; 
+               centre=215;
+           }
+ # Ru-103_DD 
+ '215234' = { 
+               table2Version=202; 
+               indicatorOfParameter=195; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # Ru-103_WD 
+ '215235' = { 
+               table2Version=202; 
+               indicatorOfParameter=196; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # SDI_1 
+ '215236' = { 
+               table2Version=201; 
+               indicatorOfParameter=141; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # SDI_2 
+ '215237' = { 
+               table2Version=201; 
+               indicatorOfParameter=142; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # SI 
+ '215238' = { 
+               table2Version=203; 
+               indicatorOfParameter=149; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # SIGMAU 
+ '215239' = { 
+               table2Version=201; 
+               indicatorOfParameter=159; 
+               centre=215;
+           }
+ # SIGMAV 
+ '215240' = { 
+               table2Version=201; 
+               indicatorOfParameter=160; 
+               centre=215;
+           }
+ # SIGMAW 
+ '215241' = { 
+               table2Version=201; 
+               indicatorOfParameter=155; 
+               centre=215;
+           }
+ # SIGMAX 
+ '215242' = { 
+               table2Version=201; 
+               indicatorOfParameter=149; 
+               centre=215;
+           }
+ # SIGMAY 
+ '215243' = { 
+               table2Version=201; 
+               indicatorOfParameter=150; 
+               centre=215;
+           }
+ # SIGMAZ 
+ '215244' = { 
+               table2Version=201; 
+               indicatorOfParameter=166; 
+               centre=215;
+           }
+ # SKYVIEW 
+ '215245' = { 
+               table2Version=202; 
+               indicatorOfParameter=100; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # SLI 
+ '215246' = { 
+               table2Version=203; 
+               indicatorOfParameter=147; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # SLO_ANG 
+ '215247' = { 
+               table2Version=202; 
+               indicatorOfParameter=98; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # SLO_ASP 
+ '215248' = { 
+               table2Version=202; 
+               indicatorOfParameter=99; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # SNOWLMT 
+ '215249' = { 
+               table2Version=201; 
+               indicatorOfParameter=85; 
+               indicatorOfTypeOfLevel=4; 
+               centre=215;
+           }
+ # SNOW_% 
+ '215250' = { 
+               table2Version=250; 
+               indicatorOfParameter=65; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # SNOW_CON 
+ '215251' = { 
+               table2Version=2; 
+               indicatorOfParameter=78; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # SNOW_GSP 
+ '215252' = { 
+               table2Version=2; 
+               indicatorOfParameter=79; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # SOBS_RAD 
+ '215253' = { 
+               table2Version=2; 
+               indicatorOfParameter=111; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # SOBT_RAD 
+ '215254' = { 
+               table2Version=2; 
+               indicatorOfParameter=113; 
+               indicatorOfTypeOfLevel=8; 
+               centre=215;
+           }
+ # SOHR_RAD 
+ '215255' = { 
+               table2Version=201; 
+               indicatorOfParameter=13; 
+               centre=215;
+           }
+ # SOILTYP 
+ '215256' = { 
+               table2Version=202; 
+               indicatorOfParameter=57; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # SSO_GAMMA 
+ '215257' = { 
+               table2Version=202; 
+               indicatorOfParameter=47; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # SSO_SIGMA 
+ '215258' = { 
+               table2Version=202; 
+               indicatorOfParameter=49; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # SSO_STDH 
+ '215259' = { 
+               table2Version=202; 
+               indicatorOfParameter=46; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # SSO_THETA 
+ '215260' = { 
+               table2Version=202; 
+               indicatorOfParameter=48; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # SUNSH 
+ '215261' = { 
+               table2Version=2; 
+               indicatorOfParameter=128; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # SUNSH2 
+ '215262' = { 
+               table2Version=2; 
+               indicatorOfParameter=129; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # SUN_SUM 
+ '215263' = { 
+               table2Version=2; 
+               indicatorOfParameter=130; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # SUN_SUM2 
+ '215264' = { 
+               table2Version=2; 
+               indicatorOfParameter=131; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # SWDIR_COR 
+ '215265' = { 
+               table2Version=202; 
+               indicatorOfParameter=97; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # SWEAT 
+ '215266' = { 
+               table2Version=250; 
+               indicatorOfParameter=153; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # SWISS00 
+ '215267' = { 
+               table2Version=203; 
+               indicatorOfParameter=138; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # SWISS12 
+ '215268' = { 
+               table2Version=203; 
+               indicatorOfParameter=139; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # SWISS_SN 
+ '215269' = { 
+               table2Version=250; 
+               indicatorOfParameter=116; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # SWISS_WE 
+ '215270' = { 
+               table2Version=250; 
+               indicatorOfParameter=115; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # SYNME5 
+ '215271' = { 
+               table2Version=205; 
+               indicatorOfParameter=1; 
+               indicatorOfTypeOfLevel=222; 
+               centre=215;
+           }
+ # SYNME6 
+ '215272' = { 
+               table2Version=205; 
+               indicatorOfParameter=2; 
+               indicatorOfTypeOfLevel=222; 
+               centre=215;
+           }
+ # SYNME7 
+ '215273' = { 
+               table2Version=205; 
+               indicatorOfParameter=3; 
+               indicatorOfTypeOfLevel=222; 
+               centre=215;
+           }
+ # SYNMSG 
+ '215274' = { 
+               table2Version=205; 
+               indicatorOfParameter=4; 
+               indicatorOfTypeOfLevel=222; 
+               centre=215;
+           }
+ # Sr-90 
+ '215275' = { 
+               table2Version=202; 
+               indicatorOfParameter=197; 
+               centre=215;
+           }
+ # Sr-90_BL 
+ '215276' = { 
+               table2Version=202; 
+               indicatorOfParameter=197; 
+               indicatorOfTypeOfLevel=105; 
+               centre=215;
+           }
+ # Sr-90_DD 
+ '215277' = { 
+               table2Version=202; 
+               indicatorOfParameter=198; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # Sr-90_WD 
+ '215278' = { 
+               table2Version=202; 
+               indicatorOfParameter=199; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # T 
+ '215279' = { 
+               table2Version=2; 
+               indicatorOfParameter=11; 
+               centre=215;
+           }
+ # TCH 
+ '215280' = { 
+               table2Version=201; 
+               indicatorOfParameter=171; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # TCM 
+ '215281' = { 
+               table2Version=201; 
+               indicatorOfParameter=170; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # TD 
+ '215282' = { 
+               table2Version=250; 
+               indicatorOfParameter=17; 
+               centre=215;
+           }
+ # TDIV_HUM 
+ '215283' = { 
+               table2Version=201; 
+               indicatorOfParameter=42; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # TD_2M 
+ '215284' = { 
+               table2Version=2; 
+               indicatorOfParameter=17; 
+               indicatorOfTypeOfLevel=105; 
+               level=2; 
+               centre=215;
+           }
+ # TD_2M_AV 
+ '215285' = { 
+               table2Version=2; 
+               indicatorOfParameter=17; 
+               indicatorOfTypeOfLevel=105; 
+               level=2; 
+               timeRangeIndicator=3; 
+               centre=215;
+           }
+ # TD_2M_BUZ 
+ '215286' = { 
+               table2Version=250; 
+               indicatorOfParameter=23; 
+               indicatorOfTypeOfLevel=105; 
+               level=2; 
+               centre=215;
+           }
+ # TD_2M_K 
+ '215287' = { 
+               table2Version=250; 
+               indicatorOfParameter=20; 
+               indicatorOfTypeOfLevel=105; 
+               level=2; 
+               centre=215;
+           }
+ # TD_2M_OLD 
+ '215288' = { 
+               table2Version=250; 
+               indicatorOfParameter=22; 
+               indicatorOfTypeOfLevel=105; 
+               level=2; 
+               centre=215;
+           }
+ # THBS_RAD 
+ '215289' = { 
+               table2Version=2; 
+               indicatorOfParameter=112; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # THBT_RAD 
+ '215290' = { 
+               table2Version=2; 
+               indicatorOfParameter=114; 
+               indicatorOfTypeOfLevel=8; 
+               centre=215;
+           }
+ # THETAE 
+ '215291' = { 
+               table2Version=250; 
+               indicatorOfParameter=19; 
+               centre=215;
+           }
+ # THETAE_2M 
+ '215292' = { 
+               table2Version=250; 
+               indicatorOfParameter=19; 
+               indicatorOfTypeOfLevel=105; 
+               level=2; 
+               centre=215;
+           }
+ # THETAV 
+ '215293' = { 
+               table2Version=250; 
+               indicatorOfParameter=27; 
+               centre=215;
+           }
+ # THETAV_2M 
+ '215294' = { 
+               table2Version=250; 
+               indicatorOfParameter=27; 
+               indicatorOfTypeOfLevel=105; 
+               level=2; 
+               centre=215;
+           }
+ # THHR_RAD 
+ '215295' = { 
+               table2Version=201; 
+               indicatorOfParameter=14; 
+               centre=215;
+           }
+ # TINC_LH 
+ '215296' = { 
+               table2Version=202; 
+               indicatorOfParameter=32; 
+               centre=215;
+           }
+ # TKE 
+ '215297' = { 
+               table2Version=201; 
+               indicatorOfParameter=152; 
+               centre=215;
+           }
+ # TKETENS 
+ '215298' = { 
+               table2Version=201; 
+               indicatorOfParameter=148; 
+               centre=215;
+           }
+ # TKE_CON 
+ '215299' = { 
+               table2Version=201; 
+               indicatorOfParameter=147; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # TKVH 
+ '215300' = { 
+               table2Version=201; 
+               indicatorOfParameter=154; 
+               centre=215;
+           }
+ # TKVM 
+ '215301' = { 
+               table2Version=201; 
+               indicatorOfParameter=153; 
+               centre=215;
+           }
+ # TMAX_2M 
+ '215302' = { 
+               table2Version=2; 
+               indicatorOfParameter=15; 
+               indicatorOfTypeOfLevel=105; 
+               level=2; 
+               centre=215;
+           }
+ # TMIN_2M 
+ '215303' = { 
+               table2Version=2; 
+               indicatorOfParameter=16; 
+               indicatorOfTypeOfLevel=105; 
+               level=2; 
+               centre=215;
+           }
+ # TO3 
+ '215304' = { 
+               table2Version=2; 
+               indicatorOfParameter=10; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # TOP_CON 
+ '215305' = { 
+               table2Version=201; 
+               indicatorOfParameter=73; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # TOTFORCE_S 
+ '215306' = { 
+               table2Version=201; 
+               indicatorOfParameter=238; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # TOT_CON 
+ '215307' = { 
+               table2Version=250; 
+               indicatorOfParameter=63; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # TOT_GSP 
+ '215308' = { 
+               table2Version=250; 
+               indicatorOfParameter=64; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # TOT_PR 
+ '215309' = { 
+               table2Version=2; 
+               indicatorOfParameter=59; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # TOT_PREC 
+ '215310' = { 
+               table2Version=2; 
+               indicatorOfParameter=61; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # TOT_RAIN 
+ '215311' = { 
+               table2Version=250; 
+               indicatorOfParameter=62; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # TOT_SNOW 
+ '215312' = { 
+               table2Version=250; 
+               indicatorOfParameter=61; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # TQC 
+ '215313' = { 
+               table2Version=2; 
+               indicatorOfParameter=76; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # TQC_ANAI 
+ '215314' = { 
+               table2Version=204; 
+               indicatorOfParameter=30; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # TQG 
+ '215315' = { 
+               table2Version=201; 
+               indicatorOfParameter=40; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # TQI 
+ '215316' = { 
+               table2Version=2; 
+               indicatorOfParameter=58; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # TQR 
+ '215317' = { 
+               table2Version=201; 
+               indicatorOfParameter=37; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # TQS 
+ '215318' = { 
+               table2Version=201; 
+               indicatorOfParameter=38; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # TQV 
+ '215319' = { 
+               table2Version=2; 
+               indicatorOfParameter=54; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # TQV_ANAI 
+ '215320' = { 
+               table2Version=204; 
+               indicatorOfParameter=29; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # TRACER 
+ '215321' = { 
+               table2Version=202; 
+               indicatorOfParameter=215; 
+               centre=215;
+           }
+ # TRACER_BL 
+ '215322' = { 
+               table2Version=202; 
+               indicatorOfParameter=215; 
+               indicatorOfTypeOfLevel=105; 
+               centre=215;
+           }
+ # TRACER_DD 
+ '215323' = { 
+               table2Version=202; 
+               indicatorOfParameter=216; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # TRACER_WD 
+ '215324' = { 
+               table2Version=202; 
+               indicatorOfParameter=217; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # TRA_SUM 
+ '215325' = { 
+               table2Version=201; 
+               indicatorOfParameter=237; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # TSUM_S_B 
+ '215326' = { 
+               table2Version=244; 
+               indicatorOfParameter=3; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # TSUM_E_B 
+ '215327' = { 
+               table2Version=244; 
+               indicatorOfParameter=4; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # TTHRES_S_B 
+ '215328' = { 
+               table2Version=244; 
+               indicatorOfParameter=6; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # TTHRES_E_B 
+ '215329' = { 
+               table2Version=244; 
+               indicatorOfParameter=7; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # TTINDEX 
+ '215330' = { 
+               table2Version=250; 
+               indicatorOfParameter=151; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # TTOP_CON 
+ '215331' = { 
+               table2Version=250; 
+               indicatorOfParameter=71; 
+               indicatorOfTypeOfLevel=3; 
+               centre=215;
+           }
+ # TW 
+ '215332' = { 
+               table2Version=250; 
+               indicatorOfParameter=255; 
+               centre=215;
+           }
+ # TWATER 
+ '215333' = { 
+               table2Version=201; 
+               indicatorOfParameter=41; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # TW_2M 
+ '215334' = { 
+               table2Version=250; 
+               indicatorOfParameter=254; 
+               indicatorOfTypeOfLevel=105; 
+               level=2; 
+               centre=215;
+           }
+ # T_2M 
+ '215335' = { 
+               table2Version=2; 
+               indicatorOfParameter=11; 
+               indicatorOfTypeOfLevel=105; 
+               level=2; 
+               centre=215;
+           }
+ # T_2M_AV 
+ '215336' = { 
+               table2Version=2; 
+               indicatorOfParameter=11; 
+               indicatorOfTypeOfLevel=105; 
+               level=2; 
+               timeRangeIndicator=3; 
+               centre=215;
+           }
+ # T_2M_BUZ 
+ '215337' = { 
+               table2Version=250; 
+               indicatorOfParameter=15; 
+               indicatorOfTypeOfLevel=105; 
+               level=2; 
+               centre=215;
+           }
+ # T_2M_K 
+ '215338' = { 
+               table2Version=250; 
+               indicatorOfParameter=12; 
+               indicatorOfTypeOfLevel=105; 
+               level=2; 
+               centre=215;
+           }
+ # T_2M_OLD 
+ '215339' = { 
+               table2Version=250; 
+               indicatorOfParameter=14; 
+               indicatorOfTypeOfLevel=105; 
+               level=2; 
+               centre=215;
+           }
+ # T_2M_S 
+ '215340' = { 
+               table2Version=250; 
+               indicatorOfParameter=11; 
+               indicatorOfTypeOfLevel=105; 
+               level=2; 
+               centre=215;
+           }
+ # T_ANAI 
+ '215341' = { 
+               table2Version=204; 
+               indicatorOfParameter=23; 
+               centre=215;
+           }
+ # T_B1_LK 
+ '215342' = { 
+               table2Version=201; 
+               indicatorOfParameter=192; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # T_BOT_LK 
+ '215343' = { 
+               table2Version=201; 
+               indicatorOfParameter=191; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # T_BS_LK 
+ '215344' = { 
+               table2Version=201; 
+               indicatorOfParameter=190; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # T_CL 
+ '215345' = { 
+               table2Version=2; 
+               indicatorOfParameter=85; 
+               indicatorOfTypeOfLevel=111; 
+               level=41; 
+               centre=215;
+           }
+ # T_G 
+ '215346' = { 
+               table2Version=2; 
+               indicatorOfParameter=11; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # T_ICE 
+ '215347' = { 
+               table2Version=201; 
+               indicatorOfParameter=215; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # T_M 
+ '215348' = { 
+               table2Version=2; 
+               indicatorOfParameter=85; 
+               indicatorOfTypeOfLevel=111; 
+               level=9; 
+               centre=215;
+           }
+ # T_MNW_LK 
+ '215349' = { 
+               table2Version=201; 
+               indicatorOfParameter=194; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # T_S 
+ '215350' = { 
+               table2Version=2; 
+               indicatorOfParameter=85; 
+               indicatorOfTypeOfLevel=111; 
+               level=0; 
+               centre=215;
+           }
+ # T_SNOW 
+ '215351' = { 
+               table2Version=201; 
+               indicatorOfParameter=203; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # T_SO 
+ '215352' = { 
+               table2Version=201; 
+               indicatorOfParameter=197; 
+               centre=215;
+           }
+ # T_WML_LK 
+ '215353' = { 
+               table2Version=201; 
+               indicatorOfParameter=193; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # Te-132 
+ '215354' = { 
+               table2Version=202; 
+               indicatorOfParameter=206; 
+               centre=215;
+           }
+ # Te-132_BL 
+ '215355' = { 
+               table2Version=202; 
+               indicatorOfParameter=206; 
+               indicatorOfTypeOfLevel=105; 
+               centre=215;
+           }
+ # Te-132_DD 
+ '215356' = { 
+               table2Version=202; 
+               indicatorOfParameter=207; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # Te-132_WD 
+ '215357' = { 
+               table2Version=202; 
+               indicatorOfParameter=208; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # U 
+ '215358' = { 
+               table2Version=2; 
+               indicatorOfParameter=33; 
+               centre=215;
+           }
+ # USTARMAX 
+ '215359' = { 
+               table2Version=250; 
+               indicatorOfParameter=242; 
+               indicatorOfTypeOfLevel=105; 
+               centre=215;
+           }
+ # U_10M 
+ '215360' = { 
+               table2Version=2; 
+               indicatorOfParameter=33; 
+               indicatorOfTypeOfLevel=105; 
+               level=10; 
+               centre=215;
+           }
+ # U_10M_AV 
+ '215361' = { 
+               table2Version=2; 
+               indicatorOfParameter=33; 
+               indicatorOfTypeOfLevel=105; 
+               level=10; 
+               timeRangeIndicator=3; 
+               centre=215;
+           }
+ # V 
+ '215362' = { 
+               table2Version=2; 
+               indicatorOfParameter=34; 
+               centre=215;
+           }
+ # VB10M_20 
+ '215363' = { 
+               table2Version=250; 
+               indicatorOfParameter=222; 
+               indicatorOfTypeOfLevel=105; 
+               level=10; 
+               centre=215;
+           }
+ # VB10M_25 
+ '215364' = { 
+               table2Version=250; 
+               indicatorOfParameter=223; 
+               indicatorOfTypeOfLevel=105; 
+               level=10; 
+               centre=215;
+           }
+ # VB10M_30 
+ '215365' = { 
+               table2Version=250; 
+               indicatorOfParameter=224; 
+               indicatorOfTypeOfLevel=105; 
+               level=10; 
+               centre=215;
+           }
+ # VB10M_35 
+ '215366' = { 
+               table2Version=250; 
+               indicatorOfParameter=225; 
+               indicatorOfTypeOfLevel=105; 
+               level=10; 
+               centre=215;
+           }
+ # VB10M_40 
+ '215367' = { 
+               table2Version=250; 
+               indicatorOfParameter=226; 
+               indicatorOfTypeOfLevel=105; 
+               level=10; 
+               centre=215;
+           }
+ # VB10M_45 
+ '215368' = { 
+               table2Version=250; 
+               indicatorOfParameter=227; 
+               indicatorOfTypeOfLevel=105; 
+               level=10; 
+               centre=215;
+           }
+ # VB10M_50 
+ '215369' = { 
+               table2Version=250; 
+               indicatorOfParameter=228; 
+               indicatorOfTypeOfLevel=105; 
+               level=10; 
+               centre=215;
+           }
+ # VBRA_10M 
+ '215370' = { 
+               table2Version=250; 
+               indicatorOfParameter=221; 
+               indicatorOfTypeOfLevel=105; 
+               level=10; 
+               centre=215;
+           }
+ # VC10M_20 
+ '215371' = { 
+               table2Version=250; 
+               indicatorOfParameter=232; 
+               indicatorOfTypeOfLevel=105; 
+               level=10; 
+               centre=215;
+           }
+ # VC10M_25 
+ '215372' = { 
+               table2Version=250; 
+               indicatorOfParameter=233; 
+               indicatorOfTypeOfLevel=105; 
+               level=10; 
+               centre=215;
+           }
+ # VC10M_30 
+ '215373' = { 
+               table2Version=250; 
+               indicatorOfParameter=234; 
+               indicatorOfTypeOfLevel=105; 
+               level=10; 
+               centre=215;
+           }
+ # VC10M_35 
+ '215374' = { 
+               table2Version=250; 
+               indicatorOfParameter=235; 
+               indicatorOfTypeOfLevel=105; 
+               level=10; 
+               centre=215;
+           }
+ # VC10M_40 
+ '215375' = { 
+               table2Version=250; 
+               indicatorOfParameter=236; 
+               indicatorOfTypeOfLevel=105; 
+               level=10; 
+               centre=215;
+           }
+ # VC10M_45 
+ '215376' = { 
+               table2Version=250; 
+               indicatorOfParameter=237; 
+               indicatorOfTypeOfLevel=105; 
+               level=10; 
+               centre=215;
+           }
+ # VC10M_50 
+ '215377' = { 
+               table2Version=250; 
+               indicatorOfParameter=238; 
+               indicatorOfTypeOfLevel=105; 
+               level=10; 
+               centre=215;
+           }
+ # VCON_10M 
+ '215378' = { 
+               table2Version=250; 
+               indicatorOfParameter=231; 
+               indicatorOfTypeOfLevel=105; 
+               level=10; 
+               centre=215;
+           }
+ # VIO3 
+ '215379' = { 
+               table2Version=202; 
+               indicatorOfParameter=65; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # VJPS_10M 
+ '215380' = { 
+               table2Version=250; 
+               indicatorOfParameter=220; 
+               indicatorOfTypeOfLevel=105; 
+               level=10; 
+               centre=215;
+           }
+ # VMAX_10M 
+ '215381' = { 
+               table2Version=201; 
+               indicatorOfParameter=187; 
+               indicatorOfTypeOfLevel=105; 
+               level=10; 
+               centre=215;
+           }
+ # VOLD_10M 
+ '215382' = { 
+               table2Version=250; 
+               indicatorOfParameter=219; 
+               indicatorOfTypeOfLevel=105; 
+               level=10; 
+               centre=215;
+           }
+ # VORTP_ABS 
+ '215383' = { 
+               table2Version=250; 
+               indicatorOfParameter=67; 
+               centre=215;
+           }
+ # VORTP_REL 
+ '215384' = { 
+               table2Version=250; 
+               indicatorOfParameter=68; 
+               centre=215;
+           }
+ # VTUR_10M 
+ '215385' = { 
+               table2Version=250; 
+               indicatorOfParameter=239; 
+               indicatorOfTypeOfLevel=105; 
+               level=10; 
+               centre=215;
+           }
+ # VW10M_20 
+ '215386' = { 
+               table2Version=250; 
+               indicatorOfParameter=212; 
+               indicatorOfTypeOfLevel=105; 
+               level=10; 
+               centre=215;
+           }
+ # VW10M_25 
+ '215387' = { 
+               table2Version=250; 
+               indicatorOfParameter=213; 
+               indicatorOfTypeOfLevel=105; 
+               level=10; 
+               centre=215;
+           }
+ # VW10M_30 
+ '215388' = { 
+               table2Version=250; 
+               indicatorOfParameter=214; 
+               indicatorOfTypeOfLevel=105; 
+               level=10; 
+               centre=215;
+           }
+ # VW10M_35 
+ '215389' = { 
+               table2Version=250; 
+               indicatorOfParameter=215; 
+               indicatorOfTypeOfLevel=105; 
+               level=10; 
+               centre=215;
+           }
+ # VW10M_40 
+ '215390' = { 
+               table2Version=250; 
+               indicatorOfParameter=216; 
+               indicatorOfTypeOfLevel=105; 
+               level=10; 
+               centre=215;
+           }
+ # VW10M_45 
+ '215391' = { 
+               table2Version=250; 
+               indicatorOfParameter=217; 
+               indicatorOfTypeOfLevel=105; 
+               level=10; 
+               centre=215;
+           }
+ # VW10M_50 
+ '215392' = { 
+               table2Version=250; 
+               indicatorOfParameter=218; 
+               indicatorOfTypeOfLevel=105; 
+               level=10; 
+               centre=215;
+           }
+ # VWIN_10M 
+ '215393' = { 
+               table2Version=250; 
+               indicatorOfParameter=211; 
+               indicatorOfTypeOfLevel=105; 
+               level=10; 
+               centre=215;
+           }
+ # V_10M 
+ '215394' = { 
+               table2Version=2; 
+               indicatorOfParameter=34; 
+               indicatorOfTypeOfLevel=105; 
+               level=10; 
+               centre=215;
+           }
+ # V_10M_AV 
+ '215395' = { 
+               table2Version=2; 
+               indicatorOfParameter=34; 
+               indicatorOfTypeOfLevel=105; 
+               level=10; 
+               timeRangeIndicator=3; 
+               centre=215;
+           }
+ # W 
+ '215396' = { 
+               table2Version=2; 
+               indicatorOfParameter=40; 
+               centre=215;
+           }
+ # WSHEARL 
+ '215397' = { 
+               table2Version=250; 
+               indicatorOfParameter=200; 
+               indicatorOfTypeOfLevel=104; 
+               centre=215;
+           }
+ # WSHEARM 
+ '215398' = { 
+               table2Version=250; 
+               indicatorOfParameter=201; 
+               indicatorOfTypeOfLevel=104; 
+               centre=215;
+           }
+ # WSHEARU 
+ '215399' = { 
+               table2Version=250; 
+               indicatorOfParameter=202; 
+               indicatorOfTypeOfLevel=104; 
+               centre=215;
+           }
+ # W_CL 
+ '215400' = { 
+               table2Version=2; 
+               indicatorOfParameter=86; 
+               indicatorOfTypeOfLevel=112; 
+               level=100; 
+               centre=215;
+           }
+ # W_G1 
+ '215401' = { 
+               table2Version=2; 
+               indicatorOfParameter=86; 
+               indicatorOfTypeOfLevel=112; 
+               level=0; 
+               centre=215;
+           }
+ # W_G2 
+ '215402' = { 
+               table2Version=2; 
+               indicatorOfParameter=86; 
+               indicatorOfTypeOfLevel=112; 
+               level=10; 
+               centre=215;
+           }
+ # W_I 
+ '215403' = { 
+               table2Version=201; 
+               indicatorOfParameter=200; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # W_SNOW 
+ '215404' = { 
+               table2Version=2; 
+               indicatorOfParameter=65; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # W_SO 
+ '215405' = { 
+               table2Version=201; 
+               indicatorOfParameter=198; 
+               centre=215;
+           }
+ # W_SO_CST 
+ '215406' = { 
+               table2Version=251; 
+               indicatorOfParameter=1; 
+               centre=215;
+           }
+ # W_SO_ICE 
+ '215407' = { 
+               table2Version=201; 
+               indicatorOfParameter=199; 
+               centre=215;
+           }
+ # Xe-133 
+ '215408' = { 
+               table2Version=202; 
+               indicatorOfParameter=218; 
+               centre=215;
+           }
+ # Xe-133_BL 
+ '215409' = { 
+               table2Version=202; 
+               indicatorOfParameter=218; 
+               indicatorOfTypeOfLevel=105; 
+               centre=215;
+           }
+ # Xe-133_DD 
+ '215410' = { 
+               table2Version=202; 
+               indicatorOfParameter=219; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # Xe-133_WD 
+ '215411' = { 
+               table2Version=202; 
+               indicatorOfParameter=220; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # Z0 
+ '215412' = { 
+               table2Version=2; 
+               indicatorOfParameter=83; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # Z0LOC 
+ '215413' = { 
+               table2Version=250; 
+               indicatorOfParameter=82; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # ZHD 
+ '215414' = { 
+               table2Version=202; 
+               indicatorOfParameter=123; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # ZTD 
+ '215415' = { 
+               table2Version=202; 
+               indicatorOfParameter=121; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # ZWD 
+ '215416' = { 
+               table2Version=202; 
+               indicatorOfParameter=122; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # Zr-95 
+ '215417' = { 
+               table2Version=202; 
+               indicatorOfParameter=209; 
+               centre=215;
+           }
+ # Zr-95_BL 
+ '215418' = { 
+               table2Version=202; 
+               indicatorOfParameter=209; 
+               indicatorOfTypeOfLevel=105; 
+               centre=215;
+           }
+ # Zr-95_DD 
+ '215419' = { 
+               table2Version=202; 
+               indicatorOfParameter=210; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # Zr-95_WD 
+ '215420' = { 
+               table2Version=202; 
+               indicatorOfParameter=211; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # CH_CLL 
+ '215421' = { 
+               table2Version=250; 
+               indicatorOfParameter=27; 
+               indicatorOfTypeOfLevel=1; 
+               centre=215;
+           }
+ # CH_SNWLMT 
+ '215422' = { 
+               table2Version=250; 
+               indicatorOfParameter=85; 
+               indicatorOfTypeOfLevel=4; 
+               centre=215;
+           }

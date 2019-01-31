@@ -1,0 +1,85 @@
+#!/bin/ksh
+	set -e
+
+	ECCODES_DEF=${PWD}/grib2
+  TMPDIR=.
+
+        echo " LINKs for ecCodes ${PWD}/grib2 for the following centres:"
+
+#	cat ${PWD}/ln_cosmo_list
+#	cat ${PWD}/ln_cosmo_list >$TMPDIR/ln_cosmo_liste
+	cat >$TMPDIR/ln_cosmo_liste << EOF
+    43 43 Brazil INMET
+		76 76 Moscow 
+		80 cnmc Rome 
+		96 96 Athens
+    127 127 Oman
+    129 129 Qatar
+    134 134 United Arab Emirates
+    146 146 Brazil Navy
+		200 200 ARPA-SIMC                
+		215 lssw Zurich
+		220 220 Poland  
+		242 242 Romania
+		250 cosmo COnsortium for Small scale MOdelling (COSMO)
+    258 258 Botswana
+    280 280 Namibia
+EOF
+ 
+        cat ${TMPDIR}/ln_cosmo_liste
+
+        
+	while read LN COUNTRY DESCRIPTION ;do
+
+	   #link exists or will be declared
+
+	   #local concepts
+	   if [ ! -L $ECCODES_DEF/localConcepts/$COUNTRY ] ;then
+
+	      cd $ECCODES_DEF/localConcepts
+
+	      echo "LINK $ECCODES_DEF/localConcepts for $LN $COUNTRY $DESCRIPTION"
+
+	      ln -s edzw $COUNTRY
+     
+#             cd $ECCODES_DEF
+
+	   fi
+
+	   #local tables   
+           if [ ! -L $ECCODES_DEF/tables/local/$COUNTRY ] ;then
+
+              cd $ECCODES_DEF/tables/local 
+
+              echo "LINK  $ECCODES_DEF/tables/local for $LN $COUNTRY $DESCRIPTION"
+
+              ln -s edzw $COUNTRY
+
+#             cd $ECCODES_DEF
+
+           fi
+
+
+	   #local section 2 files
+          if [ ! -L $ECCODES_DEF/local.${LN}.def ] ;then
+
+
+              cd $ECCODES_DEF
+
+              echo "LINK  $ECCODES_DEF/local section 2 for $LN $COUNTRY $DESCRIPTION"
+
+              ln -s local.78.def local.${LN}.def
+#             ln -s local.78.252.def local.${LN}.252.def
+#             ln -s local.78.253.def local.${LN}.253.def
+#             ln -s local.78.254.def local.${LN}.254.def
+              ln -s grib2LocalSectionNumber.78.table grib2LocalSectionNumber.$LN.table
+
+
+           fi
+
+
+	done <$TMPDIR/ln_cosmo_liste
+
+	rm $TMPDIR/ln_cosmo_liste
+
+

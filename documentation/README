@@ -1,0 +1,154 @@
+eccodes-cosmo-resources / README
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+  Documentation
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+====================================
+Introduction
+====================================
+
+The ecCodes is made up of two main elements: decoding engine and decoding rules.
+The decoding engine is coded in C and packaged in a library.
+The decoding rules are defined in text files called definition files.
+It is possible to define multiple sets of definition files.
+
+The ecCodes uses so called sample files to create a new GRIB message; a sample
+file is a binary file which contains a single GRIB 1 or GRIB 2 record.
+
+This repository contains the COSMO specific definition and sample files needed
+to work with the GRIB 2 format (but not the GRIB 1 format!). According to the
+point 5 of the COSMO GRIB policy, these files are maintained by the DWD, and
+are compatible with all COSMO software for all COSMO members.
+
+Usage of these files is shortly described in README.md, at the top level of
+this repository. In particular, these files must be used in conjunction with
+the correct version of the vendor distribution of the ecCodes.
+
+
+
+====================================
+Repository content
+====================================
+
+The goal is to include all necessary files in the distribution prepared by
+the DWD; this is not yet the case, and the sets of files which have added 
+by the SCA of this repository are marked with '+>'.
+
+  *** in definitions/grib1 subdirectory
+
+   > definitions to support usage at DWD 
+     (in particular translation from GRIB 1 to GRIB 2)
+     (not updated anymore)
+       definitions/grib1/* 
+
+  +> add support of local codes for some COSMO users, to
+     support (limited) usage of ecCodes tools:
+       definitions/grib1/localConcepts/lssw/name.def
+       definitions/grib1/localConcepts/lssw/paramId.def
+       definitions/grib1/localConcepts/lssw/shortName.def
+       definitions/grib1/localConcepts/lssw/units.def
+   
+
+  *** in definitions/grib2 subdirectory
+
+   > definitions to support usage at DWD and in the COSMO community 
+       definitions/grib2/* 
+
+  +> add support of local codes for COSMO users, by linking to the
+     corresponding files defined for center 78 (i.e. the default is
+     to use the same local conventions for all COSMO users). This 
+     concerns the local tables
+       definitions/grib2/tables/local/ccc
+     the local use section 
+       definitions/grib2/grib2LocalSectionNumber.ccc.table
+       definitions/grib2/local.ccc.def
+     add the localConcepts
+       definitions/grib2/localConcepts/ccc/name.def
+       definitions/grib2/localConcepts/ccc/paramId.def
+       definitions/grib2/localConcepts/ccc/shortName.def
+       definitions/grib2/localConcepts/ccc/units.def
+         with ccc in {43,76,80,96,127,129,134,146,200,215,220,242,250,258,280}
+
+  +> add support of COSMO-LEPS local use section, by modifying
+       definitions/grib2/grib2LocalSectionNumber.ccc.table
+       definitions/grib2/local.ccc.def
+     and creating
+       definitions/grib2/local.ccc.28.def
+         with ccc in {80,250}
+
+  +> correction of some 'features' (or bugs)
+     for COSMO-LEPS coding, see 1.1 in ./fieldextra/externals/README.eccodes
+       definitions/grib2/section.1.def (modified) & definitions/grib2/products_tigge.def (copied)
+     for COSMO-LEPS coding, see 1.2 in ./fieldextra/externals/README.eccodes
+       definitions/grib2/products_4.def (modified)
+     for local section of centers /= 78
+       definitions/grib2/section.2.def (modified)
+   
+
+  *** in samples subdirectory
+
+   > definitions to support usage at DWD and in the COSMO community 
+
+   > minimal sample file for all fieldextra usages
+       COSMO_GRIB2_default.tmpl 
+
+
+
+====================================
+Remarks on local and computed keys   
+====================================
+
+  The definitions delivered with the vendor distribution of ecCodes represents the
+  WMO GRIB 2 definitions plus some local ECMWF definitions for parameter identification,
+  mars system etc.
+
+  The only local keys coded in a GRIB message are the ones coded in the GRIB 2 section 2
+  provided by the standard.
+
+  All the meta data derived to interpret or to combine multiple information (the so called
+  computed keys) are introduced to make things more readable than the pure GRIB code, but
+  are _not_ part of the GRIB message.
+
+  One important example of a computed key is the 'shortName':
+  A short name describes a combination of parameter composed of the triple (discipline,
+  category, parameter) and, optionally, the level type, statistical process, etc. to specify
+  one unique meaningful name that identifies the variable.
+  In the COSMO model the short names differ from the ones used at ECMWF, and are based on
+  the names used in the output NAMELIST of the COSMO model. The translation between the 
+  short name and the full GRIB code is based on the files in the localConcepts of 
+  ecCodes. In this context 'localConcepts' does not mean local use of GRIB 2: indeed
+  these 'localConcepts' are only used to translate the short names into a standard
+  WMO code.
+  Note that fieldextra does not directly uses the localConcepts of ecCodes, the
+  translation between short names and local GRIB codes being based on the fieldextra
+  dictionaries (for historical reasons, the dictionaries having been introduced before
+  ecCodes, and because additional information is packed in the fieldextra dictionaries).
+     
+
+
+====================================
+Center specific definitions (GRIB 2)
+====================================
+
+ With     ccc : shortcut for originating center
+          vvv : version of local tables or of local use section
+
+   > (computed key) shortcuts for originating center is defined in
+       common/c-1.table
+
+   > (computed key) definition of short names in
+       grib2/localConcepts/ccc/            
+
+   > definition of local values used in standard tables in
+       grib2/tables/local/ccc/vvv/        
+
+   > definition of local use section
+       definitions/grib2/grib2LocalSectionNumber.ccc.table
+       definitions/grib2/local.ccc.def
+       definitions/grib2/local.ccc.vvv.def
+ 
+
