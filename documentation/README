@@ -81,10 +81,8 @@ by the SCA of this repository are marked with '+>'.
          with ccc in {80,250}
 
   +> correction of some 'features' (or bugs)
-     for COSMO-LEPS coding, see 1.1 in ./fieldextra/externals/README.eccodes
-       definitions/grib2/section.1.def (modified) & definitions/grib2/products_tigge.def (copied)
      for COSMO-LEPS coding, see 1.2 in ./fieldextra/externals/README.eccodes
-       definitions/grib2/products_4.def (modified)
+       definitions/grib2/products_4.def , definitions/grib2/products_5.def (modified)
      for local section of centers /= 78
        definitions/grib2/section.2.def (modified)
    

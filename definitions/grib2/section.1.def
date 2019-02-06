@@ -1,4 +1,3 @@
-#modified by JMB/MCH !
 # Copyright 2005-2017 ECMWF.
 #
 # This software is licensed under the terms of the Apache Licence Version 2.0
@@ -16,8 +15,7 @@ meta section1Pointer section_pointer(offsetSection1,section1Length,1);
 
 unsigned[1] numberOfSection = 1 :read_only;
 
-#codetable[2] centre  'grib2/centre.table' : dump,string_type;
-codetable[2] centre  'common/c-11.table' : dump,string_type;
+codetable[2] centre  'grib2/centre.table' : dump,string_type;
 alias identificationOfOriginatingGeneratingCentre=centre;
 meta centreDescription codetable_title(centre);
 
@@ -29,16 +27,14 @@ alias originatingCentre=centre;
 
 unsigned[2] subCentre  : dump;
 
-# Dangerous ! Silently change the source for the definition of the local use section!
-# Commented by jean-marie.bettems@meteoswiss.ch, reported issue to ECMWF (SUP-1409)
-#_if (subCentre==98 ) {
-#alias centreForLocal=subCentre;
-#} else {
+_if (subCentre==98 ) {
+alias centreForLocal=subCentre;
+} else {
 alias centreForLocal=centre;
-#}
+}
 
 #MasterTablesVersion
-codetable[1] tablesVersion 'grib2/tables/1.0.table' = 19 : edition_specific;
+codetable[1] tablesVersion 'grib2/tables/1.0.table' = 11 : edition_specific;
 alias gribMasterTablesVersionNumber=tablesVersion;
 
 transient masterDir="grib2/tables/[tablesVersion]";
@@ -102,7 +98,7 @@ alias ls.dataType=typeOfProcessedData;
 meta md5Section1 md5(offsetSection1,section1Length);
 
 meta selectStepTemplateInterval select_step_template(productDefinitionTemplateNumber,0); # 0 -> not instant
-meta selectStepTemplateInstant  select_step_template(productDefinitionTemplateNumber,1); # 1 -> instant
+meta selectStepTemplateInstant select_step_template(productDefinitionTemplateNumber,1); # 1 -> instant
 
 transient stepTypeInternal="instant" : hidden,no_copy;
 
@@ -134,3 +130,5 @@ concept is_uerra(zero) {
    '1' = {productionStatusOfProcessedData=8;}
    '0' = {dummy=1;}
 }
+
+
