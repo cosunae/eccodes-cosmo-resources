@@ -24,7 +24,7 @@ All production releases are tagged, the tag value being the same as the version 
 
 ### Testing procedure
 
-Any changes to this repository, including the use of a different version of eccodes-vendor, must be validated with the COSMO technical test suite. In particular, the programs INT2LM, COSMO, and **[fieldextra](https://github.com/MeteoSwiss-APN/fieldextra)** must pass their respective regression suite, for all originating centers in {78, 215, 250}.
+Any changes to this repository, including the use of a different version of eccodes-vendor, must be validated with the COSMO technical test suite. In particular, the programs INT2LM, COSMO, and **[fieldextra](https://github.com/COSMO-ORG/fieldextra)** must pass their respective regression suite, for all originating centers in {78, 215, 250}.
 
 ### GitHub repository
 
