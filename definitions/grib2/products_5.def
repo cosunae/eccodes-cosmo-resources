@@ -15,6 +15,6 @@
 # If block added by jean-marie.bettems@meteoswiss.ch
 
 if (subCentre!=98 || (centre!=80 && centre!=250)) {
-constant marsExpver = 'prod';
+constant marsExpver = 'test';
 include "grib2/products_tigge.def"
 }
