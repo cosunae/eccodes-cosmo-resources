@@ -1,5 +1,5 @@
 #modified by DWD!
-# Copyright 2005-2017 ECMWF.
+# Copyright 2005-2018 ECMWF.
 #
 # This software is licensed under the terms of the Apache Licence Version 2.0
 # which can be obtained at http://www.apache.org/licenses/LICENSE-2.0.
@@ -83,6 +83,9 @@ concept_nofail vertical.typeOfLevel (unknown) {
   'pressureFromGroundLayer' = {typeOfFirstFixedSurface=108;typeOfSecondFixedSurface=108;}
   'potentialVorticity' = {typeOfFirstFixedSurface=109; typeOfSecondFixedSurface=255;}
   'eta' = {typeOfFirstFixedSurface=111;  typeOfSecondFixedSurface=255;}
+  'soil' = {typeOfFirstFixedSurface=151;  typeOfSecondFixedSurface=255;}
+  'soilLayer' = {typeOfFirstFixedSurface=151;  typeOfSecondFixedSurface=151;}
+
 # In the case of Generalized vertical height coordinates, NV must be 6
   'generalVertical' = {genVertHeightCoords=1; typeOfFirstFixedSurface=150; NV=6;}
   'generalVerticalLayer' = {genVertHeightCoords=1; typeOfFirstFixedSurface=150; typeOfSecondFixedSurface=150; NV=6;}
@@ -174,5 +177,11 @@ alias extraDim=zero;
                 unalias mars.levelist;
         }
  }
+
+# See ECC-854
+if(typeOfFirstFixedSurface == 151 && typeOfSecondFixedSurface == 151) {
+    alias mars.levelist = bottomLevel;
+}
+
 alias ls.typeOfLevel=typeOfLevel;
 

@@ -40,7 +40,6 @@ unsigned[1] backgroundProcess = 255 : edition_specific;
 }
 alias backgroundGeneratingProcessIdentifier=backgroundProcess;
 
-
 #  Analysis or forecast generating processes identifier
 # (defined by originating centre)
 #DWD +4
@@ -51,7 +50,6 @@ unsigned[1] generatingProcessIdentifier  : dump;
 }
 
 #  Hours of observational data cut-off after reference time
-# NOTE 1 NOT FOUND
 unsigned[2] hoursAfterDataCutoff = missing() : edition_specific,can_be_missing;
 alias hoursAfterReferenceTimeOfDataCutoff=hoursAfterDataCutoff;
 

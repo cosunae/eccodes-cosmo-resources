@@ -3,10 +3,17 @@
 #weil in section.4.def benutzt und diese ist wegen ieeefloat Fehler local
 constant productDefinitionTemplateNumberInternal=0 : hidden,no_copy;
 
-#alias localDefinitionNumber=grib2LocalSectionNumber;
+#DL as this definition file is used by different centres per link define aliases
+# according to centreForLocal
+if (centreForLocal != 78) {
+alias localDefinitionNumber=grib2LocalSectionNumber;
+} else {
 alias grib2LocalSectionNumber=localDefinitionNumber;
+}
 
- if (section2Length==20) {
+#if (section2Length==20) {
+# if (section2Length==20 && tiggeSuiteID == 255) {
+ if (section2Length==20 && !(defined(suiteName))) {
 #  unsigned[1] localDefinitionNumber: dump;
   unsigned[1] localHostIdentifier: dump;
   unsigned[2] localCreationDateYear: dump;
@@ -24,8 +31,9 @@ alias grib2LocalSectionNumber=localDefinitionNumber;
 
  } else {
 
-   if ( (localDefinitionNumber == 252) || (localDefinitionNumber == 253)
-     || (localDefinitionNumber == 250) || (localDefinitionNumber == 254) ){
+   if ( (localDefinitionNumber == 252 ) || (localDefinitionNumber == 253 )
+      || (localDefinitionNumber == 28 )
+      || (localDefinitionNumber == 250 ) || (localDefinitionNumber == 254 ) ){
       template  localSection  "grib2/local.78.[localDefinitionNumber:l].def";
    } else {
       section_padding section2Padding : read_only;
@@ -33,4 +41,3 @@ alias grib2LocalSectionNumber=localDefinitionNumber;
 #      meta localValidityDate sprintf("%d",localValidityDateL): dump;
    }
 }
-

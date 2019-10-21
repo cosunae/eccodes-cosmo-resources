@@ -14,3 +14,5 @@
 205 205 Maximum 10m convective gust(ms-1)
 206 206 Maximum rotation amplitude (positive or negative)  (over given time interval and column)(s-1)
 207 207 Maximum updraft track (over given time interval and column)(m s-1)
+208 208 u-component of (vertical) wind shear vector between two levels(m s-1)
+209 209 v-component of (vertical) wind shear vector between two levels(m s-1)

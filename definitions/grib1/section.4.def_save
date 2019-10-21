@@ -87,19 +87,19 @@ concept packingType {
   "grid_ieee"                         = { sphericalHarmonics = 0; complexPacking = 0;
                                           integerPointValues=1; additionalFlagPresent=1;}
   "spectral_complex"                  = { sphericalHarmonics = 1; complexPacking = 1;
-                                                                                        additionalFlagPresent = 0; }
+											additionalFlagPresent = 0; }
   "spectral_simple"                   = { sphericalHarmonics = 1; complexPacking = 0; additionalFlagPresent = 0;
                                           representationMode=1;}
   "spectral_ieee"                  = { sphericalHarmonics = 1; complexPacking = 1;
-                                                                                        additionalFlagPresent = 0;hideThis=1; }
+											additionalFlagPresent = 0;hideThis=1; }
   "grid_simple_matrix"                = { sphericalHarmonics = 0; complexPacking = 0; additionalFlagPresent = 1;}
 
   "grid_second_order_row_by_row"        = {     sphericalHarmonics = 0; complexPacking = 1; secondOrderOfDifferentWidth=1;                                      
-                                                                                        matrixOfValues=0; secondaryBitmapPresent=0; generalExtended2ordr=0; }
+											matrixOfValues=0; secondaryBitmapPresent=0; generalExtended2ordr=0; }
   "grid_second_order_constant_width"    = {     sphericalHarmonics = 0; complexPacking = 1; secondOrderOfDifferentWidth=0;
-                                                                                        matrixOfValues=0; secondaryBitmapPresent=1; generalExtended2ordr=0; }
+										        matrixOfValues=0; secondaryBitmapPresent=1; generalExtended2ordr=0; }
   "grid_second_order_general_grib1"    = {sphericalHarmonics = 0; complexPacking = 1; secondOrderOfDifferentWidth=1;
-                                                                        matrixOfValues=0; secondaryBitmapPresent=1; generalExtended2ordr=0; }
+									matrixOfValues=0; secondaryBitmapPresent=1; generalExtended2ordr=0; }
   "grid_second_order_no_SPD"  = {       sphericalHarmonics = 0; complexPacking = 1; secondOrderOfDifferentWidth=1;     
                                                                         matrixOfValues=0; secondaryBitmapPresent=0; generalExtended2ordr=1;
                                                                         plusOneinOrdersOfSPD=0; twoOrdersOfSPD=0;}
@@ -156,10 +156,9 @@ alias numberOfBitsContainingEachPackedValue = bitsPerValue;
         referenceValue,
         binaryScaleFactor,
         decimalScaleFactor,
-        optimizeScaleFactor,
         halfByte,
-                packingType,
-                grid_ieee,precision,
+		packingType,
+		grid_ieee,precision,
         missingValue,
         numberOfPoints,
         bitmap
@@ -179,7 +178,7 @@ if (bitmapPresent==1) {
 }
 
 _if (sphericalHarmonics) {
-        alias numberOfEffectiveValues=numberOfValues;
+	alias numberOfEffectiveValues=numberOfValues;
 }
 
 meta changeDecimalPrecision decimal_precision(bitsPerValue,decimalScaleFactor,changingPrecision,values)  : edition_specific;
@@ -252,3 +251,4 @@ if (complexPacking==0 || sphericalHarmonics==1) {
 
 meta md5Section4 md5(offsetSection4,section4Length);
 alias md5DataSection = md5Section4;
+

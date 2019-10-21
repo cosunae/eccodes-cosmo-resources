@@ -72,19 +72,6 @@ by the SCA of this repository are marked with '+>'.
        definitions/grib2/localConcepts/ccc/shortName.def
        definitions/grib2/localConcepts/ccc/units.def
          with ccc in {43,76,80,96,127,129,134,146,200,215,220,242,250,258,280}
-
-  +> add support of COSMO-LEPS local use section, by modifying
-       definitions/grib2/grib2LocalSectionNumber.ccc.table
-       definitions/grib2/local.ccc.def
-     and creating
-       definitions/grib2/local.ccc.28.def
-         with ccc in {80,250}
-
-  +> correction of some 'features' (or bugs)
-     for COSMO-LEPS coding, see 1.2 in ./fieldextra/externals/README.eccodes
-       definitions/grib2/products_4.def , definitions/grib2/products_5.def (modified)
-     for local section of centers /= 78
-       definitions/grib2/section.2.def (modified)
    
 
   *** in samples subdirectory

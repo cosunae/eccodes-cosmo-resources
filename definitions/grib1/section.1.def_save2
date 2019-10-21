@@ -315,18 +315,10 @@ if(((section1Length > 40) or new() or setLocalDefinition> 0) and deleteLocalDefi
 	}
   }
 
-  if(originatingCentre == 78) {
-#DWD changes for 98 without localDecodeDateL
-    if ( subCentre == 98 && localDefinitionNumber == 1) {
-# add  dummy line
-      alias ls.centre = centre; 
-    } else {
-      meta localDecodeDate sprintf("%d",localDecodeDateL): no_copy, dump;
-      alias localCreationDate = localDecodeDate;
-    }
-
+  if (originatingCentre == 78) {
+    meta localDecodeDate sprintf("%d",localDecodeDateL): no_copy, dump;
+    alias localCreationDate = localDecodeDate;
   }
-
 
 }
 else

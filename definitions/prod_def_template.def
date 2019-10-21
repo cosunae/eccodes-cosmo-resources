@@ -268,7 +268,6 @@
 '500249' = { productDefinitionTemplateNumber = 42 ; }
 '500251' = { productDefinitionTemplateNumber = 42 ; }
 '500252' = { productDefinitionTemplateNumber = 42 ; }
-'500254' = { productDefinitionTemplateNumber = 42 ; }
 '500255' = { productDefinitionTemplateNumber = 42 ; }
 '500257' = { productDefinitionTemplateNumber = 42 ; }
 '500260' = { productDefinitionTemplateNumber = 42 ; }
@@ -653,3 +652,6 @@
 '503293' = { productDefinitionTemplateNumber = 8 ; }
 '503294' = { productDefinitionTemplateNumber = 8 ; }
 '503295' = { productDefinitionTemplateNumber = 8 ; }
+'503470' = { productDefinitionTemplateNumber = 18 ; }
+'503471' = { productDefinitionTemplateNumber = 18 ; }
+'503539' = { productDefinitionTemplateNumber = 42 ; }

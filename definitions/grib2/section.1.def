@@ -1,18 +1,30 @@
-# Copyright 2005-2019 ECMWF.
+# Copyright 2005-2017 ECMWF.
+#
+# This software is licensed under the terms of the Apache Licence Version 2.0
+# which can be obtained at http://www.apache.org/licenses/LICENSE-2.0.
+# 
+# In applying this licence, ECMWF does not waive the privileges and immunities granted to it by
+# virtue of its status as an intergovernmental organisation nor does it submit to any jurisdiction.
+#
+
 
 position offsetSection1;
+# GRIB-API 1.16.0 length[4] section1Length ;
 section_length[4] section1Length ;
 meta section1Pointer section_pointer(offsetSection1,section1Length,1);
 
 unsigned[1] numberOfSection = 1 :read_only;
 
+#codetable[2] centre  'grib2/centre.table' : dump,string_type;
 codetable[2] centre  'common/c-11.table' : dump,string_type;
 alias identificationOfOriginatingGeneratingCentre=centre;
 meta centreDescription codetable_title(centre);
 
+
 alias parameter.centre=centre;
 alias ls.centre=centre;
 alias originatingCentre=centre;
+
 
 unsigned[2] subCentre  : dump;
 
@@ -22,7 +34,9 @@ alias centreForLocal=subCentre;
 alias centreForLocal=centre;
 }
 
-codetable[1] tablesVersion 'grib2/tables/1.0.table' = tablesVersionLatest : edition_specific;
+#MasterTablesVersion
+#codetable[1] tablesVersion 'grib2/tables/1.0.table' = tablesVersionLatest : edition_specific;
+codetable[1] tablesVersion 'grib2/tables/1.0.table' = 19 : edition_specific;
 alias gribMasterTablesVersionNumber=tablesVersion;
 
 transient masterDir="grib2/tables/[tablesVersion]";
@@ -32,10 +46,12 @@ when (tablesVersion!=255) {
   set masterDir="grib2/tables/4";
 }
 
-codetable[1] localTablesVersion 'grib2/tables/local/[centreForLocal]/1.1.table' ;
+#codetable[1] localTablesVersion 'grib2/tables/[tablesVersion]/1.1.table' = 1 ;
+codetable[1] localTablesVersion 'grib2/tables/local/[centreForLocal]/1.1.table' = 1 ;
 alias versionNumberOfGribLocalTables=localTablesVersion;
 
 transient localDir="";
+#if (localTablesVersion != 0) {
 if (localTablesVersion != 0 and localTablesVersion != 255) {
   transient localDir="grib2/tables/local/[centre]/[localTablesVersion]";
 }
@@ -70,6 +86,7 @@ meta julianDay julian_day(dataDate,hour,minute,second) : edition_specific;
 
 meta      dataTime    time(hour,minute,second) : dump;
 alias mars.time = dataTime;
+
 
 meta dateTimeL evaluate(date*10000 + time ) ;
 meta dateTime sprintf("%d",dateTimeL):  no_copy, dump;
