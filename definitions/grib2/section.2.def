@@ -1,11 +1,4 @@
-# Copyright 2005-2017 ECMWF.
-#
-# This software is licensed under the terms of the Apache Licence Version 2.0
-# which can be obtained at http://www.apache.org/licenses/LICENSE-2.0.
-# 
-# In applying this licence, ECMWF does not waive the privileges and immunities granted to it by
-# virtue of its status as an intergovernmental organisation nor does it submit to any jurisdiction.
-#
+# Copyright 2005-2019 ECMWF.
 
 position offsetSection2;
 #GRIB-API 1.16.0 length[4] section2Length ;
@@ -22,35 +15,41 @@ transient addEmptySection2 = 0;
                 
 if ( addEmptySection2 == 0 ) {
 
-        if ( grib2LocalSectionPresent==1 or ( section2Length>5 or new() )) {
-        	alias section2Used=one;
+    if ( grib2LocalSectionPresent==1 or ( section2Length>5 or new() )) {
+        alias section2Used=one;
 
-        	if(productionStatusOfProcessedData == 4 || productionStatusOfProcessedData == 5) {
-                        # This is TIGGE-LAM because of the productionStatusOfProcessedData and the non-empty section 2
-        		codetable[2] tiggeLocalVersion 'grib2/tiggeLocalVersion.table' = 1 : dump;
-        		template  tiggeSection "grib2/local.tigge.[tiggeLocalVersion:l].def";
-        	}
+        if(productionStatusOfProcessedData == 4 || productionStatusOfProcessedData == 5) {
+            # This is TIGGE-LAM because of the productionStatusOfProcessedData and the non-empty section 2
+            codetable[2] tiggeLocalVersion 'grib2/tiggeLocalVersion.table' = 1 : dump;
+            template  tiggeSection "grib2/local.tigge.[tiggeLocalVersion:l].def";
+        }
 
-                if (section2Used == 1 && centreForLocal==78 ) {
-        	codetable[1] localDefinitionNumber 'grib2/grib2LocalSectionNumber.[centreForLocal:l].table' = 0 : dump;
-        	alias grib2LocalSectionNumber=localDefinitionNumber;
-                }
-                else {
-                codetable[2] grib2LocalSectionNumber 'grib2/grib2LocalSectionNumber.[centreForLocal:l].table' = 1 : dump;
+        if(productionStatusOfProcessedData == 10 || productionStatusOfProcessedData == 11) {
+           # crra = Copernicus Regional ReAnalysis
+           codetable[2] crraLocalVersion 'grib2/crraLocalVersion.table' = 1 : dump;
+           template  crraSection "grib2/local.crra.[crraLocalVersion:l].def";
+        }
+
+        if (section2Used == 1 && centreForLocal==78 ) {
+            codetable[1] localDefinitionNumber 'grib2/grib2LocalSectionNumber.[centreForLocal:l].table' = 0 : dump;
+            alias grib2LocalSectionNumber=localDefinitionNumber;
+        }
+        else {
+          codetable[2] grib2LocalSectionNumber 'grib2/grib2LocalSectionNumber.[centreForLocal:l].table' = 1 : dump;
 #Error with test grib_level.sh
 #?Error with grib_api und Convert grb1 -> grb2
 #cg???	        alias localDefinitionNumber=grib2LocalSectionNumber;
 #DWD add alias for COSMO-Leps ???
 #aber fehler mit grib_level.sh                  alias localDefinitionNumber=grib2LocalSectionNumber;
-                }
-	
-        	if (grib2LocalSectionNumber!=0) {
-        		template_nofail local "grib2/local.[centreForLocal:l].def";
-        	} else {
-        		constant deleteLocalDefinition=1;
-        	}
-               position offsetAfterCentreLocalSection;
         }
+	
+        if (grib2LocalSectionNumber!=0) {
+            template_nofail local "grib2/local.[centreForLocal:l].def";
+        } else {
+            constant deleteLocalDefinition=1;
+        }
+        position offsetAfterCentreLocalSection;
+    }
 }
 
 section_padding section2Padding : read_only;

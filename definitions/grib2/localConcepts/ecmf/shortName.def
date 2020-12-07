@@ -205,6 +205,22 @@
 	 parameterCategory = 2 ;
 	 parameterNumber = 32 ;
 	}
+#Total column cloud liquid water
+'tclw' = {
+	 discipline = 0 ;
+	 parameterCategory = 1 ;
+	 parameterNumber = 69 ;
+	 typeOfFirstFixedSurface = 1 ;
+	 typeOfSecondFixedSurface = 8 ;
+	}
+#Total column cloud ice water
+'tciw' = {
+	 discipline = 0 ;
+	 parameterCategory = 1 ;
+	 parameterNumber = 70 ;
+	 typeOfFirstFixedSurface = 1 ;
+	 typeOfSecondFixedSurface = 8 ;
+	}
 #Surface solar radiation downwards
 'ssrd' = {
 	 discipline = 0 ;
@@ -220,6 +236,14 @@
 	 parameterNumber = 3 ;
 	 typeOfStatisticalProcessing = 1 ;
 	 typeOfFirstFixedSurface = 1 ;
+	}
+#Top net solar radiation
+'tsr' = {
+	 discipline = 0 ;
+	 parameterCategory = 4 ;
+	 parameterNumber = 1 ;
+	 typeOfFirstFixedSurface = 8 ;
+	 typeOfStatisticalProcessing = 1 ;
 	}
 #Eastward turbulent surface stress
 'ewss' = {
@@ -260,6 +284,22 @@
 	 discipline = 0 ;
 	 parameterCategory = 14 ;
 	 parameterNumber = 1 ;
+	}
+#Surface net solar radiation, clear sky
+'ssrc' = {
+	 discipline = 0 ;
+	 parameterCategory = 4 ;
+	 parameterNumber = 11 ;
+	 typeOfFirstFixedSurface = 1 ;
+	 typeOfStatisticalProcessing = 1 ;
+	}
+#Surface net thermal radiation, clear sky
+'strc' = {
+	 discipline = 0 ;
+	 parameterCategory = 5 ;
+	 parameterNumber = 6 ;
+	 typeOfFirstFixedSurface = 1 ;
+	 typeOfStatisticalProcessing = 1 ;
 	}
 #Specific cloud liquid water content
 'clwc' = {
@@ -340,12 +380,12 @@
 	 discipline = 0 ;
 	 parameterCategory = 2 ;
 	 parameterNumber = 22 ;
+	 typeOfFirstFixedSurface = 103 ;
 	 scaleFactorOfLowerLimit = 0 ;
 	 scaledValueOfFirstFixedSurface = 10 ;
 	 productDefinitionTemplateNumber = 9 ;
 	 typeOfStatisticalProcessing = 2 ;
 	 scaledValueOfLowerLimit = 10 ;
-	 typeOfFirstFixedSurface = 103 ;
 	 probabilityType = 3 ;
 	 scaleFactorOfFirstFixedSurface = 0 ;
 	}
@@ -415,6 +455,18 @@
 	 scaleFactorOfLowerLimit = 0 ;
 	 productDefinitionTemplateNumber = 9 ;
 	}
+#Mean sea water potential temperature in the upper 300 m
+'mswpt300m' = {
+	 discipline = 10 ;
+	 parameterCategory = 4 ;
+	 parameterNumber = 18 ;
+	 typeOfFirstFixedSurface = 160 ;
+	 typeOfSecondFixedSurface = 160 ;
+	 scaledValueOfFirstFixedSurface = 0 ;
+	 scaleFactorOfFirstFixedSurface = 0 ;
+	 scaledValueOfSecondFixedSurface = 300 ;
+	 scaleFactorOfSecondFixedSurface = 0 ;
+	}
 #Mean sea water temperature in the upper 300 m
 'mswt300m' = {
 	 discipline = 10 ;
@@ -426,6 +478,36 @@
 	 scaledValueOfFirstFixedSurface = 0 ;
 	 scaledValueOfSecondFixedSurface = 300 ;
 	 scaleFactorOfSecondFixedSurface = 0 ;
+	}
+#Sea surface practical salinity
+'sos' = {
+	 discipline = 10 ;
+	 parameterCategory = 3 ;
+	 parameterNumber = 3 ;
+	 typeOfFirstFixedSurface = 160 ;
+	 typeOfSecondFixedSurface = 255 ;
+	 scaledValueOfFirstFixedSurface = 0 ;
+	 scaleFactorOfFirstFixedSurface = 0 ;
+	}
+#Ocean mixed layer thickness defined by sigma theta 0.01 kg/m3
+'mlotst010' = {
+	 discipline = 10 ;
+	 parameterCategory = 4 ;
+	 parameterNumber = 14 ;
+	 typeOfSecondFixedSurface = 255 ;
+	 scaledValueOfFirstFixedSurface = 1 ;
+	 scaleFactorOfFirstFixedSurface = 2 ;
+	 typeOfFirstFixedSurface = 169 ;
+	}
+#2 metre specific humidity
+'2sh' = {
+	 discipline = 0 ;
+	 parameterCategory = 1 ;
+	 parameterNumber = 0 ;
+	 typeOfFirstFixedSurface = 103 ;
+	 typeOfSecondFixedSurface = 255 ;
+	 scaledValueOfFirstFixedSurface = 2 ;
+	 scaleFactorOfFirstFixedSurface = 0 ;
 	}
 #Ammonium aerosol mass mixing ratio
 'aermr18' = {
@@ -501,6 +583,24 @@
 	 typeOfFirstFixedSurface = 1 ;
 	 aerosolType = 62003 ;
 	}
+#-10 degrees C isothermal level (atm)
+'degm10l' = {
+	 discipline = 0 ;
+	 parameterCategory = 3 ;
+	 parameterNumber = 6 ;
+	 typeOfFirstFixedSurface = 20 ;
+	 scaledValueOfFirstFixedSurface = 26315 ;
+	 scaleFactorOfFirstFixedSurface = 2 ;
+	}
+#0 degrees C isothermal level (atm)
+'deg0l' = {
+	 discipline = 0 ;
+	 parameterCategory = 3 ;
+	 parameterNumber = 6 ;
+	 typeOfFirstFixedSurface = 20 ;
+	 scaledValueOfFirstFixedSurface = 27315 ;
+	 scaleFactorOfFirstFixedSurface = 2 ;
+	}
 #10 metre wind gust in the last 3 hours
 '10fg3' = {
 	 discipline = 0 ;
@@ -574,6 +674,12 @@
 	 typeOfFirstFixedSurface = 103 ;
 	 scaleFactorOfFirstFixedSurface = 0 ;
 	 scaledValueOfFirstFixedSurface = 2 ;
+	}
+#Liquid water content in snow pack
+'lwcs' = {
+	 discipline = 2 ;
+	 parameterCategory = 3 ;
+	 parameterNumber = 23 ;
 	}
 #Height of convective cloud top
 'hcct' = {
@@ -743,6 +849,69 @@
 	 parameterCategory = 0 ;
 	 parameterNumber = 33 ;
 	}
+#Mixed-layer CAPE in the lowest 50 hPa
+'mlcape50' = {
+	 discipline = 0 ;
+	 parameterCategory = 7 ;
+	 parameterNumber = 6 ;
+	 typeOfFirstFixedSurface = 18 ;
+	 scaledValueOfFirstFixedSurface = 5000 ;
+	 scaleFactorOfFirstFixedSurface = 0 ;
+	}
+#Mixed-layer CIN in the lowest 50 hPa
+'mlcin50' = {
+	 discipline = 0 ;
+	 parameterCategory = 7 ;
+	 parameterNumber = 7 ;
+	 typeOfFirstFixedSurface = 18 ;
+	 scaledValueOfFirstFixedSurface = 5000 ;
+	 scaleFactorOfFirstFixedSurface = 0 ;
+	}
+#Mixed-layer CAPE in the lowest 100 hPa
+'mlcape100' = {
+	 discipline = 0 ;
+	 parameterCategory = 7 ;
+	 parameterNumber = 6 ;
+	 typeOfFirstFixedSurface = 18 ;
+	 scaledValueOfFirstFixedSurface = 10000 ;
+	 scaleFactorOfFirstFixedSurface = 0 ;
+	}
+#Mixed-layer CIN in the lowest 100 hPa
+'mlcin100' = {
+	 discipline = 0 ;
+	 parameterCategory = 7 ;
+	 parameterNumber = 7 ;
+	 typeOfFirstFixedSurface = 18 ;
+	 scaledValueOfFirstFixedSurface = 10000 ;
+	 scaleFactorOfFirstFixedSurface = 0 ;
+	}
+#Most-unstable CAPE
+'mucape' = {
+	 discipline = 0 ;
+	 parameterCategory = 7 ;
+	 parameterNumber = 6 ;
+	 typeOfFirstFixedSurface = 17 ;
+	 scaledValueOfFirstFixedSurface = missing() ;
+	 scaleFactorOfFirstFixedSurface = missing() ;
+	}
+#Most-unstable CIN
+'mucin' = {
+	 discipline = 0 ;
+	 parameterCategory = 7 ;
+	 parameterNumber = 7 ;
+	 typeOfFirstFixedSurface = 17 ;
+	 scaledValueOfFirstFixedSurface = missing() ;
+	 scaleFactorOfFirstFixedSurface = missing() ;
+	}
+#Departure level of the most unstable parcel expressed as Pressure
+'mudlp' = {
+	 discipline = 0 ;
+	 parameterCategory = 3 ;
+	 parameterNumber = 0 ;
+	 typeOfFirstFixedSurface = 17 ;
+	 scaledValueOfFirstFixedSurface = missing() ;
+	 scaleFactorOfFirstFixedSurface = missing() ;
+	}
 #200 metre U wind component
 '200u' = {
 	 discipline = 0 ;
@@ -877,6 +1046,33 @@
 	 parameterNumber = 20 ;
 	 typeOfStatisticalProcessing = 0 ;
 	}
+#Time integral of rain flux
+'tirf' = {
+	 discipline = 0 ;
+	 parameterCategory = 1 ;
+	 parameterNumber = 65 ;
+	 typeOfFirstFixedSurface = 1 ;
+	 typeOfSecondFixedSurface = 255 ;
+	 typeOfStatisticalProcessing = 1 ;
+	}
+#Time integral of surface eastward momentum flux
+'tisemf' = {
+	 discipline = 0 ;
+	 parameterCategory = 2 ;
+	 parameterNumber = 17 ;
+	 typeOfFirstFixedSurface = 1 ;
+	 typeOfSecondFixedSurface = 255 ;
+	 typeOfStatisticalProcessing = 1 ;
+	}
+#Time integral of surface northward momentum flux
+'tisnmf' = {
+	 discipline = 0 ;
+	 parameterCategory = 2 ;
+	 parameterNumber = 18 ;
+	 typeOfFirstFixedSurface = 1 ;
+	 typeOfSecondFixedSurface = 255 ;
+	 typeOfStatisticalProcessing = 1 ;
+	}
 #Cross sectional area of flow in channel
 'chcross' = {
 	 discipline = 1 ;
@@ -980,6 +1176,106 @@
 	 discipline = 1 ;
 	 parameterCategory = 0 ;
 	 parameterNumber = 9 ;
+	}
+#Latitude
+'lat' = {
+	 discipline = 0 ;
+	 parameterCategory = 191 ;
+	 parameterNumber = 1 ;
+	}
+#Longitude
+'lon' = {
+	 discipline = 0 ;
+	 parameterCategory = 191 ;
+	 parameterNumber = 2 ;
+	}
+#Latitude on T grid
+'tlat' = {
+	 discipline = 0 ;
+	 parameterCategory = 191 ;
+	 parameterNumber = 1 ;
+	 gridDefinitionTemplateNumber = 101 ;
+	 numberOfGridInReference = 1 ;
+	}
+#Longitude on T grid
+'tlon' = {
+	 discipline = 0 ;
+	 parameterCategory = 191 ;
+	 parameterNumber = 2 ;
+	 gridDefinitionTemplateNumber = 101 ;
+	 numberOfGridInReference = 1 ;
+	}
+#Latitude on U grid
+'ulat' = {
+	 discipline = 0 ;
+	 parameterCategory = 191 ;
+	 parameterNumber = 1 ;
+	 gridDefinitionTemplateNumber = 101 ;
+	 numberOfGridInReference = 2 ;
+	}
+#Longitude on U grid
+'ulon' = {
+	 discipline = 0 ;
+	 parameterCategory = 191 ;
+	 parameterNumber = 2 ;
+	 gridDefinitionTemplateNumber = 101 ;
+	 numberOfGridInReference = 2 ;
+	}
+#Latitude on V grid
+'vlat' = {
+	 discipline = 0 ;
+	 parameterCategory = 191 ;
+	 parameterNumber = 1 ;
+	 gridDefinitionTemplateNumber = 101 ;
+	 numberOfGridInReference = 3 ;
+	}
+#Longitude on V grid
+'vlon' = {
+	 discipline = 0 ;
+	 parameterCategory = 191 ;
+	 parameterNumber = 2 ;
+	 gridDefinitionTemplateNumber = 101 ;
+	 numberOfGridInReference = 3 ;
+	}
+#Latitude on W grid
+'wlat' = {
+	 discipline = 0 ;
+	 parameterCategory = 191 ;
+	 parameterNumber = 1 ;
+	 gridDefinitionTemplateNumber = 101 ;
+	 numberOfGridInReference = 4 ;
+	}
+#Longitude on W grid
+'wlon' = {
+	 discipline = 0 ;
+	 parameterCategory = 191 ;
+	 parameterNumber = 2 ;
+	 gridDefinitionTemplateNumber = 101 ;
+	 numberOfGridInReference = 4 ;
+	}
+#Latitude on F grid
+'flat' = {
+	 discipline = 0 ;
+	 parameterCategory = 191 ;
+	 parameterNumber = 1 ;
+	 gridDefinitionTemplateNumber = 101 ;
+	 numberOfGridInReference = 5 ;
+	}
+#Longitude on F grid
+'flon' = {
+	 discipline = 0 ;
+	 parameterCategory = 191 ;
+	 parameterNumber = 2 ;
+	 gridDefinitionTemplateNumber = 101 ;
+	 numberOfGridInReference = 5 ;
+	}
+#Total column graupel
+'tcolg' = {
+	 discipline = 0 ;
+	 parameterCategory = 1 ;
+	 parameterNumber = 74 ;
+	 typeOfFirstFixedSurface = 1 ;
+	 typeOfSecondFixedSurface = 8 ;
 	}
 #2 metre relative humidity
 '2r' = {
@@ -1259,6 +1555,48 @@
 	 parameterCategory = 0 ;
 	 parameterNumber = 9 ;
 	}
+#Forest fire weather index
+'fwinx' = {
+	 discipline = 2 ;
+	 parameterCategory = 4 ;
+	 parameterNumber = 5 ;
+	}
+#Fine fuel moisture code
+'ffmcode' = {
+	 discipline = 2 ;
+	 parameterCategory = 4 ;
+	 parameterNumber = 6 ;
+	}
+#Duff moisture code
+'dufmcode' = {
+	 discipline = 2 ;
+	 parameterCategory = 4 ;
+	 parameterNumber = 7 ;
+	}
+#Drought code
+'drtcode' = {
+	 discipline = 2 ;
+	 parameterCategory = 4 ;
+	 parameterNumber = 8 ;
+	}
+#Initial fire spread index
+'infsinx' = {
+	 discipline = 2 ;
+	 parameterCategory = 4 ;
+	 parameterNumber = 9 ;
+	}
+#Fire buildup index
+'fbupinx' = {
+	 discipline = 2 ;
+	 parameterCategory = 4 ;
+	 parameterNumber = 10 ;
+	}
+#Fire daily severity rating
+'fdsrte' = {
+	 discipline = 2 ;
+	 parameterCategory = 4 ;
+	 parameterNumber = 11 ;
+	}
 #Cloudy radiance (with respect to wave number)
 '~' = {
 	 discipline = 3 ;
@@ -1300,6 +1638,132 @@
 	 discipline = 3 ;
 	 parameterCategory = 1 ;
 	 parameterNumber = 23 ;
+	}
+#Keetch-Byram drought index
+'kbdi' = {
+	 discipline = 2 ;
+	 parameterCategory = 4 ;
+	 parameterNumber = 12 ;
+	}
+#Drought factor (as defined by the Australian forest service)
+'drtmrk' = {
+	 discipline = 2 ;
+	 parameterCategory = 4 ;
+	 parameterNumber = 13 ;
+	}
+#Rate of spread (as defined by the Australian forest service)
+'rosmrk' = {
+	 discipline = 2 ;
+	 parameterCategory = 4 ;
+	 parameterNumber = 14 ;
+	}
+#Fire danger index (as defined by the Australian forest service)
+'fdimrk' = {
+	 discipline = 2 ;
+	 parameterCategory = 4 ;
+	 parameterNumber = 15 ;
+	}
+#Spread component (as defined by the U.S Forest Service National Fire-Danger Rating System)
+'scnfdr' = {
+	 discipline = 2 ;
+	 parameterCategory = 4 ;
+	 parameterNumber = 16 ;
+	}
+#Burning index (as defined by the U.S Forest Service National Fire-Danger Rating System)
+'buinfdr' = {
+	 discipline = 2 ;
+	 parameterCategory = 4 ;
+	 parameterNumber = 17 ;
+	}
+#Ignition component (as defined by the U.S Forest Service National Fire-Danger Rating System)
+'icnfdr' = {
+	 discipline = 2 ;
+	 parameterCategory = 4 ;
+	 parameterNumber = 18 ;
+	}
+#Energy release component (as defined by the U.S Forest Service National Fire-Danger Rating System)
+'ercnfdr' = {
+	 discipline = 2 ;
+	 parameterCategory = 4 ;
+	 parameterNumber = 19 ;
+	}
+#Universal thermal climate index
+'utci' = {
+	 discipline = 20 ;
+	 parameterCategory = 0 ;
+	 parameterNumber = 0 ;
+	}
+#Mean radiant temperature
+'mrt' = {
+	 discipline = 20 ;
+	 parameterCategory = 0 ;
+	 parameterNumber = 1 ;
+	}
+#Fraction of Malaria cases
+'mal_cases_frac' = {
+	 discipline = 20 ;
+	 parameterCategory = 1 ;
+	 parameterNumber = 0 ;
+	}
+#Malaria circumsporozoite protein ratio
+'mal_prot_ratio' = {
+	 discipline = 20 ;
+	 parameterCategory = 1 ;
+	 parameterNumber = 1 ;
+	}
+#Plasmodium falciparum entomological inoculation rate
+'mal_innoc_rate' = {
+	 discipline = 20 ;
+	 parameterCategory = 1 ;
+	 parameterNumber = 2 ;
+	}
+#Human bite rate by anopheles vectors
+'mal_hbite_rate' = {
+	 discipline = 20 ;
+	 parameterCategory = 1 ;
+	 parameterNumber = 3 ;
+	}
+#Malaria immunity ratio
+'mal_immun_ratio' = {
+	 discipline = 20 ;
+	 parameterCategory = 1 ;
+	 parameterNumber = 4 ;
+	}
+#Falciparum parasite ratio
+'mal_infect_ratio' = {
+	 discipline = 20 ;
+	 parameterCategory = 1 ;
+	 parameterNumber = 5 ;
+	}
+#Detectable falciparum parasite ratio (after day 10)
+'mal_infect_d10_ratio' = {
+	 discipline = 20 ;
+	 parameterCategory = 1 ;
+	 parameterNumber = 6 ;
+	}
+#Anopheles vector to host ratio
+'mal_host_ratio' = {
+	 discipline = 20 ;
+	 parameterCategory = 1 ;
+	 parameterNumber = 7 ;
+	}
+#Anopheles vector density
+'mal_vect_dens' = {
+	 discipline = 20 ;
+	 parameterCategory = 1 ;
+	 parameterNumber = 8 ;
+	}
+#Fraction of malarial vector reproductive habitat
+'mal_hab_frac' = {
+	 discipline = 20 ;
+	 parameterCategory = 1 ;
+	 parameterNumber = 9 ;
+	}
+#Population density
+'pop_dens' = {
+	 discipline = 20 ;
+	 parameterCategory = 2 ;
+	 parameterNumber = 0 ;
 	}
 #Virtual temperature
 'vtmp' = {
@@ -1355,11 +1819,67 @@
 	 parameterCategory = 0 ;
 	 parameterNumber = 15 ;
 	}
+#Eastward sea water velocity
+'ocu' = {
+	 discipline = 10 ;
+	 parameterCategory = 1 ;
+	 parameterNumber = 2 ;
+	 typeOfFirstFixedSurface = 160 ;
+	}
+#Northward sea water velocity
+'ocv' = {
+	 discipline = 10 ;
+	 parameterCategory = 1 ;
+	 parameterNumber = 3 ;
+	 typeOfFirstFixedSurface = 160 ;
+	}
+#Sea surface height
+'zos' = {
+	 discipline = 10 ;
+	 parameterCategory = 3 ;
+	 parameterNumber = 1 ;
+	 typeOfFirstFixedSurface = 160 ;
+	 typeOfSecondFixedSurface = 255 ;
+	 scaledValueOfFirstFixedSurface = 0 ;
+	 scaleFactorOfFirstFixedSurface = 0 ;
+	}
+#Depth of 20C isotherm
+'t20d' = {
+	 discipline = 10 ;
+	 parameterCategory = 4 ;
+	 parameterNumber = 14 ;
+	 typeOfSecondFixedSurface = 255 ;
+	 typeOfFirstFixedSurface = 20 ;
+	 scaleFactorOfFirstFixedSurface = 2 ;
+	 scaledValueOfFirstFixedSurface = 29315 ;
+	}
+#Average salinity in the upper 300m
+'sav300' = {
+	 discipline = 10 ;
+	 parameterCategory = 4 ;
+	 parameterNumber = 21 ;
+	 typeOfSecondFixedSurface = 160 ;
+	 typeOfFirstFixedSurface = 160 ;
+	 scaledValueOfFirstFixedSurface = 0 ;
+	 scaledValueOfSecondFixedSurface = 300 ;
+	 scaleFactorOfSecondFixedSurface = 0 ;
+	 scaleFactorOfFirstFixedSurface = 0 ;
+	}
 #Surface runoff
 'sro' = {
 	 discipline = 2 ;
 	 parameterCategory = 0 ;
 	 parameterNumber = 34 ;
+	}
+#Sea-ice thickness
+'sithick' = {
+	 discipline = 10 ;
+	 parameterCategory = 2 ;
+	 parameterNumber = 1 ;
+	 typeOfFirstFixedSurface = 160 ;
+	 typeOfSecondFixedSurface = 255 ;
+	 scaledValueOfFirstFixedSurface = 0 ;
+	 scaleFactorOfFirstFixedSurface = 0 ;
 	}
 #100 metre U wind component
 '100u' = {
@@ -1998,7 +2518,7 @@
 	 parameterCategory = 1 ;
 	 parameterNumber = 59 ;
 	}
-#Water equivalent of accumulated snow depth
+#Water equivalent of accumulated snow depth (deprecated)
 'sdwe' = {
 	 discipline = 0 ;
 	 parameterCategory = 1 ;
@@ -3554,7 +4074,6 @@
 	 discipline = 0 ;
 	 parameterCategory = 1 ;
 	 parameterNumber = 60 ;
-	 typeOfFirstFixedSurface = 1 ;
 	}
 #Snow Fall water equivalent
 'sf' = {
@@ -4001,18 +4520,6 @@
 	 parameterCategory = 128 ;
 	 parameterNumber = 74 ;
 	}
-#Total column cloud liquid water
-'tclw' = {
-	 discipline = 192 ;
-	 parameterCategory = 128 ;
-	 parameterNumber = 78 ;
-	}
-#Total column cloud ice water
-'tciw' = {
-	 discipline = 192 ;
-	 parameterCategory = 128 ;
-	 parameterNumber = 79 ;
-	}
 #Experimental product
 '~' = {
 	 discipline = 192 ;
@@ -4315,10 +4822,10 @@
 	}
 #Snow depth
 'sd' = {
+	 localTablesVersion = 1 ;
 	 discipline = 0 ;
 	 parameterCategory = 1 ;
-	 parameterNumber = 11 ;
-	 unitsFactor = 1000 ;
+	 parameterNumber = 254 ;
 	}
 #Large-scale precipitation
 'lsp' = {
@@ -4435,12 +4942,6 @@
 	 discipline = 192 ;
 	 parameterCategory = 128 ;
 	 parameterNumber = 174 ;
-	}
-#Top net solar radiation
-'tsr' = {
-	 discipline = 192 ;
-	 parameterCategory = 128 ;
-	 parameterNumber = 178 ;
 	}
 #Evaporation
 'e' = {
@@ -4573,18 +5074,6 @@
 	 discipline = 192 ;
 	 parameterCategory = 128 ;
 	 parameterNumber = 209 ;
-	}
-#Surface net solar radiation, clear sky
-'ssrc' = {
-	 discipline = 192 ;
-	 parameterCategory = 128 ;
-	 parameterNumber = 210 ;
-	}
-#Surface net thermal radiation, clear sky
-'strc' = {
-	 discipline = 192 ;
-	 parameterCategory = 128 ;
-	 parameterNumber = 211 ;
 	}
 #TOA incident solar radiation
 'tisr' = {
@@ -16901,12 +17390,6 @@
 	 parameterCategory = 228 ;
 	 parameterNumber = 23 ;
 	}
-#Zero degree level
-'deg0l' = {
-	 discipline = 192 ;
-	 parameterCategory = 228 ;
-	 parameterNumber = 24 ;
-	}
 #Horizontal visibility
 'hvis' = {
 	 discipline = 192 ;
@@ -20154,18 +20637,6 @@
 	 parameterCategory = 151 ;
 	 parameterNumber = 130 ;
 	}
-#Eastward sea water velocity
-'ocu' = {
-	 discipline = 192 ;
-	 parameterCategory = 151 ;
-	 parameterNumber = 131 ;
-	}
-#Northward sea water velocity
-'ocv' = {
-	 discipline = 192 ;
-	 parameterCategory = 151 ;
-	 parameterNumber = 132 ;
-	}
 #Upward sea water velocity
 'wo' = {
 	 discipline = 192 ;
@@ -20237,12 +20708,6 @@
 	 discipline = 192 ;
 	 parameterCategory = 151 ;
 	 parameterNumber = 144 ;
-	}
-#Sea surface height
-'zos' = {
-	 discipline = 192 ;
-	 parameterCategory = 151 ;
-	 parameterNumber = 145 ;
 	}
 #Sea level previous timestep
 'sl_1' = {
@@ -20346,12 +20811,6 @@
 	 parameterCategory = 151 ;
 	 parameterNumber = 162 ;
 	}
-#Depth of 20C isotherm
-'t20d' = {
-	 discipline = 192 ;
-	 parameterCategory = 151 ;
-	 parameterNumber = 163 ;
-	}
 #Average potential temperature in the upper 300m
 'tav300' = {
 	 discipline = 192 ;
@@ -20417,12 +20876,6 @@
 	 discipline = 192 ;
 	 parameterCategory = 151 ;
 	 parameterNumber = 174 ;
-	}
-#Average salinity in the upper 300m
-'sav300' = {
-	 discipline = 192 ;
-	 parameterCategory = 151 ;
-	 parameterNumber = 175 ;
 	}
 #Layer Thickness at scalar points
 'ldp' = {
@@ -20639,12 +21092,6 @@
 	 discipline = 192 ;
 	 parameterCategory = 160 ;
 	 parameterNumber = 140 ;
-	}
-#Snow depth
-'sdrea' = {
-	 discipline = 192 ;
-	 parameterCategory = 160 ;
-	 parameterNumber = 141 ;
 	}
 #Large-scale precipitation
 'lsprea' = {
@@ -21643,7 +22090,7 @@
 	 parameterNumber = 54 ;
 	}
 #Mean 2 metre temperature in the last 24 hours anomaly
-'mn2t24a' = {
+'mean2t24a' = {
 	 discipline = 192 ;
 	 parameterCategory = 171 ;
 	 parameterNumber = 55 ;
@@ -22207,7 +22654,7 @@
 	 parameterNumber = 206 ;
 	}
 #10 metre wind speed anomaly
-'10ua' = {
+'10sia' = {
 	 discipline = 192 ;
 	 parameterCategory = 171 ;
 	 parameterNumber = 207 ;
@@ -22512,19 +22959,19 @@
 	 parameterCategory = 172 ;
 	 parameterNumber = 48 ;
 	}
-#Large-scale precipitation fraction
-'~' = {
+#Mean large-scale precipitation fraction
+'mlspfr' = {
 	 discipline = 192 ;
 	 parameterCategory = 172 ;
 	 parameterNumber = 50 ;
 	}
-#Stratiform precipitation (Large-scale precipitation)
-'~' = {
+#Mean large-scale precipitation rate
+'mlsprt' = {
 	 discipline = 192 ;
 	 parameterCategory = 172 ;
 	 parameterNumber = 142 ;
 	}
-#Convective precipitation
+#Mean convective precipitation rate
 'cprate' = {
 	 discipline = 192 ;
 	 parameterCategory = 172 ;
@@ -22542,68 +22989,68 @@
 	 parameterCategory = 172 ;
 	 parameterNumber = 145 ;
 	}
-#Surface sensible heat flux
-'~' = {
+#Mean surface sensible heat flux
+'msshfl' = {
 	 discipline = 192 ;
 	 parameterCategory = 172 ;
 	 parameterNumber = 146 ;
 	}
-#Surface latent heat flux
-'~' = {
+#Mean surface latent heat flux
+'mslhfl' = {
 	 discipline = 192 ;
 	 parameterCategory = 172 ;
 	 parameterNumber = 147 ;
 	}
-#Surface net radiation
-'~' = {
+#Mean surface net radiation flux
+'msnrf' = {
 	 discipline = 192 ;
 	 parameterCategory = 172 ;
 	 parameterNumber = 149 ;
 	}
-#Short-wave heating rate
-'~' = {
+#Mean short-wave heating rate
+'mswhr' = {
 	 discipline = 192 ;
 	 parameterCategory = 172 ;
 	 parameterNumber = 153 ;
 	}
-#Long-wave heating rate
-'~' = {
+#Mean long-wave heating rate
+'mlwhr' = {
 	 discipline = 192 ;
 	 parameterCategory = 172 ;
 	 parameterNumber = 154 ;
 	}
-#Surface solar radiation downwards
-'~' = {
+#Mean surface downward solar radiation flux
+'msdsrf' = {
 	 discipline = 192 ;
 	 parameterCategory = 172 ;
 	 parameterNumber = 169 ;
 	}
-#Surface thermal radiation downwards
-'~' = {
+#Mean surface downward thermal radiation flux
+'msdtrf' = {
 	 discipline = 192 ;
 	 parameterCategory = 172 ;
 	 parameterNumber = 175 ;
 	}
-#Surface solar radiation
-'~' = {
+#Mean surface net solar radiation flux
+'msnsrf' = {
 	 discipline = 192 ;
 	 parameterCategory = 172 ;
 	 parameterNumber = 176 ;
 	}
-#Surface thermal radiation
-'~' = {
+#Mean surface net thermal radiation flux
+'msntrf' = {
 	 discipline = 192 ;
 	 parameterCategory = 172 ;
 	 parameterNumber = 177 ;
 	}
-#Top solar radiation
-'~' = {
+#Mean top net solar radiation flux
+'mtnsrf' = {
 	 discipline = 192 ;
 	 parameterCategory = 172 ;
 	 parameterNumber = 178 ;
 	}
-#Top thermal radiation
-'~' = {
+#Mean top net thermal radiation flux
+'mtntrf' = {
 	 discipline = 192 ;
 	 parameterCategory = 172 ;
 	 parameterNumber = 179 ;
@@ -22650,8 +23097,8 @@
 	 parameterCategory = 172 ;
 	 parameterNumber = 197 ;
 	}
-#Runoff
-'~' = {
+#Mean runoff rate
+'mrort' = {
 	 discipline = 192 ;
 	 parameterCategory = 172 ;
 	 parameterNumber = 205 ;
@@ -22686,7 +23133,7 @@
 	 parameterCategory = 172 ;
 	 parameterNumber = 212 ;
 	}
-#Total precipitation
+#Mean total precipitation rate
 'tprate' = {
 	 discipline = 192 ;
 	 parameterCategory = 172 ;
@@ -22740,8 +23187,8 @@
 	 parameterCategory = 173 ;
 	 parameterNumber = 142 ;
 	}
-#Convective precipitation anomaly
-'~' = {
+#Mean convective precipitation rate anomaly
+'mcpra' = {
 	 discipline = 192 ;
 	 parameterCategory = 173 ;
 	 parameterNumber = 143 ;
@@ -23040,12 +23487,6 @@
 	 parameterCategory = 174 ;
 	 parameterNumber = 95 ;
 	}
-#Sea-ice thickness
-'sithick' = {
-	 discipline = 192 ;
-	 parameterCategory = 174 ;
-	 parameterNumber = 98 ;
-	}
 #Liquid water potential temperature
 '~' = {
 	 discipline = 192 ;
@@ -23333,12 +23774,6 @@
 	 discipline = 192 ;
 	 parameterCategory = 180 ;
 	 parameterNumber = 179 ;
-	}
-#Snow depth
-'sdsien' = {
-	 discipline = 192 ;
-	 parameterCategory = 190 ;
-	 parameterNumber = 141 ;
 	}
 #Field capacity
 'cap' = {

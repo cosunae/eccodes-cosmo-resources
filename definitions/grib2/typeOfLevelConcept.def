@@ -1,0 +1,86 @@
+# Concept typeOfLevel
+'surface'       	= {typeOfFirstFixedSurface=1;   typeOfSecondFixedSurface=101;   }
+'surface'       	= {typeOfFirstFixedSurface=1;   typeOfSecondFixedSurface=255;   }
+'cloudBase'     	= {typeOfFirstFixedSurface=2;   typeOfSecondFixedSurface=101;   }
+'cloudBase'     	= {typeOfFirstFixedSurface=2;   typeOfSecondFixedSurface=1;     }
+'cloudBase'     	= {typeOfFirstFixedSurface=2;   typeOfSecondFixedSurface=255;   }
+'cloudTop'      	= {typeOfFirstFixedSurface=3;   typeOfSecondFixedSurface=101;   }
+'cloudTop'      	= {typeOfFirstFixedSurface=3;   typeOfSecondFixedSurface=255;   }
+'isothermZero'  	= {typeOfFirstFixedSurface=4;   typeOfSecondFixedSurface=101;   }
+'isothermZero'  	= {typeOfFirstFixedSurface=4;   typeOfSecondFixedSurface=255;   }
+'adiabaticCondensation' = {typeOfFirstFixedSurface=5;   typeOfSecondFixedSurface=255;  }
+'maxWind' 		= {typeOfFirstFixedSurface=6; typeOfSecondFixedSurface=255;}
+'tropopause' 		= {typeOfFirstFixedSurface=7; typeOfSecondFixedSurface=255;}
+'nominalTop' 		= {typeOfFirstFixedSurface=8; typeOfSecondFixedSurface=255; }
+'seaBottom' 		= {typeOfFirstFixedSurface=9;    typeOfSecondFixedSurface=255;}
+'CBbase' 		= {typeOfFirstFixedSurface=11;    typeOfSecondFixedSurface=255;}
+'CBtop' 		= {typeOfFirstFixedSurface=12;    typeOfSecondFixedSurface=255;}
+'isothermalAboveGround' = {typeOfFirstFixedSurface=20;   typeOfSecondFixedSurface=1;}
+'isothermal' 		= {typeOfFirstFixedSurface=20;}
+'isothermal' 		= {typeOfFirstFixedSurface=20;   typeOfSecondFixedSurface=255;}
+'isobaricInPa' 		= {typeOfFirstFixedSurface=100; typeOfSecondFixedSurface=255; pressureUnits='Pa'; }
+'isobaricInhPa' 	= {typeOfFirstFixedSurface=100; pressureUnits='hPa'; typeOfSecondFixedSurface=255;}
+'isobaricLayer' 	= {typeOfFirstFixedSurface=100; typeOfSecondFixedSurface=100;}
+'isobaricLayer' 	= {typeOfFirstFixedSurface=100; typeOfSecondFixedSurface=1;}
+'meanSea' 		= {typeOfFirstFixedSurface=101; typeOfSecondFixedSurface=255; }
+'heightAboveSea' 	= {typeOfFirstFixedSurface=102; typeOfSecondFixedSurface=255;}
+'heightAboveSeaLayer' 	= {typeOfFirstFixedSurface=102; typeOfSecondFixedSurface=102;}
+'heightAboveGround' 	= {typeOfFirstFixedSurface=103; typeOfSecondFixedSurface=255;}
+'heightAboveGroundLayer' = {typeOfFirstFixedSurface=103;typeOfSecondFixedSurface=103;}
+'heightAboveLandFraction' = {typeOfFirstFixedSurface=103; typeOfSecondFixedSurface=181;}
+'sigma' 		= {typeOfFirstFixedSurface=104; typeOfSecondFixedSurface=255;}
+'sigmaLayer' 		= {typeOfFirstFixedSurface=104; typeOfSecondFixedSurface=104;}
+'hybrid' 		= {typeOfFirstFixedSurface=105; typeOfSecondFixedSurface=101; }
+'hybrid' 		= {typeOfFirstFixedSurface=105; typeOfSecondFixedSurface=1; }
+'hybrid' 		= {typeOfFirstFixedSurface=105; typeOfSecondFixedSurface=255;}
+'hybridHeight' 		= {typeOfFirstFixedSurface=118; typeOfSecondFixedSurface=255;}
+'hybridLayer' 		= {typeOfFirstFixedSurface=105; typeOfSecondFixedSurface=105; }
+'depthBelowLand' 	= {typeOfFirstFixedSurface=106;  typeOfSecondFixedSurface=255;}
+'depthBelowLandLayer' 	= {typeOfFirstFixedSurface=106; typeOfSecondFixedSurface=106;}
+'theta' 		= {typeOfFirstFixedSurface=107; typeOfSecondFixedSurface=255;}
+'thetaLayer' 		= {typeOfFirstFixedSurface=107;typeOfSecondFixedSurface=107;}
+'pressureFromGround' 	= {typeOfFirstFixedSurface=108; typeOfSecondFixedSurface=255;}
+'pressureFromGroundLayer' = {typeOfFirstFixedSurface=108;typeOfSecondFixedSurface=108;}
+'potentialVorticity' 	= {typeOfFirstFixedSurface=109; typeOfSecondFixedSurface=255;}
+'eta' 			= {typeOfFirstFixedSurface=111;  typeOfSecondFixedSurface=255;}
+'soil' 			= {typeOfFirstFixedSurface=151;  typeOfSecondFixedSurface=255;}
+'soilLayer' 		= {typeOfFirstFixedSurface=151;  typeOfSecondFixedSurface=151;}
+# In the case of Generalized vertical height coordinates, NV must be 6
+'generalVertical' 	= {genVertHeightCoords=1; typeOfFirstFixedSurface=150; NV=6;}
+'generalVerticalLayer' 	= {genVertHeightCoords=1; typeOfFirstFixedSurface=150; typeOfSecondFixedSurface=150; NV=6;}
+'depthBelowSea' 	= {typeOfFirstFixedSurface=160; typeOfSecondFixedSurface=255;}
+'entireAtmosphere' 	= {typeOfFirstFixedSurface=1;typeOfSecondFixedSurface=8;}
+# for ECHOTOP / new ART levels and local level types
+'aerosolCldBase'  	= {typeOfFirstFixedSurface=21; typeOfSecondFixedSurface=255;}
+'aerosolCldTop'   	= {typeOfFirstFixedSurface=22; typeOfSecondFixedSurface=255;}
+'radionucCldBase' 	= {typeOfFirstFixedSurface=23; typeOfSecondFixedSurface=255;}
+'radionucCldTop'  	= {typeOfFirstFixedSurface=24; typeOfSecondFixedSurface=255;}
+'echoTopInDBZ'    	= {typeOfFirstFixedSurface=25; typeOfSecondFixedSurface=255;} 
+'LFC'                	= {typeOfFirstFixedSurface=194; typeOfSecondFixedSurface=255;}
+'radarElevComposite' 	= {typeOfFirstFixedSurface=199; typeOfSecondFixedSurface=255;} 
+#ECMWF
+# Note: We already had 'entireAtmosphere' mapped before adding this one so had to choose another name
+#ECMWF 'atmosphere' 	= {typeOfFirstFixedSurface=10;    typeOfSecondFixedSurface=255;}
+#ECMWF
+'entireAtmosphereLayer' = {typeOfFirstFixedSurface=10;}
+'entireOcean' 		= {typeOfFirstFixedSurface=1;typeOfSecondFixedSurface=9;}
+'snow' 			= {typeOfFirstFixedSurface=114;  typeOfSecondFixedSurface=255;}
+'snowLayer' 		= {typeOfFirstFixedSurface=114; typeOfSecondFixedSurface=114;} 
+'depthBelowSea' 	= {typeOfFirstFixedSurface=160; typeOfSecondFixedSurface=255;} 
+'depthBelowWater' 	= {typeOfFirstFixedSurface=161; typeOfSecondFixedSurface=255;} 
+'lakeBottom' 		= {typeOfFirstFixedSurface=162; typeOfSecondFixedSurface=255;} 
+'sedimentBottom' 	= {typeOfFirstFixedSurface=163; typeOfSecondFixedSurface=255;} 
+'sedimentBottomTA' 	= {typeOfFirstFixedSurface=164; typeOfSecondFixedSurface=255;} 
+'sedimentBottomTW' 	= {typeOfFirstFixedSurface=165; typeOfSecondFixedSurface=255;} 
+'mixedLayerBottom' 	= {typeOfFirstFixedSurface=166; typeOfSecondFixedSurface=255;} 
+'mixedLayer' 		= {typeOfFirstFixedSurface=1; typeOfSecondFixedSurface=166;} 
+'thermocline' 		= {typeOfFirstFixedSurface=166; typeOfSecondFixedSurface=162;} 
+'entireLake' 		= {typeOfFirstFixedSurface=1; typeOfSecondFixedSurface=162;} 
+'sedimentLayerTW' 	= {typeOfFirstFixedSurface=162; typeOfSecondFixedSurface=165;} 
+'sedimentLayerTA' 	= {typeOfFirstFixedSurface=162; typeOfSecondFixedSurface=164;} 
+'atmML' 		= {typeOfFirstFixedSurface=192; typeOfSecondFixedSurface=255;} 
+'atmMU' 		= {typeOfFirstFixedSurface=193; typeOfSecondFixedSurface=255;} 
+#? no entry in 4.5.table  'planetBoundaryLayer' = {typeOfFirstFixedSurface=220; typeOfSecondFixedSurface=255;}
+'oceanSurface' 		= {typeOfFirstFixedSurface=160; scaleFactorOfFirstFixedSurface=0; scaledValueOfFirstFixedSurface=0; typeOfSecondFixedSurface=255;}
+'oceanLayer' 		= {typeOfFirstFixedSurface=160; typeOfSecondFixedSurface=160;}
+'mixedLayerDepth' 	= {typeOfFirstFixedSurface=169; typeOfSecondFixedSurface=255;}

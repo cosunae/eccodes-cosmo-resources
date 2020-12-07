@@ -241,6 +241,7 @@ _if (stepType is "instant" ) {
 meta stepRange g1step_range(P1,P2,timeRangeIndicator,unitOfTimeRange,stepUnits,stepType) : dump;
 meta startStep long_vector(stepRange,0) : dump,no_copy;
 meta endStep   long_vector(stepRange,1) : dump,no_copy;
+meta stepHumanReadable step_human_readable(stepUnits, stepRange): hidden,no_copy;   
 
 alias stepInHours = endStep;
 alias ls.stepRange = stepRange;
@@ -259,6 +260,7 @@ alias mars.param  = marsParam;
 if (centre == 34 && subCentre == 241)
 {
    alias mars.param = paramId;
+
    if (indicatorOfTypeOfLevel == 101) {
       # See ECC-467
       constant sfc_levtype = "sfc";
@@ -286,7 +288,7 @@ if(((section1Length > 40) or new() or setLocalDefinition> 0) and deleteLocalDefi
          codetable[1] localDefinitionNumber 'grib1/localDefinitionNumber.98-78.table' = 1 : dump;
     # handling of ecmf files with DWD local section
     if ( localDefinitionNumber != 254 ) {
-    template  localDefinition  "grib1/local.98.[localDefinitionNumber:l].def";
+    template_nofail  localDefinition  "grib1/local.98.[localDefinitionNumber:l].def";
     if (changed(localDefinitionNumber)) {
       if(!new() && localDefinitionNumber!=4 ) {
          section_padding localExtensionPadding : read_only;

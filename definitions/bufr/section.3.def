@@ -1,11 +1,4 @@
-# Copyright 2005-2017 ECMWF.
-#
-# This software is licensed under the terms of the Apache Licence Version 2.0
-# which can be obtained at http://www.apache.org/licenses/LICENSE-2.0.
-#
-# In applying this licence, ECMWF does not waive the privileges and immunities granted to it by
-# virtue of its status as an intergovernmental organisation nor does it submit to any jurisdiction.
-#
+# (C) Copyright 2005- ECMWF.
 
 constant defaultSequence=0;
 constant tablesMasterDir="bufr/tables/[masterTableNumber]/wmo/[masterTablesVersionNumber]" : hidden;
@@ -29,7 +22,6 @@ if (masterTablesVersionNumber==19) {
 
   constant tablesLocalDir="bufr/tables/[masterTableNumber]/local/[masterTablesVersionNumber]-[localTablesVersionNumber]/[bufrHeaderCentre:l]/[bufrHeaderSubCentre]" : hidden;
 } else {
-
 constant tablesLocalDir="bufr/tables/[masterTableNumber]/local/[localTablesVersionNumber]/[bufrHeaderCentre:l]/[bufrHeaderSubCentre]" : hidden;
 }
 constant rootTablesDir="bufr/tables" : hidden;
@@ -42,8 +34,7 @@ when (changed(tablesLocalDir)) { set clearTables=1;}
 # we should implement some table version dependency
 #constant templatesMasterDir="bufr/templates/[masterTableNumber]/[masterTablesVersionNumber]";
 #constant templatesLocalDir="bufr/templates/local/[masterTableNumber]/[bufrHeaderCentre:l]/[localTablesVersionNumber]";
-
-constant templatesMasterDir="bufr/templates/";
+constant templatesMasterDir="bufr/templates";
 #DWD-1+2
 #orig constant templatesLocalDir="bufr/templates/local";
 constant templatesLocalDir="bufr/templates/local/[bufrHeaderCentre:l]";
@@ -63,7 +54,6 @@ unsigned[2]     numberOfSubsets : dump;
 alias ls.numberOfSubsets=numberOfSubsets;
 
 if (section2Present && bufrHeaderCentre==98 && section2Length==52) {
-
     if ( rdbType == 2 || rdbType == 3 || rdbType == 8 || rdbType == 12 ) {
       transient isSatelliteType=1;
     } else {
@@ -88,19 +78,15 @@ if (section2Present && bufrHeaderCentre==98 && section2Length==52) {
             oldSubtype==31) {
 	    meta ls.localNumberOfObservations bits(keySat,0,16) : dump,long_type,no_copy;
             meta ls.satelliteID bits(keySat,16,16) : dump,long_type,no_copy;
-            alias mars.satelliteID=satelliteID;
         } else {
             meta ls.localNumberOfObservations bits(keySat,0,8) : dump,long_type,no_copy;
             meta ls.satelliteID bits(keySat,8,16) : dump,long_type,no_copy;
-            alias mars.satelliteID=satelliteID;
         }
     } else {
         meta ls.localLatitude bits(keyData,72,25,-9000000,100000) : dump,no_copy;
         meta ls.localLongitude bits(keyData,40,26,-18000000,100000) : dump,no_copy;
-        alias ls.ident=keyMore : dump,string_type,no_copy;
- 
-        alias mars.localLatitude=localLatitude;
-        alias mars.localLongitude=localLongitude;
+	meta ident trim(keyMore,1,1): dump, no_copy; # remove whitespaces left and right
+	alias mars.ident = ident : string_type, no_copy;        
     }
 }
 

@@ -1,12 +1,4 @@
-# Copyright 2005-2017 ECMWF.
-#
-# This software is licensed under the terms of the Apache Licence Version 2.0
-# which can be obtained at http://www.apache.org/licenses/LICENSE-2.0.
-# 
-# In applying this licence, ECMWF does not waive the privileges and immunities granted to it by
-# virtue of its status as an intergovernmental organisation nor does it submit to any jurisdiction.
-#
-
+# Copyright 2005-2019 ECMWF.
 
 position offsetSection1;
 # GRIB-API 1.16.0 length[4] section1Length ;
@@ -40,6 +32,9 @@ codetable[1] tablesVersion 'grib2/tables/1.0.table' = 19 : edition_specific;
 alias gribMasterTablesVersionNumber=tablesVersion;
 
 transient masterDir="grib2/tables/[tablesVersion]";
+if (tablesVersion > tablesVersionLatest) {
+  transient masterDir="grib2/tables/[tablesVersionLatest]";
+} 
 when (tablesVersion!=255) {
   set masterDir="grib2/tables/[tablesVersion]";
 } else {
@@ -143,7 +138,13 @@ if ( ((section1Length > 21) or setCalendarId > 0) and deleteCalendarId == 0) {
 }
 
 concept is_uerra(zero) {
+   '1' = {productionStatusOfProcessedData=10;}
+   '1' = {productionStatusOfProcessedData=11;}
    '1' = {productionStatusOfProcessedData=9;}
    '1' = {productionStatusOfProcessedData=8;}
    '0' = {dummy=1;}
 }
+
+constant conceptsMasterDir="grib2" : hidden;
+constant conceptsLocalDirAll="grib2/localConcepts/[centre:s]" : hidden;
+constant conceptsLocalDirECMF="grib2/localConcepts/ecmf" : hidden;

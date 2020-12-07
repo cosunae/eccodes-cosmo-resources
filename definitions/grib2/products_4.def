@@ -18,11 +18,11 @@
 constant marsExpver = 'prod';
 
 if (centre!=80 && centre!=250 && centre!=78) {
-include "grib2/products_tigge.def"
+include "grib2/products_tigge.def";
 } else {
 
 # only include the definitions for namespaces parameter/mars and some aliases
 
-include "grib2/products_tigge_leps.def"
+include "grib2/products_tigge_leps.def";
 
 }
