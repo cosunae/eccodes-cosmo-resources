@@ -3471,118 +3471,6 @@
 	 parameterNumber = 8 ;
 	}
 
-#paramId: 500779
-#Effective radius of cloud water
-'RECLOUD' = {
-	 discipline = 0 ;
-	 parameterCategory = 1 ;
-	 parameterNumber = 129 ;
-	}
-
-#paramId: 500780
-#Effective radius of rain
-'RERAIN' = {
-	 discipline = 0 ;
-	 parameterCategory = 1 ;
-	 parameterNumber = 130 ;
-	}
-
-#paramId: 500781
-#Effective radius of cloud ice
-'REICE' = {
-	 discipline = 0 ;
-	 parameterCategory = 1 ;
-	 parameterNumber = 131 ;
-	}
-
-#paramId: 500782
-#Effective radius of snow
-'RESNOW' = {
-	 discipline = 0 ;
-	 parameterCategory = 1 ;
-	 parameterNumber = 132 ;
-	}
-
-#paramId: 500783
-#Effective radius of graupel
-'REGRAUPEL' = {
-	 discipline = 0 ;
-	 parameterCategory = 1 ;
-	 parameterNumber = 133 ;
-	}
-
-#paramId: 500784
-#Effective radius of hail
-'REHAIL' = {
-	 discipline = 0 ;
-	 parameterCategory = 1 ;
-	 parameterNumber = 134 ;
-	}
-
-#paramId: 500785
-#Effective radius of subgrid liquid clouds
-'RECLOUD_SGS' = {
-	 discipline = 0 ;
-	 parameterCategory = 1 ;
-	 parameterNumber = 135 ;
-	}
-
-#paramId: 500786
-#Effective radius of subgrid ice clouds
-'REICE_SGS' = {
-	 discipline = 0 ;
-	 parameterCategory = 1 ;
-	 parameterNumber = 136 ;
-	}
-
-#paramId: 500787
-#Effective aspect ratio of rain
-'ARRAIN' = {
-	 discipline = 0 ;
-	 parameterCategory = 1 ;
-	 parameterNumber = 137 ;
-	}
-
-#paramId: 500788
-#Effective aspect ratio of cloud ice
-'ARICE' = {
-	 discipline = 0 ;
-	 parameterCategory = 1 ;
-	 parameterNumber = 138 ;
-	}
-
-#paramId: 500789
-#Effective aspect ratio of snow
-'ARSNOW' = {
-	 discipline = 0 ;
-	 parameterCategory = 1 ;
-	 parameterNumber = 139 ;
-	}
-
-#paramId: 500790
-#Effective aspect ratio of graupel
-'ARGRAUPEL' = {
-	 discipline = 0 ;
-	 parameterCategory = 1 ;
-	 parameterNumber = 140 ;
-	}
-
-#paramId: 500791
-#Effective aspect ratio of hail
-'ARHAIL' = {
-	 discipline = 0 ;
-	 parameterCategory = 1 ;
-	 parameterNumber = 141 ;
-	}
-
-#paramId: 500792
-#Effective aspect ratio of subgrid ice clouds
-'ARICE_SGS' = {
-	 discipline = 0 ;
-	 parameterCategory = 1 ;
-	 parameterNumber = 142 ;
-	}
-
 #paramId: 500905
 #Specific Humidity (S)
 'QV_S' = {
@@ -8265,5 +8153,144 @@
 	 typeOfStatisticalProcessing = 0 ;
 	 typeOfSecondFixedSurface = 8 ;
 	 typeOfFirstFixedSurface = 1 ;
+	}
+
+#paramId: 503563
+#Temperature tendency perturbation due to stochastic model of model error
+'DT_SMME' = {
+	 discipline = 0 ;
+	 parameterCategory = 0 ;
+	 parameterNumber = 26 ;
+	 typeOfGeneratingProcess = 221 ;
+	}
+
+#paramId: 503564
+#Zonal wind tendency perturbation due to stochastic model of model error
+'DU_SMME' = {
+	 discipline = 0 ;
+	 parameterCategory = 2 ;
+	 parameterNumber = 39 ;
+	 typeOfGeneratingProcess = 221 ;
+	}
+
+#paramId: 503565
+#Meridional wind tendency perturbation due to stochastic model of model error
+'DV_SMME' = {
+	 discipline = 0 ;
+	 parameterCategory = 2 ;
+	 parameterNumber = 40 ;
+	 typeOfGeneratingProcess = 221 ;
+	}
+
+#paramId: 503566
+#Effective radius of cloud water
+'RECLOUD' = {
+	 discipline = 0 ;
+	 parameterCategory = 1 ;
+	 parameterNumber = 129 ;
+	}
+
+#paramId: 503567
+#Effective radius of rain
+'RERAIN' = {
+	 discipline = 0 ;
+	 parameterCategory = 1 ;
+	 parameterNumber = 130 ;
+	}
+
+#paramId: 503568
+#Effective radius of cloud ice
+'REICE' = {
+	 discipline = 0 ;
+	 parameterCategory = 1 ;
+	 parameterNumber = 131 ;
+	}
+
+#paramId: 503569
+#Effective radius of snow
+'RESNOW' = {
+	 discipline = 0 ;
+	 parameterCategory = 1 ;
+	 parameterNumber = 132 ;
+	}
+
+#paramId: 503570
+#Effective radius of graupel
+'REGRAUPEL' = {
+	 discipline = 0 ;
+	 parameterCategory = 1 ;
+	 parameterNumber = 133 ;
+	}
+
+#paramId: 503571
+#Effective radius of hail
+'REHAIL' = {
+	 discipline = 0 ;
+	 parameterCategory = 1 ;
+	 parameterNumber = 134 ;
+	}
+
+#paramId: 503572
+#Effective radius of subgrid liquid clouds
+'RECLOUD_SGS' = {
+	 discipline = 0 ;
+	 parameterCategory = 1 ;
+	 parameterNumber = 135 ;
+	}
+
+#paramId: 503573
+#Effective radius of subgrid ice clouds
+'REICE_SGS' = {
+	 discipline = 0 ;
+	 parameterCategory = 1 ;
+	 parameterNumber = 136 ;
+	}
+
+#paramId: 503574
+#Effective aspect ratio of rain
+'ARRAIN' = {
+	 discipline = 0 ;
+	 parameterCategory = 1 ;
+	 parameterNumber = 137 ;
+	}
+
+#paramId: 503575
+#Effective aspect ratio of cloud ice
+'ARICE' = {
+	 discipline = 0 ;
+	 parameterCategory = 1 ;
+	 parameterNumber = 138 ;
+	}
+
+#paramId: 503576
+#Effective aspect ratio of snow
+'ARSNOW' = {
+	 discipline = 0 ;
+	 parameterCategory = 1 ;
+	 parameterNumber = 139 ;
+	}
+
+#paramId: 503577
+#Effective aspect ratio of graupel
+'ARGRAUPEL' = {
+	 discipline = 0 ;
+	 parameterCategory = 1 ;
+	 parameterNumber = 140 ;
+	}
+
+#paramId: 503578
+#Effective aspect ratio of hail
+'ARHAIL' = {
+	 discipline = 0 ;
+	 parameterCategory = 1 ;
+	 parameterNumber = 141 ;
+	}
+
+#paramId: 503579
+#Effective aspect ratio of subgrid ice clouds
+'ARICE_SGS' = {
+	 discipline = 0 ;
+	 parameterCategory = 1 ;
+	 parameterNumber = 142 ;
 	}
 
