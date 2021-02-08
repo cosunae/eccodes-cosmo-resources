@@ -1,13 +1,13 @@
 # Concept typeOfLevel
-'surface'       	= {typeOfFirstFixedSurface=1;   typeOfSecondFixedSurface=101;   }
 'surface'       	= {typeOfFirstFixedSurface=1;   typeOfSecondFixedSurface=255;   }
-'cloudBase'     	= {typeOfFirstFixedSurface=2;   typeOfSecondFixedSurface=101;   }
-'cloudBase'     	= {typeOfFirstFixedSurface=2;   typeOfSecondFixedSurface=1;     }
+'surface'       	= {typeOfFirstFixedSurface=1;   typeOfSecondFixedSurface=101;   }
 'cloudBase'     	= {typeOfFirstFixedSurface=2;   typeOfSecondFixedSurface=255;   }
-'cloudTop'      	= {typeOfFirstFixedSurface=3;   typeOfSecondFixedSurface=101;   }
+'cloudBase'     	= {typeOfFirstFixedSurface=2;   typeOfSecondFixedSurface=1;     }
+'cloudBase'     	= {typeOfFirstFixedSurface=2;   typeOfSecondFixedSurface=101;   }
 'cloudTop'      	= {typeOfFirstFixedSurface=3;   typeOfSecondFixedSurface=255;   }
-'isothermZero'  	= {typeOfFirstFixedSurface=4;   typeOfSecondFixedSurface=101;   }
+'cloudTop'      	= {typeOfFirstFixedSurface=3;   typeOfSecondFixedSurface=101;   }
 'isothermZero'  	= {typeOfFirstFixedSurface=4;   typeOfSecondFixedSurface=255;   }
+'isothermZero'  	= {typeOfFirstFixedSurface=4;   typeOfSecondFixedSurface=101;   }
 'adiabaticCondensation' = {typeOfFirstFixedSurface=5;   typeOfSecondFixedSurface=255;  }
 'maxWind' 		= {typeOfFirstFixedSurface=6; typeOfSecondFixedSurface=255;}
 'tropopause' 		= {typeOfFirstFixedSurface=7; typeOfSecondFixedSurface=255;}
@@ -16,12 +16,12 @@
 'CBbase' 		= {typeOfFirstFixedSurface=11;    typeOfSecondFixedSurface=255;}
 'CBtop' 		= {typeOfFirstFixedSurface=12;    typeOfSecondFixedSurface=255;}
 'isothermalAboveGround' = {typeOfFirstFixedSurface=20;   typeOfSecondFixedSurface=1;}
-'isothermal' 		= {typeOfFirstFixedSurface=20;}
 'isothermal' 		= {typeOfFirstFixedSurface=20;   typeOfSecondFixedSurface=255;}
+'isothermal' 		= {typeOfFirstFixedSurface=20;}
 'isobaricInPa' 		= {typeOfFirstFixedSurface=100; typeOfSecondFixedSurface=255; pressureUnits='Pa'; }
 'isobaricInhPa' 	= {typeOfFirstFixedSurface=100; pressureUnits='hPa'; typeOfSecondFixedSurface=255;}
-'isobaricLayer' 	= {typeOfFirstFixedSurface=100; typeOfSecondFixedSurface=100;}
 'isobaricLayer' 	= {typeOfFirstFixedSurface=100; typeOfSecondFixedSurface=1;}
+'isobaricLayer' 	= {typeOfFirstFixedSurface=100; typeOfSecondFixedSurface=100;}
 'meanSea' 		= {typeOfFirstFixedSurface=101; typeOfSecondFixedSurface=255; }
 'heightAboveSea' 	= {typeOfFirstFixedSurface=102; typeOfSecondFixedSurface=255;}
 'heightAboveSeaLayer' 	= {typeOfFirstFixedSurface=102; typeOfSecondFixedSurface=102;}
@@ -30,9 +30,9 @@
 'heightAboveLandFraction' = {typeOfFirstFixedSurface=103; typeOfSecondFixedSurface=181;}
 'sigma' 		= {typeOfFirstFixedSurface=104; typeOfSecondFixedSurface=255;}
 'sigmaLayer' 		= {typeOfFirstFixedSurface=104; typeOfSecondFixedSurface=104;}
-'hybrid' 		= {typeOfFirstFixedSurface=105; typeOfSecondFixedSurface=101; }
-'hybrid' 		= {typeOfFirstFixedSurface=105; typeOfSecondFixedSurface=1; }
 'hybrid' 		= {typeOfFirstFixedSurface=105; typeOfSecondFixedSurface=255;}
+'hybrid' 		= {typeOfFirstFixedSurface=105; typeOfSecondFixedSurface=1; }
+'hybrid' 		= {typeOfFirstFixedSurface=105; typeOfSecondFixedSurface=101; }
 'hybridHeight' 		= {typeOfFirstFixedSurface=118; typeOfSecondFixedSurface=255;}
 'hybridLayer' 		= {typeOfFirstFixedSurface=105; typeOfSecondFixedSurface=105; }
 'depthBelowLand' 	= {typeOfFirstFixedSurface=106;  typeOfSecondFixedSurface=255;}
@@ -84,3 +84,4 @@
 'oceanSurface' 		= {typeOfFirstFixedSurface=160; scaleFactorOfFirstFixedSurface=0; scaledValueOfFirstFixedSurface=0; typeOfSecondFixedSurface=255;}
 'oceanLayer' 		= {typeOfFirstFixedSurface=160; typeOfSecondFixedSurface=160;}
 'mixedLayerDepth' 	= {typeOfFirstFixedSurface=169; typeOfSecondFixedSurface=255;}
+'layerAboveSurface' = {typeOfFirstFixedSurface=103; typeOfSecondFixedSurface=1;}
