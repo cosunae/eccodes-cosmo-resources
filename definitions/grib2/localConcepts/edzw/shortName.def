@@ -14301,3 +14301,198 @@
          typeOfFirstFixedSurface = 114 ;
          typeOfSecondFixedSurface = 114 ;
         }
+
+# New pollen parameters, extracted from definitions.edzw-2.23.0-4
+#paramId: 503636
+#Hazel (corylus) pollen concentration
+'CORY' = {
+	 discipline = 0 ;
+	 parameterCategory = 20 ;
+	 parameterNumber = 59 ;
+	 constituentType = 62104 ;
+	}
+
+#paramId: 503637
+#Fraction of land occupied by hazel (corylus)
+'CORYfr' = {
+	 discipline = 2 ;
+	 parameterCategory = 0 ;
+	 parameterNumber = 4 ;
+	 typeOfGeneratingProcess = 9 ;
+	 constituentType = 62104 ;
+	}
+
+#paramId: 503643
+#Precipitation reservoir (liquid water on the flowers, preventing them from flowering) of hazel (corylus)
+'CORYrprec' = {
+	 discipline = 2 ;
+	 parameterCategory = 0 ;
+	 parameterNumber = 13 ;
+	 constituentType = 62104 ;
+	}
+
+#paramId: 503651
+#Hazel (corylus) pollen specific number concentration
+'CORYsnc' = {
+	 discipline = 0 ;
+	 parameterCategory = 20 ;
+	 parameterNumber = 60 ;
+	 constituentType = 62104 ;
+	}
+
+#paramId: 503638
+#Number of hazel (corylus) pollen in the reservoir (previous timestep)
+'CORYreso' = {
+	 discipline = 0 ;
+	 parameterCategory = 20 ;
+	 parameterNumber = 192 ;
+	 constituentType = 62104 ;
+	}
+
+#paramId: 503639
+#Number of hazel (corylus) pollen released into the reservoir (new)
+'CORYresn' = {
+	 discipline = 0 ;
+	 parameterCategory = 20 ;
+	 parameterNumber = 193 ;
+	 constituentType = 62104 ;
+	}
+
+#paramId: 503640
+#State of the hazel (corylus) season (eq.zero before and after season, the higher, the more plants are flowering)
+'CORYsdes' = {
+	 discipline = 0 ;
+	 parameterCategory = 20 ;
+	 parameterNumber = 194 ;
+	 constituentType = 62104 ;
+	}
+
+#paramId: 503641
+#Height correction for emission (decreasing emission with height) for hazel (corylus)
+'CORYhcem' = {
+	 discipline = 0 ;
+	 parameterCategory = 20 ;
+	 parameterNumber = 195 ;
+	 typeOfGeneratingProcess = 9 ;
+	 constituentType = 62104 ;
+	}
+
+#paramId: 503642
+#Sum of released hazel (corylus) pollen into the reservoir (daily sum)
+'CORYress' = {
+	 discipline = 0 ;
+	 parameterCategory = 20 ;
+	 parameterNumber = 193 ;
+	 typeOfStatisticalProcessing = 11 ;
+	 constituentType = 62104 ;
+	}
+
+#paramId: 503644
+#Cumulated weighted 2m temperature sum of daily values for hazel (corylus) pollen
+'CORYctsum' = {
+	 discipline = 0 ;
+	 parameterCategory = 20 ;
+	 parameterNumber = 196 ;
+	 constituentType = 62104 ;
+	}
+
+#paramId: 503645
+#Cumulated 2m temperature sum threshold for the start of hazel (corylus) pollen season (climatological)
+'CORYtthrs' = {
+	 discipline = 0 ;
+	 parameterCategory = 20 ;
+	 parameterNumber = 197 ;
+	 typeOfGeneratingProcess = 9 ;
+	 constituentType = 62104 ;
+	}
+
+#paramId: 503646
+#Cumulated 2m temperature sum threshold for the end of hazel (corylus) pollen season (climatological)
+'CORYtthre' = {
+	 discipline = 0 ;
+	 parameterCategory = 20 ;
+	 parameterNumber = 198 ;
+	 typeOfGeneratingProcess = 9 ;
+	 constituentType = 62104 ;
+	}
+
+#paramId: 503647
+#Number of days since the start of hazel (corylus) pollen season (if present day is in the season: zero outside season)
+'CORYsaisn' = {
+	 discipline = 0 ;
+	 parameterCategory = 20 ;
+	 parameterNumber = 199 ;
+	 constituentType = 62104 ;
+	}
+
+#paramId: 503648
+#Length of hazel (corylus) pollen season
+'CORYsaisl' = {
+	 discipline = 0 ;
+	 parameterCategory = 20 ;
+	 parameterNumber = 201 ;
+	 constituentType = 62104 ;
+	}
+
+#paramId: 503649
+#Pollen number emission flux for hazel (corylus)
+'CORYfe' = {
+	 discipline = 0 ;
+	 parameterCategory = 20 ;
+	 parameterNumber = 202 ;
+	 constituentType = 62104 ;
+	}
+
+#paramId: 503650
+#Number of days since the start of hazel (corylus) pollen season (if present day is outside the season: length of current season)
+'CORYsaisa' = {
+	 discipline = 0 ;
+	 parameterCategory = 20 ;
+	 parameterNumber = 200 ;
+	 constituentType = 62104 ;
+	}
+
+#paramId: 503652
+#Emission tuning factor for birch (betula) pollen
+'BETUtune' = {
+	 discipline = 0 ;
+	 parameterCategory = 20 ;
+	 parameterNumber = 211 ;
+	 constituentType = 62101 ;
+	}
+
+#paramId: 503653
+#Emission tuning factor for alder (alnus) pollen
+'ALNUtune' = {
+	 discipline = 0 ;
+	 parameterCategory = 20 ;
+	 parameterNumber = 211 ;
+	 constituentType = 62100 ;
+	}
+
+#paramId: 503654
+#Emission tuning factor for grasses (poaceae) pollen
+'POACtune' = {
+	 discipline = 0 ;
+	 parameterCategory = 20 ;
+	 parameterNumber = 211 ;
+	 constituentType = 62300 ;
+	}
+
+#paramId: 503655
+#Emission tuning factor for ragweed (ambrosia) pollen
+'AMBRtune' = {
+	 discipline = 0 ;
+	 parameterCategory = 20 ;
+	 parameterNumber = 211 ;
+	 constituentType = 62200 ;
+	}
+
+#paramId: 503656
+#Emission tuning factor for hazel (corylus) pollen
+'CORYtune' = {
+	 discipline = 0 ;
+	 parameterCategory = 20 ;
+	 parameterNumber = 211 ;
+	 constituentType = 62104 ;
+	}
