@@ -14233,10 +14233,9 @@
         }
 # Height of new snow (without settling); accumulation
 'H_NEWSNOW_M' = {
-         discipline = 0 ;
-         parameterCategory = 1 ;
-         parameterNumber = 57 ;
-         typeOfStatisticalProcessing = 1 ;
+         discipline = 2 ;
+         parameterCategory = 3 ;
+         parameterNumber = 207 ;
         }
 
 # Volumetric ice content of snow layer - multi level
