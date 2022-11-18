@@ -1,19 +1,10 @@
 #modified by DWD!
 # Copyright 2005-2019 ECMWF.
 
-# For grib2 to grib1 conversion
-constant dataRepresentationType = 90;
-
-
 # START 2/template.4.31 ----------------------------------------------------------------------
 # TEMPLATE 4.31, Satellite Product
-#  Parameter category
-codetable[1] parameterCategory ('4.1.[discipline:l].table',masterDir,localDir)  : dump;
 
-#  Parameter number
-codetable[1] parameterNumber ('4.2.[discipline:l].[parameterCategory:l].table',masterDir,localDir)  : dump;
-meta parameterUnits codetable_units(parameterNumber) : dump;
-meta parameterName  codetable_title(parameterNumber) : dump;
+include "grib2/template.4.parameter.def"
 
 #  Type of generating process
 codetable[1] typeOfGeneratingProcess ('4.3.table',masterDir,localDir) : dump;
@@ -27,18 +18,9 @@ unsigned[1] observationGeneratingProcessIdentifier  : dump;
 }
 alias generatingProcessIdentifier=observationGeneratingProcessIdentifier;
 
-#  Number of contributing spectral bands
-# (NB)
-#unsigned[1] NB  : dump;
-unsigned[1] NB=1  : dump;
-alias numberOfContributingSpectralBands=NB;
+# neu - dwd 
+###include "grib2/template.4.generating_process.def"
 
-listOfContributingSpectralBands list(numberOfContributingSpectralBands){
-      unsigned[2] satelliteSeries : dump;
-      unsigned[2] satelliteNumber : dump;
-      unsigned[2] instrumentType : dump;
-      unsigned[1] scaleFactorOfCentralWaveNumber = missing() : dump,can_be_missing ;
-      unsigned[4] scaledValueOfCentralWaveNumber = missing() : dump,can_be_missing ;
-}
+include "grib2/template.4.satellite.def"
 
 # END   2/template.4.31 ----------------------------------------------------------------------

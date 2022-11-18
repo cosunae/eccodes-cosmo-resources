@@ -8294,3 +8294,395 @@
 	 parameterNumber = 142 ;
 	}
 
+#paramId: 503580
+#Relative Humidity in lowest model layer - time-filtered assimilation increment
+'Proportion' = {
+	 discipline = 0 ;
+	 parameterCategory = 1 ;
+	 parameterNumber = 1 ;
+	 typeOfSecondFixedSurface = 1 ;
+	 typeOfFirstFixedSurface = 103 ;
+	 typeOfGeneratingProcess = 207 ;
+	}
+
+#paramId: 503581
+#Temperature in lowest model layer - time-filtered assimilation increment
+'K' = {
+	 discipline = 0 ;
+	 parameterCategory = 0 ;
+	 parameterNumber = 0 ;
+	 typeOfSecondFixedSurface = 1 ;
+	 typeOfFirstFixedSurface = 103 ;
+	 typeOfGeneratingProcess = 207 ;
+	}
+
+#paramId: 503583
+#Wind speed (time average)
+'m s-1' = {
+	 discipline = 0 ;
+	 parameterCategory = 2 ;
+	 parameterNumber = 1 ;
+	 typeOfStatisticalProcessing = 0 ;
+	}
+
+#paramId: 503584
+#10m wind speed (time average)
+'m s-1' = {
+	 discipline = 0 ;
+	 parameterCategory = 2 ;
+	 parameterNumber = 1 ;
+	 typeOfStatisticalProcessing = 0 ;
+	 typeOfFirstFixedSurface = 103 ;
+	 scaleFactorOfFirstFixedSurface = 0 ;
+	 scaledValueOfFirstFixedSurface = 10 ;
+	}
+
+#paramId: 503587
+#Total cloud cover (time average)
+'%' = {
+	 discipline = 0 ;
+	 parameterCategory = 6 ;
+	 parameterNumber = 1 ;
+	 typeOfStatisticalProcessing = 0 ;
+	}
+
+#paramId: 503593
+#Clear-sky net solar radiation flux (at the surface)
+'W m-2' = {
+	 discipline = 0 ;
+	 parameterCategory = 4 ;
+	 parameterNumber = 11 ;
+	 typeOfFirstFixedSurface = 1 ;
+	}
+
+#paramId: 503594
+#Clear-sky net thermal radiation flux (at the surface)
+'W m-2' = {
+	 discipline = 0 ;
+	 parameterCategory = 5 ;
+	 parameterNumber = 6 ;
+	 typeOfFirstFixedSurface = 1 ;
+	}
+
+#paramId: 503595
+#Clear-sky net solar radiation flux (on model top)
+'W m-2' = {
+	 discipline = 0 ;
+	 parameterCategory = 4 ;
+	 parameterNumber = 11 ;
+	 typeOfFirstFixedSurface = 8 ;
+	}
+
+#paramId: 503596
+#Clear-sky net thermal radiation flux (on model top)
+'W m-2' = {
+	 discipline = 0 ;
+	 parameterCategory = 5 ;
+	 parameterNumber = 6 ;
+	 typeOfFirstFixedSurface = 8 ;
+	}
+
+#paramId: 503597
+#Clear-sky net solar radiation flux (at the surface) - time average
+'W m-2' = {
+	 discipline = 0 ;
+	 parameterCategory = 4 ;
+	 parameterNumber = 11 ;
+	 typeOfStatisticalProcessing = 0 ;
+	 typeOfFirstFixedSurface = 1 ;
+	}
+
+#paramId: 503598
+#Clear-sky net thermal radiation flux (at the surface) - time average
+'W m-2' = {
+	 discipline = 0 ;
+	 parameterCategory = 5 ;
+	 parameterNumber = 6 ;
+	 typeOfStatisticalProcessing = 0 ;
+	 typeOfFirstFixedSurface = 1 ;
+	}
+
+#paramId: 503599
+#Clear-sky net solar radiation flux (on model top) - time average
+'W m-2' = {
+	 discipline = 0 ;
+	 parameterCategory = 4 ;
+	 parameterNumber = 11 ;
+	 typeOfStatisticalProcessing = 0 ;
+	 typeOfFirstFixedSurface = 8 ;
+	}
+
+#paramId: 503600
+#Clear-sky net thermal radiation flux (on model top) - time average
+'W m-2' = {
+	 discipline = 0 ;
+	 parameterCategory = 5 ;
+	 parameterNumber = 6 ;
+	 typeOfStatisticalProcessing = 0 ;
+	 typeOfFirstFixedSurface = 8 ;
+	}
+
+#paramId: 503601
+#TOA downward solar radiation (time average)
+'W m-2' = {
+	 discipline = 0 ;
+	 parameterCategory = 4 ;
+	 parameterNumber = 7 ;
+	 typeOfStatisticalProcessing = 0 ;
+	 typeOfFirstFixedSurface = 8 ;
+	}
+
+#paramId: 503602
+#Volumetric saturation of soil moisture
+'m3 m-3' = {
+	 discipline = 2 ;
+	 parameterCategory = 3 ;
+	 parameterNumber = 16 ;
+	 typeOfSecondFixedSurface = 106 ;
+	 typeOfFirstFixedSurface = 106 ;
+	}
+
+#paramId: 503616
+#Pressure in lowest model layer - time-filtered assimilation increment
+'Pa' = {
+	 discipline = 0 ;
+	 parameterCategory = 3 ;
+	 parameterNumber = 0 ;
+	 typeOfSecondFixedSurface = 1 ;
+	 typeOfFirstFixedSurface = 103 ;
+	 typeOfGeneratingProcess = 207 ;
+	}
+
+#paramId: 503617
+#Maximum amplitude of updraft helicity in tropospheric column of low height
+'m2 s-2' = {
+	 discipline = 0 ;
+	 parameterCategory = 7 ;
+	 parameterNumber = 15 ;
+	 typeOfStatisticalProcessing = 2 ;
+	 typeOfSecondFixedSurface = 102 ;
+	 scaleFactorOfSecondFixedSurface = 0 ;
+	 scaledValueOfSecondFixedSurface = 3000 ;
+	 typeOfFirstFixedSurface = 102 ;
+	 scaleFactorOfFirstFixedSurface = 0 ;
+	 scaledValueOfFirstFixedSurface = 0 ;
+	}
+
+#paramId: 503618
+#Maximum amplitude of updraft helicity in tropospheric column of medium height
+'m2 s-2' = {
+	 discipline = 0 ;
+	 parameterCategory = 7 ;
+	 parameterNumber = 15 ;
+	 typeOfStatisticalProcessing = 2 ;
+	 typeOfSecondFixedSurface = 102 ;
+	 scaleFactorOfSecondFixedSurface = 0 ;
+	 scaledValueOfSecondFixedSurface = 5000 ;
+	 typeOfFirstFixedSurface = 102 ;
+	 scaleFactorOfFirstFixedSurface = 0 ;
+	 scaledValueOfFirstFixedSurface = 2000 ;
+	}
+
+#paramId: 503621
+#Large-scale precipitation rate
+'kg m-2 s-1' = {
+	 discipline = 0 ;
+	 parameterCategory = 1 ;
+	 parameterNumber = 54 ;
+	}
+
+#paramId: 503624
+#Total lightning flash density - maximum
+'km-2 day-1' = {
+	 discipline = 0 ;
+	 parameterCategory = 17 ;
+	 parameterNumber = 4 ;
+	 typeOfStatisticalProcessing = 2 ;
+	 typeOfSecondFixedSurface = 8 ;
+	 typeOfFirstFixedSurface = 1 ;
+	}
+
+#paramId: 503628
+#Smoke - high absorption (mass mixing ratio)
+'kg kg-1' = {
+	 discipline = 0 ;
+	 parameterCategory = 20 ;
+	 parameterNumber = 2 ;
+	 constituentType = 62020 ;
+	}
+
+#paramId: 503629
+#Smoke - high absorption (mass density)
+'kg m-3' = {
+	 discipline = 0 ;
+	 parameterCategory = 20 ;
+	 parameterNumber = 0 ;
+	 constituentType = 62020 ;
+	}
+
+#paramId: 503630
+#Smoke - high absorption (specific number concentration)
+'kg-1' = {
+	 discipline = 0 ;
+	 parameterCategory = 20 ;
+	 parameterNumber = 60 ;
+	 constituentType = 62020 ;
+	}
+
+#paramId: 503631
+#Smoke - low absorption (mass mixing ratio)
+'kg kg-1' = {
+	 discipline = 0 ;
+	 parameterCategory = 20 ;
+	 parameterNumber = 2 ;
+	 constituentType = 62021 ;
+	}
+
+#paramId: 503632
+#Smoke - low absorption (mass density)
+'kg m-3' = {
+	 discipline = 0 ;
+	 parameterCategory = 20 ;
+	 parameterNumber = 0 ;
+	 constituentType = 62021 ;
+	}
+
+#paramId: 503633
+#Smoke - low absorption (specific number concentration)
+'kg-1' = {
+	 discipline = 0 ;
+	 parameterCategory = 20 ;
+	 parameterNumber = 60 ;
+	 constituentType = 62021 ;
+	}
+
+#paramId: 503634
+#Sulphur dioxide (SO2) - volume mixing ratio
+'mol mol-1' = {
+	 discipline = 0 ;
+	 parameterCategory = 20 ;
+	 parameterNumber = 52 ;
+	 constituentType = 8 ;
+	}
+
+#paramId: 503635
+#Sulphur dioxide (SO2) - mass density
+'kg m-3' = {
+	 discipline = 0 ;
+	 parameterCategory = 20 ;
+	 parameterNumber = 0 ;
+	 constituentType = 8 ;
+	}
+
+#paramId: 503636
+#Hazel (corylus) pollen concentration
+'m-3' = {
+	 discipline = 0 ;
+	 parameterCategory = 20 ;
+	 parameterNumber = 59 ;
+	 constituentType = 62104 ;
+	}
+
+#paramId: 503637
+#Fraction of land occupied by hazel (corylus)
+'%' = {
+	 discipline = 2 ;
+	 parameterCategory = 0 ;
+	 parameterNumber = 4 ;
+	 typeOfGeneratingProcess = 9 ;
+	 constituentType = 62104 ;
+	}
+
+#paramId: 503643
+#Precipitation reservoir (liquid water on the flowers, preventing them from flowering) of hazel (corylus)
+'kg m-2' = {
+	 discipline = 2 ;
+	 parameterCategory = 0 ;
+	 parameterNumber = 13 ;
+	 constituentType = 62104 ;
+	}
+
+#paramId: 503651
+#Hazel (corylus) pollen specific number concentration
+'kg-1' = {
+	 discipline = 0 ;
+	 parameterCategory = 20 ;
+	 parameterNumber = 60 ;
+	 constituentType = 62104 ;
+	}
+
+#paramId: 503657
+#Temperature in lowest model layer - time-filtered assimilation increment, weighted with cos(2pi loc.time/day)
+'K' = {
+	 discipline = 0 ;
+	 parameterCategory = 0 ;
+	 parameterNumber = 0 ;
+	 typeOfSecondFixedSurface = 1 ;
+	 typeOfFirstFixedSurface = 103 ;
+	 typeOfGeneratingProcess = 208 ;
+	}
+
+#paramId: 503662
+#Thickness of snow layer - multi level
+'m' = {
+	 discipline = 0 ;
+	 parameterCategory = 1 ;
+	 parameterNumber = 11 ;
+	 typeOfSecondFixedSurface = 114 ;
+	 typeOfFirstFixedSurface = 114 ;
+	}
+
+#paramId: 503664
+#Snow temperature of layer (defined at layer top) - multi level
+'K' = {
+	 discipline = 2 ;
+	 parameterCategory = 3 ;
+	 parameterNumber = 28 ;
+	 typeOfSecondFixedSurface = 114 ;
+	 typeOfFirstFixedSurface = 114 ;
+	}
+
+#paramId: 503672
+#Lightning Potential Index from convection scheme
+'J kg-1' = {
+	 discipline = 0 ;
+	 parameterCategory = 17 ;
+	 parameterNumber = 5 ;
+	}
+
+#paramId: 503673
+#Maximum Lightning Potential Index from convection scheme
+'J kg-1' = {
+	 discipline = 0 ;
+	 parameterCategory = 17 ;
+	 parameterNumber = 5 ;
+	 typeOfStatisticalProcessing = 2 ;
+	}
+
+#paramId: 503674
+#Wind speed in lowest model layer - time-filtered assimilation increment
+'m s-1' = {
+	 discipline = 0 ;
+	 parameterCategory = 2 ;
+	 parameterNumber = 1 ;
+	 typeOfSecondFixedSurface = 1 ;
+	 typeOfFirstFixedSurface = 103 ;
+	 typeOfGeneratingProcess = 207 ;
+	}
+
+#paramId: 503675
+#Eddy Dissipation Parameter
+'m2/3 s-1' = {
+	 discipline = 0 ;
+	 parameterCategory = 19 ;
+	 parameterNumber = 30 ;
+	}
+
+#paramId: 503676
+#Icing Severity (0=None, 1=Trace, 2=Light, 3=Moderate, 4=Severe)
+'Code Table 4.228' = {
+	 discipline = 0 ;
+	 parameterCategory = 19 ;
+	 parameterNumber = 37 ;
+	}
+

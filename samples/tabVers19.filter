@@ -1,0 +1,8 @@
+if ( editionNumber==2 ) {
+set tablesVersion=19;
+set year = 2017;
+set month = 8;
+set day = 29;
+
+}
+write;

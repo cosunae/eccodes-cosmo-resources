@@ -8,5 +8,6 @@
 198 198 Covariance of soil moisture content (kg2 m-4)
 199 199 Surface emissivity (Numeric)
 200 200 Soil moisture index (multilayers) (Numeric)
+201 201 Soil water mass flux (sum of conductive and diffusive fluxes) (kg m-2 s-1)
 206 206 Number of snow layer (Numeric)
-207 207 Height of new snow (without settling) (m)
+207 207 Height of new snow (without settling)

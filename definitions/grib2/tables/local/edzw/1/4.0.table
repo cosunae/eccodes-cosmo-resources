@@ -1,11 +1,5 @@
 # Code table 4.0 - Product definition template number
 # 32768-65534 Reserved for local use 
-40002 40002 Derived forecast based on all ensemble members at a horizontal level or in a horizontal layer at a point in time for chemical constituents
-40005 40005 Probability forecasts at a horizontal level or in a horizontal layer at a point in time for chemical constituents
-40006 40006 Percentile forecasts at a horizontal level or in a horizontal layer at a point in time for chemical constituents
-40009 40009 Probability forecasts at a horizontal level or in a horizontal layer in a continuous or non-continuous time interval for chemical constituents
-40010 40010 Percentile forecasts at a horizontal level or in a horizontal layer in a continuous or non-continuous time interval for chemical constituents
-40012 40012 Derived forecasts based on all ensemble members at a horizontal level or in a horizontal layer in a continuous or non-continuous time interval for chemical constituents
 40033 40033 Individual ensemble forecast, control and perturbed, at a horizontal level or in a horizontal layer at a point in time for simulated (synthetic) satellite data
 40034 40034 Individual ensemble forecast, control and perturbed, at a horizontal level or in a horizontal layer, in a continuous or non-continuous interval for simulated (synthetic) satellite data
 40055 40055 tiles parameters at a horizontal level or in a horizontal layer at a point in time

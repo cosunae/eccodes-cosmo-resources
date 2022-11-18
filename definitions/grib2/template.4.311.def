@@ -1,30 +1,13 @@
 #modified by DWD!
 # Copyright 2005-2019 ECMWF.
 
-# For grib2 to grib1 conversion
-constant dataRepresentationType = 90;
-
-
 # START 2/template.4.311 ----------------------------------------------------------------------
 # TEMPLATE 4.311, Satellite Product Auxiliary Information
-#  Parameter category
-codetable[1] parameterCategory ('4.1.[discipline:l].table',masterDir,localDir) : dump;
 
-#  Parameter number
-codetable[1] parameterNumber ('4.2.[discipline:l].[parameterCategory:l].table',masterDir,localDir)  : dump;
-meta parameterUnits codetable_units(parameterNumber) : dump;
-meta parameterName  codetable_title(parameterNumber) : dump;
+include "grib2/template.4.parameter.def"
 
-#  Type of generating process
-codetable[1] typeOfGeneratingProcess ('4.3.table',masterDir,localDir) : dump;
-
-#  Observation generating process identifier (defined by originating centre)
-# DWD +4
-if (centre == 78) { 
-codetable[1] observationGeneratingProcessIdentifier ('generatingProcessIdentifier.table',masterDir,localDir) : dump ;
-} else {
-unsigned[1] observationGeneratingProcessIdentifier  : dump;
-}
+# neu - dwd
+include "grib2/template.4.generating_process.def"
 
 #  Number of contributing spectral bands
 # (NB)
