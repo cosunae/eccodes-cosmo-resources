@@ -15404,3 +15404,42 @@
 	 parameterNumber = 37 ;
 	}
 
+#paramId: 503672
+#Snow temperature at node (i.e. at snow layer interface or boundary) - multi level
+'503672' = {
+	 discipline = 2 ;
+	 parameterCategory = 3 ;
+	 parameterNumber = 208 ;
+	 typeOfFirstFixedSurface = 114 ;
+	}
+
+#paramId: 503673
+#Volumetric ice content of snow layer (for use in tile approach) - multi level
+'503673' = {
+	 discipline = 2 ;
+	 parameterCategory = 3 ;
+	 parameterNumber = 209 ;
+	 typeOfSecondFixedSurface = 114 ;
+	 typeOfFirstFixedSurface = 114 ;
+	}
+
+#paramId: 503674
+#Volumetric water content of snow layer (for use in tile approach) - multi level
+'503674' = {
+	 discipline = 2 ;
+	 parameterCategory = 3 ;
+	 parameterNumber = 210 ;
+	 typeOfSecondFixedSurface = 114 ;
+	 typeOfFirstFixedSurface = 114 ;
+	}
+
+#paramId: 503675
+#Volumetric air content of snow layer (for use in tile approach) - multi level
+'503675' = {
+	 discipline = 2 ;
+	 parameterCategory = 3 ;
+	 parameterNumber = 211 ;
+	 typeOfSecondFixedSurface = 114 ;
+	 typeOfFirstFixedSurface = 114 ;
+	}
+
