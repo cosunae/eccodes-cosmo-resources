@@ -3,6 +3,9 @@ import eccodes as ec
 from typing import Dict, Any
 import hashlib
 import json
+import os
+import gribapi
+
 
 def dict_hash(dictionary: Dict[str, Any]) -> str:
     """MD5 hash of a dictionary."""
@@ -13,41 +16,88 @@ def dict_hash(dictionary: Dict[str, Any]) -> str:
     dhash.update(encoded)
     return dhash.hexdigest()
 
-parser = argparse.ArgumentParser(prog="check_mars_model",
-                                 description="script to check that mars data is defined and unique for all records within a file")
-parser.add_argument('-f','--filename')
 
+parser = argparse.ArgumentParser(
+    prog="check_mars_model",
+    description="script to check that mars data is defined and unique for all records within a file",
+)
+argin = parser.add_mutually_exclusive_group(required=True)
+argin.add_argument("-f", "--filename")
+argin.add_argument("-d", "--dir")
+
+parser.add_argument(
+    "-e",
+    "--exception",
+    help="list of (comma separated) paramId that should be excluded from checking."
+    "This is used in case there are duplicates in the files that should be excluded from checking for clashes",
+)
 args = parser.parse_args()
 
-f = open(args.filename, 'rb')
+files = []
+if args.filename:
+    files = [args.filename]
+else:
+    for root, _, ff in os.walk(args.dir):
+        for f in ff:
+            files.append(os.path.join(root, f))
 
-keys = ('class','stream', 'levtype', 'paramId','level')
+schema_keys = (
+    "class",
+    "stream",
+    "levtype",
+    "param",
+    "level",
+    "step",
+    "date",
+    "time",
+    "number",
+)
 hash_keys = {}
-cnt=0
+param_exception = (
+    [int(x) for x in args.exception.split(",")] if args.exception else None
+)
 index = {}
-while 1:
-    gid = ec.codes_grib_new_from_file(f)
-    if gid is None:
-        break
-    
-    vals = {}
-    for key in keys:
-        print("LL", ec.codes_get(gid,'levtype'))
-        if key == 'level':
-            val = ec.codes_get_double(gid,key)
-        else:
-            val = ec.codes_get(gid,key)
-        if val == 'unknown':
-            print("ec", ec.codes_get(gid, "typeOfLevel"), ec.codes_get_long(gid, 'typeOfFirstFixedSurface'), ec.codes_get_long(gid, 'typeOfSecondFixedSurface'), ec.codes_get(gid, 'shortName'))
-            raise RuntimeError("unknown key:"+key)
-        
-        vals[key] = val
-        print('key:', ec.codes_get_double(gid, key))
-        
-    hash = dict_hash(vals)
-    if hash in hash_keys.keys():
-        raise RuntimeError("Hash already found,", vals, " for record #:", cnt, ' It was already inserted with index: ', index[hash])
-    index[hash] = cnt
-    hash_keys[dict_hash(vals)] = vals
-    
-    cnt+=1
+
+for file in files:
+    print("Processing file", file)
+    cnt = 0
+    with open(file, "rb") as f:
+        while 1:
+            gid = ec.codes_grib_new_from_file(f)
+            if gid is None:
+                break
+
+            try:
+                ec.codes_get(gid, "edition")
+            except gribapi.error.UnsupportedEditionError:
+                raise RuntimeError(file + " is not a grib file ")
+
+            vals = {}
+            for key in schema_keys:
+                if key == "level":
+                    val = ec.codes_get_double(gid, key)
+                else:
+                    val = ec.codes_get(gid, key)
+                if val == "unknown":
+                    raise RuntimeError("unknown key:" + key)
+
+                vals[key] = val
+
+            hash = dict_hash(vals)
+            if hash in hash_keys.keys():
+                if vals["param"] in param_exception:
+                    continue
+                raise RuntimeError(
+                    "Hash already found,",
+                    vals,
+                    " for record #:",
+                    cnt,
+                    ",in file :",
+                    file,
+                    ". It was already inserted with index: ",
+                    index[hash],
+                )
+            index[hash] = (cnt, file)
+            hash_keys[dict_hash(vals)] = vals
+
+            cnt += 1
