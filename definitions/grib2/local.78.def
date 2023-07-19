@@ -76,7 +76,7 @@ if (centreForLocal == 215) {
 # KENDA-1 First Guess ens: 0=main run
 
  # class
-transient marsClass='od';
+constant marsClass='od';
 
 concept marsStream(unknown) {
     enda = {
@@ -120,7 +120,7 @@ concept marsModel(unknown) {
       generatingProcessIdentifier = 142;}
 } : no_copy;
 
- transient marsExpver = 1;
+ constant marsExpver = 1;
 
  alias mars.class = marsClass;
  alias mars.stream = marsStream;

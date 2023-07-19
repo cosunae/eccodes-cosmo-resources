@@ -51,6 +51,9 @@ schema_keys = (
     "date",
     "time",
     "number",
+    # This is needed to differentiate between 1h and 10min data for step 0,
+    # however is commented out since it is not a mars key
+    # "indicatorOfUnitOfTimeRange",
 )
 hash_keys = {}
 param_exception = (
@@ -67,6 +70,7 @@ for file in files:
             if gid is None:
                 break
 
+            cnt += 1
             try:
                 ec.codes_get(gid, "edition")
             except gribapi.error.UnsupportedEditionError:
@@ -85,7 +89,7 @@ for file in files:
 
             hash = dict_hash(vals)
             if hash in hash_keys.keys():
-                if vals["param"] in param_exception:
+                if param_exception and vals["param"] in param_exception:
                     continue
                 raise RuntimeError(
                     "Hash already found,",
@@ -99,5 +103,3 @@ for file in files:
                 )
             index[hash] = (cnt, file)
             hash_keys[dict_hash(vals)] = vals
-
-            cnt += 1
