@@ -62,6 +62,8 @@
 'pl'   = {typeOfFirstFixedSurface=100; typeOfSecondFixedSurface=1;}
 #atmML
 'ml'   = {typeOfFirstFixedSurface=192; typeOfSecondFixedSurface=255;} 
+#atmMU
+'ml'   = {typeOfFirstFixedSurface=193; typeOfSecondFixedSurface=255;} 
 #thermocline
 'ml'   = {typeOfFirstFixedSurface=166; typeOfSecondFixedSurface=162;} 
 #cloudBase
@@ -81,5 +83,18 @@
                            typeOfSecondFixedSurface=150; NV=6;}
 #generalVertical
 'ml'  = {genVertHeightCoords=1; typeOfFirstFixedSurface=150; NV=6;}
+#surface
+'sfc' = {typeOfFirstFixedSurface=1;   typeOfSecondFixedSurface=101;}
+# not in typeOfLevel
+'sfc' = {typeOfFirstFixedSurface=194;   typeOfSecondFixedSurface=192;}
+# not in typeOfLevel
+'sfc' = {typeOfFirstFixedSurface=5;   typeOfSecondFixedSurface=192;}
+# not in typeOfLevel
+'sfc' = {typeOfFirstFixedSurface=103;   typeOfSecondFixedSurface=192;} 
+#atmosphere
+'sfc' = {typeOfFirstFixedSurface=10;   typeOfSecondFixedSurface=255;}
+
+
+
 
 
