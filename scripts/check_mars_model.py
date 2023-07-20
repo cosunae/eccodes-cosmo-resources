@@ -19,11 +19,19 @@ def dict_hash(dictionary: Dict[str, Any]) -> str:
 
 parser = argparse.ArgumentParser(
     prog="check_mars_model",
-    description="script to check that mars data is defined and unique for all records within a file",
+    description="script to check that mars data is defined and "
+    "unique for all records within a file",
 )
 argin = parser.add_mutually_exclusive_group(required=True)
-argin.add_argument("-f", "--filename")
-argin.add_argument("-d", "--dir")
+argin.add_argument("-f", "--filename", help="grib filename to process")
+argin.add_argument(
+    "-d",
+    "--dir",
+    help="directory from which all grib files are" "recursively processed",
+)
+parser.add_argument(
+    "-v", "--verbose", action="store_true", help="verbose information for debugging"
+)
 
 parser.add_argument(
     "-e",
@@ -41,6 +49,8 @@ else:
         for f in ff:
             files.append(os.path.join(root, f))
 
+# the syntax of the schema keys follows FDB:
+#    ? at the end marks an optional key
 schema_keys = (
     "class",
     "stream",
@@ -50,7 +60,7 @@ schema_keys = (
     "step",
     "date",
     "time",
-    "number",
+    "number?",
     # This is needed to differentiate between 1h and 10min data for step 0,
     # however is commented out since it is not a mars key
     # "indicatorOfUnitOfTimeRange",
@@ -78,14 +88,30 @@ for file in files:
 
             vals = {}
             for key in schema_keys:
-                if key == "level":
-                    val = ec.codes_get_double(gid, key)
-                else:
-                    val = ec.codes_get(gid, key)
-                if val == "unknown":
-                    raise RuntimeError("unknown key:" + key)
+                if args.verbose:
+                    print("[", key, "]")
 
-                vals[key] = val
+                def _get_codes_key(gid, key):
+                    if key == "level":
+                        val = ec.codes_get_double(gid, key)
+                    else:
+                        val = ec.codes_get(gid, key)
+                    if val == "unknown":
+                        raise RuntimeError("unknown key:" + key)
+
+                    return val
+
+                if key[-1] == "?":
+                    key = key[:-1]
+                    try:
+                        val = _get_codes_key(gid, key)
+                    except gribapi.errors.KeyValueNotFoundError:
+                        val = None
+                else:
+                    val = _get_codes_key(gid, key)
+
+                if val:
+                    vals[key] = val
 
             hash = dict_hash(vals)
             if hash in hash_keys.keys():
