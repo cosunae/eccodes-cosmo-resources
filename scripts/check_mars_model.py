@@ -54,6 +54,8 @@ else:
 schema_keys = (
     "class",
     "stream",
+    "type",
+    "model",
     "levtype",
     "param",
     "level",
@@ -61,6 +63,7 @@ schema_keys = (
     "date",
     "time",
     "number?",
+    "quantile?",
     # This is needed to differentiate between 1h and 10min data for step 0,
     # however is commented out since it is not a mars key
     # "indicatorOfUnitOfTimeRange",
@@ -110,7 +113,9 @@ for file in files:
                 else:
                     val = _get_codes_key(gid, key)
 
-                if val:
+                if val is not None:
+                    if args.verbose:
+                        print("{key} = {val}".format(key=key, val=val))
                     vals[key] = val
 
             hash = dict_hash(vals)
