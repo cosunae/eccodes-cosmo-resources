@@ -84,7 +84,7 @@ if (centreForLocal == 215) {
 # KENDA-1 First Guess ens: 0=main run
 # SNOWPOLINO: 0=main run
 
-# ATTENTION: KENDA-1 is not fully supported; the coding of KENDA-I1 needs to be revised, before
+# ATTENTION: KENDA-1 is not fully supported; the coding of KENDA-CH1 needs to be revised, before
 #            it can be fully supported  
 
 # class
@@ -176,9 +176,8 @@ concept marsModel(unknown) {
       generatingProcessIdentifier = 141;}
     'ICON-CH2-EPS' = {
       generatingProcessIdentifier = 142;}
-    # KENDA-I1 should be coded with a new generatingProcessIdentifier
-    'KENDA-I1' = {
-      generatingProcessIdentifier = 143;}
+    'KENDA-CH1' = {
+      generatingProcessIdentifier = 151;}
 } : no_copy;
 
  constant marsExpver = 1;
