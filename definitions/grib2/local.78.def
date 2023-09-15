@@ -43,3 +43,88 @@ alias grib2LocalSectionNumber=localDefinitionNumber;
 #      meta localValidityDate sprintf("%d",localValidityDateL): dump;
    }
 }
+
+if (centreForLocal == 215) {
+ # class
+ transient marsClass='od';
+
+## typeOfGeneratingProcess
+# COSMO-1E, COSMO-2E: 4 = Ensemble forecast
+# KENDA-1 det: 0 = Analysis
+# KENDA-1 ens: 0 = Analysis
+# KENDA-1 mean (laf): 0 = Analysis
+# KENDA-1 spread (laf): 0 = Analysis
+# KENDA-1 First Guess det: 2 = Forecast
+# KENDA-1 First Guess ens: 4 = Ensemble forecast
+
+## generatingProcessIdentifier
+# COSMO-1E: 121
+# COSMO-2E: 122
+# KENDA-1 det: 121
+# KENDA-1 ensemble: 121
+# KENDA-1 First Guess det: 121 
+# KENDA-1 First Guess ens: 121 
+# ICON-CH1-EPS: 141 
+# ICON-CH2-EPS: 142
+
+## backgroundProcess
+# COSMO-1E: 0=main run
+# COSMO-2E: 0=main run
+# KENDA-1 det: 2=assimilation
+# KENDA-1 ensemble: 2=assimilation 
+# KENDA-1 First Guess det: 0=main run 
+# KENDA-1 First Guess ens: 0=main run
+
+ # class
+constant marsClass='od';
+
+concept marsStream(unknown) {
+    enda = {
+      typeOfGeneratingProcess = 0;}
+    oper = {
+      typeOfGeneratingProcess = 2;}
+    enfo = {
+      typeOfGeneratingProcess = 4;}
+} : no_copy;
+
+concept marsType(unknown) {
+    # analysis
+    an = {
+      typeOfGeneratingProcess = 0;}
+    # 1st guess
+    fg = {
+      typeOfGeneratingProcess = 0;
+      backgroundProcess = 0;}
+    # det forecast
+    fc = {
+      typeOfGeneratingProcess = 2;}
+    # perturbed forecast
+    pf = {
+      typeOfGeneratingProcess = 4;}
+} : no_copy;
+
+concept marsModel(unknown) {
+    COSMO = {
+      generatingProcessIdentifier = 121;
+      typeOfGeneratingProcess = 4;}
+    COSMO = {
+      generatingProcessIdentifier = 122;
+      typeOfGeneratingProcess = 4;}
+    KENDA = {
+      generatingProcessIdentifier = 121;}
+    KENDA = {
+      generatingProcessIdentifier = 122;}
+    ICON = {
+      generatingProcessIdentifier = 141;}
+    ICON = {
+      generatingProcessIdentifier = 142;}
+} : no_copy;
+
+ constant marsExpver = 1;
+
+ alias mars.class = marsClass;
+ alias mars.stream = marsStream;
+ alias mars.type = marsType;
+ alias mars.model = marsModel;
+ alias mars.expver = marsExpver;
+}
