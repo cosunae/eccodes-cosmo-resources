@@ -110,7 +110,7 @@ for file in files:
                 else:
                     val = _get_codes_key(gid, key)
 
-                if val:
+                if val is not None:
                     vals[key] = val
 
             hash = dict_hash(vals)
