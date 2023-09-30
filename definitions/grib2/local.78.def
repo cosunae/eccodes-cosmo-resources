@@ -147,11 +147,6 @@ concept marsType(unknown) {
       derivedForecast = 4;}
 } : no_copy;
 
-if (marsType is "ememb")
-{
-   alias mars.number = perturbationNumber;
-}
-
 concept marsModel(unknown) {
     'COSMO-1E' = {
       generatingProcessIdentifier = 121;
