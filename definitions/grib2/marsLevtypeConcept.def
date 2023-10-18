@@ -13,13 +13,15 @@
 'pl'   = {typeOfFirstFixedSurface=100; typeOfSecondFixedSurface=255;}
 'pl'   = {typeOfFirstFixedSurface=100; typeOfSecondFixedSurface=100;}
 'sfc'  = {typeOfFirstFixedSurface=101; typeOfSecondFixedSurface=255;}
-'sfc'  = {typeOfFirstFixedSurface=102; typeOfSecondFixedSurface=255;}
+# heightAboveSea
+'ml'   = {typeOfFirstFixedSurface=102; typeOfSecondFixedSurface=255;}
 'sfc'  = {typeOfFirstFixedSurface=103; typeOfSecondFixedSurface=255;}
 'sfc'  = {typeOfFirstFixedSurface=103; typeOfSecondFixedSurface=103;}
 'ml'   = {typeOfFirstFixedSurface=105; typeOfSecondFixedSurface=255;}
 'ml'   = {typeOfFirstFixedSurface=105; typeOfSecondFixedSurface=105;}
-'sfc'  = {typeOfFirstFixedSurface=106; typeOfSecondFixedSurface=255;}
-'sfc'  = {typeOfFirstFixedSurface=106;typeOfSecondFixedSurface=106;}
+# depthBelowLand
+'ml'   = {typeOfFirstFixedSurface=106; typeOfSecondFixedSurface=255;}
+'ml'   = {typeOfFirstFixedSurface=106;typeOfSecondFixedSurface=106;}
 'pt'   = {typeOfFirstFixedSurface=107; typeOfSecondFixedSurface=255;}
 'pt'   = {typeOfFirstFixedSurface=107; typeOfSecondFixedSurface=107;}
 'pv'   = {typeOfFirstFixedSurface=109; typeOfSecondFixedSurface=255;}
