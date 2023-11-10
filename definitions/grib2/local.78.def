@@ -45,8 +45,6 @@ alias grib2LocalSectionNumber=localDefinitionNumber;
 }
 
 if (centreForLocal == 215) {
- # class
- transient marsClass='od';
 
 ## typeOfGeneratingProcess
 # COSMO-1E, COSMO-2E: 4 = Ensemble forecast
