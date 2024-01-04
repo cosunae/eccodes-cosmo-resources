@@ -1,4 +1,6 @@
 # Concept marsLevtype
+# Updates share/eccodes/definitions/grib2/marsLevtypeConcept of eccodes 2.25.0 with
+# level types defined in typeOfLevelConcept.def
 # surface
 'sfc'  = {typeOfFirstFixedSurface=1; typeOfSecondFixedSurface=255;}
 'sfc'  = {typeOfFirstFixedSurface=1; typeOfSecondFixedSurface=101;}
@@ -20,9 +22,9 @@
 'sfc'  = {typeOfFirstFixedSurface=4; typeOfSecondFixedSurface=255;}
 'sfc'  = {typeOfFirstFixedSurface=4; typeOfSecondFixedSurface=101;}
 # adiabaticCondensation
-'sfc' = {typeOfFirstFixedSurface=5;   typeOfSecondFixedSurface=255;}
-# ???
-'sfc' = {typeOfFirstFixedSurface=5;   typeOfSecondFixedSurface=192;}
+'sfc' = {typeOfFirstFixedSurface=5; typeOfSecondFixedSurface=255;}
+# Combination is missing in typeOfLevelConcept.def; is used to code LCL_ML
+'sfc' = {typeOfFirstFixedSurface=5; typeOfSecondFixedSurface=192;}
 # maxWind
 'sfc' = {typeOfFirstFixedSurface=6; typeOfSecondFixedSurface=255;}
 # tropopause
@@ -43,9 +45,12 @@
 'sfc'  = {typeOfFirstFixedSurface=17; typeOfSecondFixedSurface=255;}
 # mixedLayerParcel
 'sfc'  = {typeOfFirstFixedSurface=18; typeOfSecondFixedSurface=255;}
-# ???
+# Defined only in eccodes 2.25.0 marsLevtypeConcept.def
 'o2d'  = {typeOfFirstFixedSurface=20; scaleFactorOfFirstFixedSurface=-2;
           scaledValueOfFirstFixedSurface=29315; typeOfSecondFixedSurface=255;}
+# Combination is missing in typeOfLevelConcept.def; is used to code TCOND10_MX
+'sfc'  = {typeOfFirstFixedSurface=20; scaleFactorOfFirstFixedSurface=2;
+          scaledValueOfFirstFixedSurface=26315; typeOfSecondFixedSurface=8;}
 # isothermal
 'o2d'  = {typeOfFirstFixedSurface=20; typeOfSecondFixedSurface=255;}
 # aerosolCldBase
@@ -74,7 +79,7 @@
 'sfc'  = {typeOfFirstFixedSurface=103; typeOfSecondFixedSurface=255;}
 # heightAboveGroundLayer
 'sfc'  = {typeOfFirstFixedSurface=103; typeOfSecondFixedSurface=103;}
-# ???
+# Combination is missing in typeOfLevelConcept.def; is used to code CAPE_3KM
 'sfc' = {typeOfFirstFixedSurface=103;   typeOfSecondFixedSurface=192;} 
 # sigma
 'ml'   = {typeOfFirstFixedSurface=104; typeOfSecondFixedSurface=255;}
@@ -93,9 +98,9 @@
 # thetaLayer
 'pt'   = {typeOfFirstFixedSurface=107; typeOfSecondFixedSurface=107;}
 # pressureFromGround
-'pressureFromGround'           = {typeOfFirstFixedSurface=108; typeOfSecondFixedSurface=255;}
+'pgl' = {typeOfFirstFixedSurface=108; typeOfSecondFixedSurface=255;}
 # pressureFromGroundLayer
-'pressureFromGroundLayer'      = {typeOfFirstFixedSurface=108; typeOfSecondFixedSurface=108;}
+'pgl' = {typeOfFirstFixedSurface=108; typeOfSecondFixedSurface=108;}
 # potentialVorticity
 'pv'   = {typeOfFirstFixedSurface=109; typeOfSecondFixedSurface=255;}
 # eta
@@ -129,7 +134,7 @@
 'o2d'  = {typeOfFirstFixedSurface=160; typeOfSecondFixedSurface=160;}
 # oceanSurfaceToBottom
 'o2d'  = {typeOfFirstFixedSurface=160; typeOfSecondFixedSurface=9;}
-# ???
+# Defined only in eccodes 2.25.0 marsLevtypeConcept.def
 'o2d'  = {typeOfFirstFixedSurface=160; typeOfSecondFixedSurface=20;
           scaledValueOfFirstFixedSurface=0; scaleFactorOfFirstFixedSurface=0;}
 # lakeBottom
@@ -156,11 +161,11 @@
 'o2d'  = {typeOfFirstFixedSurface=174; typeOfSecondFixedSurface=255;}
 # iceLayerOnWater
 'o2d'  = {typeOfFirstFixedSurface=174; typeOfSecondFixedSurface=176;}
-# ???
+# Defined only in eccodes 2.25.0 marsLevtypeConcept.def
 'sfc'  = {typeOfFirstFixedSurface=174; typeOfSecondFixedSurface=255; discipline=1;}
-# ???
+# Defined only in eccodes 2.25.0 marsLevtypeConcept.def
 'sfc'  = {typeOfFirstFixedSurface=174; typeOfSecondFixedSurface=176; discipline=1;}
-# ???
+# Defined only in eccodes 2.25.0 marsLevtypeConcept.def
 'o2d'  = {typeOfFirstFixedSurface=174; typeOfSecondFixedSurface=160;
           scaleFactorOfSecondFixedSurface=0; scaledValueOfSecondFixedSurface=0;}
 # iceTopUnderSnowOnWater
@@ -171,15 +176,13 @@
 'o2d'  = {typeOfFirstFixedSurface=176; typeOfSecondFixedSurface=255;}
 # indefiniteSoilDepth
 'sfc'  = {typeOfFirstFixedSurface=177; typeOfSecondFixedSurface=255;}
-# ???
-'o2d'  = {typeOfFirstFixedSurface=188; typeOfSecondFixedSurface=189;}
 # atmML
 'sfc'  = {typeOfFirstFixedSurface=192; typeOfSecondFixedSurface=255;} 
 # atmMU
 'sfc'  = {typeOfFirstFixedSurface=193; typeOfSecondFixedSurface=255;}
-# LFC
+# LFC (Level of free convection)
 'sfc'  = {typeOfFirstFixedSurface=194; typeOfSecondFixedSurface=255;}
-# not in typeOfLevel
+# Combination is missing in typeOfLevelConcept.def; is used to code LFC_ML
 'sfc'  = {typeOfFirstFixedSurface=194;   typeOfSecondFixedSurface=192;}
 # radarElevComposite
 'sfc'  = {typeOfFirstFixedSurface=199; typeOfSecondFixedSurface=255;} 
