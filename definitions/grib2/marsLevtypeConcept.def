@@ -1,98 +1,191 @@
 # Concept marsLevtype
+# Updates share/eccodes/definitions/grib2/marsLevtypeConcept of eccodes 2.25.0 with
+# level types defined in typeOfLevelConcept.def
+# surface
 'sfc'  = {typeOfFirstFixedSurface=1; typeOfSecondFixedSurface=255;}
+'sfc'  = {typeOfFirstFixedSurface=1; typeOfSecondFixedSurface=101;}
+# entireAtmosphere
 'sfc'  = {typeOfFirstFixedSurface=1; typeOfSecondFixedSurface=8;}
+# entireOcean
 'o2d'  = {typeOfFirstFixedSurface=1; typeOfSecondFixedSurface=9;}
+# entireLake
 'sfc'  = {typeOfFirstFixedSurface=1; typeOfSecondFixedSurface=162;}
+# mixedLayer
+'sfc'  = {typeOfFirstFixedSurface=1; typeOfSecondFixedSurface=166;} 
+# cloudBase
+'sfc'  = {typeOfFirstFixedSurface=2; typeOfSecondFixedSurface=255;}
+'sfc'  = {typeOfFirstFixedSurface=2; typeOfSecondFixedSurface=101;}
+# cloudTop
+'sfc'  = {typeOfFirstFixedSurface=3; typeOfSecondFixedSurface=255;}
+'sfc'  = {typeOfFirstFixedSurface=3; typeOfSecondFixedSurface=101;}
+# isothermZero
+'sfc'  = {typeOfFirstFixedSurface=4; typeOfSecondFixedSurface=255;}
+'sfc'  = {typeOfFirstFixedSurface=4; typeOfSecondFixedSurface=101;}
+# adiabaticCondensation
+'sfc' = {typeOfFirstFixedSurface=5; typeOfSecondFixedSurface=255;}
+# Combination is missing in typeOfLevelConcept.def; is used to code LCL_ML
+'sfc' = {typeOfFirstFixedSurface=5; typeOfSecondFixedSurface=192;}
+# maxWind
+'sfc' = {typeOfFirstFixedSurface=6; typeOfSecondFixedSurface=255;}
+# tropopause
 'sfc'  = {typeOfFirstFixedSurface=7; typeOfSecondFixedSurface=255;}
+# nominalTop
 'sfc'  = {typeOfFirstFixedSurface=8; typeOfSecondFixedSurface=255;}
+# seaBottom
+'sfc'  = {typeOfFirstFixedSurface=9; typeOfSecondFixedSurface=255;}
+# entireAtmosphereLayer
+'sfc' = {typeOfFirstFixedSurface=10;}
+# atmosphere
+'sfc'  = {typeOfFirstFixedSurface=10;  typeOfSecondFixedSurface=255;}
+# CBase
+'sfc'  = {typeOfFirstFixedSurface=11; typeOfSecondFixedSurface=255;}
+# CBTop
+'sfc'  = {typeOfFirstFixedSurface=12; typeOfSecondFixedSurface=255;}
+# mostUnstableParcel
 'sfc'  = {typeOfFirstFixedSurface=17; typeOfSecondFixedSurface=255;}
+# mixedLayerParcel
 'sfc'  = {typeOfFirstFixedSurface=18; typeOfSecondFixedSurface=255;}
+# Defined only in eccodes 2.25.0 marsLevtypeConcept.def
 'o2d'  = {typeOfFirstFixedSurface=20; scaleFactorOfFirstFixedSurface=-2;
           scaledValueOfFirstFixedSurface=29315; typeOfSecondFixedSurface=255;}
+# Combination is missing in typeOfLevelConcept.def; is used to code TCOND10_MX
+'sfc'  = {typeOfFirstFixedSurface=20; scaleFactorOfFirstFixedSurface=2;
+          scaledValueOfFirstFixedSurface=26315; typeOfSecondFixedSurface=8;}
+# isothermal
 'o2d'  = {typeOfFirstFixedSurface=20; typeOfSecondFixedSurface=255;}
+# aerosolCldBase
+'sfc'  = {typeOfFirstFixedSurface=21; typeOfSecondFixedSurface=255;}
+# aerosolCldTop
+'sfc'  = {typeOfFirstFixedSurface=22; typeOfSecondFixedSurface=255;}
+# radionucCldBase
+'sfc' 	= {typeOfFirstFixedSurface=23; typeOfSecondFixedSurface=255;}
+# radionucCldTop
+'sfc'  	= {typeOfFirstFixedSurface=24; typeOfSecondFixedSurface=255;}
+#echoTopInDBZ
+'sfc' = {typeOfFirstFixedSurface=25;   typeOfSecondFixedSurface=255;}
+# isobaric
 'pl'   = {typeOfFirstFixedSurface=100; typeOfSecondFixedSurface=255;}
+# layerAboveSurface
+'pl'   = {typeOfFirstFixedSurface=100; typeOfSecondFixedSurface=1;}
+# isobaricLayer
 'pl'   = {typeOfFirstFixedSurface=100; typeOfSecondFixedSurface=100;}
+# meanSea
 'sfc'  = {typeOfFirstFixedSurface=101; typeOfSecondFixedSurface=255;}
-'sfc'  = {typeOfFirstFixedSurface=102; typeOfSecondFixedSurface=255;}
+# heightAboveSea
+'zl'   = {typeOfFirstFixedSurface=102; typeOfSecondFixedSurface=255;}
+# heightAboveSeaLayer
+'zl'   = {typeOfFirstFixedSurface=102; typeOfSecondFixedSurface=102;}
+# heightAboveGround (to be changed with adaptations for DestinE in eccodes 2.32)
 'sfc'  = {typeOfFirstFixedSurface=103; typeOfSecondFixedSurface=255;}
+# heightAboveGroundLayer
 'sfc'  = {typeOfFirstFixedSurface=103; typeOfSecondFixedSurface=103;}
+# Combination is missing in typeOfLevelConcept.def; is used to code CAPE_3KM
+'sfc' = {typeOfFirstFixedSurface=103;   typeOfSecondFixedSurface=192;} 
+# sigma
+'ml'   = {typeOfFirstFixedSurface=104; typeOfSecondFixedSurface=255;}
+# sigmaLayer
+'ml'   = {typeOfFirstFixedSurface=104; typeOfSecondFixedSurface=104;}
+# hybrid'       
 'ml'   = {typeOfFirstFixedSurface=105; typeOfSecondFixedSurface=255;}
+# hybridLayer
 'ml'   = {typeOfFirstFixedSurface=105; typeOfSecondFixedSurface=105;}
-'sfc'  = {typeOfFirstFixedSurface=106; typeOfSecondFixedSurface=255;}
-'sfc'  = {typeOfFirstFixedSurface=106;typeOfSecondFixedSurface=106;}
+# depthBelowLand
+'dl'   = {typeOfFirstFixedSurface=106; typeOfSecondFixedSurface=255;}
+# depthBelowLandLayer
+'dl'   = {typeOfFirstFixedSurface=106;typeOfSecondFixedSurface=106;}
+# theta
 'pt'   = {typeOfFirstFixedSurface=107; typeOfSecondFixedSurface=255;}
+# thetaLayer
 'pt'   = {typeOfFirstFixedSurface=107; typeOfSecondFixedSurface=107;}
+# pressureFromGround
+'pgl' = {typeOfFirstFixedSurface=108; typeOfSecondFixedSurface=255;}
+# pressureFromGroundLayer
+'pgl' = {typeOfFirstFixedSurface=108; typeOfSecondFixedSurface=108;}
+# potentialVorticity
 'pv'   = {typeOfFirstFixedSurface=109; typeOfSecondFixedSurface=255;}
-'sol'  = {typeOfFirstFixedSurface=114; typeOfSecondFixedSurface=255;}
-'sol'  = {typeOfFirstFixedSurface=114; typeOfSecondFixedSurface=114;}
+# eta
+'eta'  = {typeOfFirstFixedSurface=111; typeOfSecondFixedSurface=255;}
+# snow
+'snow' = {typeOfFirstFixedSurface=114; typeOfSecondFixedSurface=255;}
+# snowLayer
+'snow' = {typeOfFirstFixedSurface=114; typeOfSecondFixedSurface=114;}
+# hybridHeight
 'hhl'  = {typeOfFirstFixedSurface=118; typeOfSecondFixedSurface=255;}
+# hybridPressure
 'hpl'  = {typeOfFirstFixedSurface=119; typeOfSecondFixedSurface=255;}
-'sol'  = {typeOfFirstFixedSurface=151; typeOfSecondFixedSurface=255;}
-'sol'  = {typeOfFirstFixedSurface=151; typeOfSecondFixedSurface=151;}
-'sol'  = {typeOfFirstFixedSurface=152; typeOfSecondFixedSurface=255;}
-'sol'  = {typeOfFirstFixedSurface=152; typeOfSecondFixedSurface=152;}
+# generalvertical (NV must be 6)
+'ml'   = {genVertHeightCoords=1; typeOfFirstFixedSurface=150; NV=6;}
+# generalVerticalLayer (NV must be 6)
+'ml'   = {genVertHeightCoords=1; typeOfFirstFixedSurface=150; typeOfSecondFixedSurface=150; NV=6;}
+# soil
+'soil' = {typeOfFirstFixedSurface=151; typeOfSecondFixedSurface=255;}
+# soilLayer
+'soilLayer'= {typeOfFirstFixedSurface=151; typeOfSecondFixedSurface=151;}
+# seaIce
+'sice'  = {typeOfFirstFixedSurface=152; typeOfSecondFixedSurface=255;}
+# seaIceLayer
+'sice'  = {typeOfFirstFixedSurface=152; typeOfSecondFixedSurface=152;}
+# depthBelowSea
 'o2d'  = {typeOfFirstFixedSurface=160; typeOfSecondFixedSurface=255;}
+# oceanSurface
 'o2d'  = {typeOfFirstFixedSurface=160; scaleFactorOfFirstFixedSurface=0;
           scaledValueOfFirstFixedSurface=0; typeOfSecondFixedSurface=255;}
+# depthBelowSeaLayer
 'o2d'  = {typeOfFirstFixedSurface=160; typeOfSecondFixedSurface=160;}
+# oceanSurfaceToBottom
 'o2d'  = {typeOfFirstFixedSurface=160; typeOfSecondFixedSurface=9;}
+# Defined only in eccodes 2.25.0 marsLevtypeConcept.def
 'o2d'  = {typeOfFirstFixedSurface=160; typeOfSecondFixedSurface=20;
           scaledValueOfFirstFixedSurface=0; scaleFactorOfFirstFixedSurface=0;}
+# lakeBottom
 'sfc'  = {typeOfFirstFixedSurface=162; typeOfSecondFixedSurface=255;}
+# mixingLayer
 'sfc'  = {typeOfFirstFixedSurface=166; typeOfSecondFixedSurface=255;}
+# thermocline
+'ml'   = {typeOfFirstFixedSurface=166; typeOfSecondFixedSurface=162;} 
+# oceanModel
 'o3d'  = {typeOfFirstFixedSurface=168; typeOfSecondFixedSurface=255;}
+# oceanModelLayer
 'o3d'  = {typeOfFirstFixedSurface=168; typeOfSecondFixedSurface=168;}
+# mixedLayerDepthByDensity
 'o2d'  = {typeOfFirstFixedSurface=169; typeOfSecondFixedSurface=255;}
+# mixedLayerDepthByTemperature
 'o2d'  = {typeOfFirstFixedSurface=170; typeOfSecondFixedSurface=255;}
+# mixedLayerDepthByDiffusivity
 'o2d'  = {typeOfFirstFixedSurface=171; typeOfSecondFixedSurface=255;}
+# snowTopOverIceOnWater
 'o2d'  = {typeOfFirstFixedSurface=173; typeOfSecondFixedSurface=255;}
+# snowLayerOverIceOnWater
 'o2d'  = {typeOfFirstFixedSurface=173; typeOfSecondFixedSurface=175;}
+# iceTopOnWater
 'o2d'  = {typeOfFirstFixedSurface=174; typeOfSecondFixedSurface=255;}
+# iceLayerOnWater
+'o2d'  = {typeOfFirstFixedSurface=174; typeOfSecondFixedSurface=176;}
+# Defined only in eccodes 2.25.0 marsLevtypeConcept.def
 'sfc'  = {typeOfFirstFixedSurface=174; typeOfSecondFixedSurface=255; discipline=1;}
-'o2d'  = {typeOfFirstFixedSurface=175; typeOfSecondFixedSurface=255;}
-'o2d'  = {typeOfFirstFixedSurface=176; typeOfSecondFixedSurface=255;}
+# Defined only in eccodes 2.25.0 marsLevtypeConcept.def
+'sfc'  = {typeOfFirstFixedSurface=174; typeOfSecondFixedSurface=176; discipline=1;}
+# Defined only in eccodes 2.25.0 marsLevtypeConcept.def
 'o2d'  = {typeOfFirstFixedSurface=174; typeOfSecondFixedSurface=160;
           scaleFactorOfSecondFixedSurface=0; scaledValueOfSecondFixedSurface=0;}
-'o2d'  = {typeOfFirstFixedSurface=174; typeOfSecondFixedSurface=176;}
-'sfc'  = {typeOfFirstFixedSurface=174; typeOfSecondFixedSurface=176; discipline=1;}
+# iceTopUnderSnowOnWater
+'o2d'  = {typeOfFirstFixedSurface=175; typeOfSecondFixedSurface=255;}
+# iceLayerUnderSnowOnWater
 'o2d'  = {typeOfFirstFixedSurface=175; typeOfSecondFixedSurface=176;}
+# iceBottomOnWater
+'o2d'  = {typeOfFirstFixedSurface=176; typeOfSecondFixedSurface=255;}
+# indefiniteSoilDepth
 'sfc'  = {typeOfFirstFixedSurface=177; typeOfSecondFixedSurface=255;}
-'o2d'  = {typeOfFirstFixedSurface=188; typeOfSecondFixedSurface=189;}
-#isobaricLayer
-'pl'   = {typeOfFirstFixedSurface=100; typeOfSecondFixedSurface=1;}
-#atmML
-'ml'   = {typeOfFirstFixedSurface=192; typeOfSecondFixedSurface=255;} 
-#atmMU
-'ml'   = {typeOfFirstFixedSurface=193; typeOfSecondFixedSurface=255;} 
-#thermocline
-'ml'   = {typeOfFirstFixedSurface=166; typeOfSecondFixedSurface=162;} 
-#cloudBase
-'sfc'  = {typeOfFirstFixedSurface=2;   typeOfSecondFixedSurface=255;}
-'sfc'  = {typeOfFirstFixedSurface=2;   typeOfSecondFixedSurface=101;}
-#mixedLayer
-'sfc'  = {typeOfFirstFixedSurface=1; typeOfSecondFixedSurface=166;} 
-#cloudTop
-'sfc'  = {typeOfFirstFixedSurface=3;   typeOfSecondFixedSurface=255;}
-'sfc' = {typeOfFirstFixedSurface=3;   typeOfSecondFixedSurface=101;}
-#isothermZero
-'sfc' = {typeOfFirstFixedSurface=4;   typeOfSecondFixedSurface=255;}
-#isothermZero
-'sfc' = {typeOfFirstFixedSurface=4;   typeOfSecondFixedSurface=101;}
-#generalVerticalLayer
-'ml'  = {genVertHeightCoords=1; typeOfFirstFixedSurface=150; 
-                           typeOfSecondFixedSurface=150; NV=6;}
-#generalVertical
-'ml'  = {genVertHeightCoords=1; typeOfFirstFixedSurface=150; NV=6;}
-#surface
-'sfc' = {typeOfFirstFixedSurface=1;   typeOfSecondFixedSurface=101;}
-# not in typeOfLevel
-'sfc' = {typeOfFirstFixedSurface=194;   typeOfSecondFixedSurface=192;}
-# not in typeOfLevel
-'sfc' = {typeOfFirstFixedSurface=5;   typeOfSecondFixedSurface=192;}
-# not in typeOfLevel
-'sfc' = {typeOfFirstFixedSurface=103;   typeOfSecondFixedSurface=192;} 
-#atmosphere
-'sfc' = {typeOfFirstFixedSurface=10;   typeOfSecondFixedSurface=255;}
+# atmML
+'sfc'  = {typeOfFirstFixedSurface=192; typeOfSecondFixedSurface=255;} 
+# atmMU
+'sfc'  = {typeOfFirstFixedSurface=193; typeOfSecondFixedSurface=255;}
+# LFC (Level of free convection)
+'sfc'  = {typeOfFirstFixedSurface=194; typeOfSecondFixedSurface=255;}
+# Combination is missing in typeOfLevelConcept.def; is used to code LFC_ML
+'sfc'  = {typeOfFirstFixedSurface=194;   typeOfSecondFixedSurface=192;}
+# radarElevComposite
+'sfc'  = {typeOfFirstFixedSurface=199; typeOfSecondFixedSurface=255;} 
 
 
 
