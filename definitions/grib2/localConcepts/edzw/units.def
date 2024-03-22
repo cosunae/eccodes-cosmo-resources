@@ -14903,4 +14903,19 @@
 	 typeOfSecondFixedSurface = 114 ;
 	 typeOfFirstFixedSurface = 114 ;
 	}
+	
+#paramId: 503998 (preliminary)
+#Top of persistent contrails
+'m' = {
+	 discipline = 0 ;
+	 parameterCategory = 19 ;
+	 parameterNumber = 48 ;
+	}
 
+#paramId: 503999 (preliminary)
+#Base of persistent contrails
+'m' = {
+	 discipline = 0 ;
+	 parameterCategory = 19 ;
+	 parameterNumber = 49 ;
+	}
