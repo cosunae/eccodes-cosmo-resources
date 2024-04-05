@@ -93,7 +93,8 @@
 'sfc' = {typeOfFirstFixedSurface=103;   typeOfSecondFixedSurface=192;} 
 #atmosphere
 'sfc' = {typeOfFirstFixedSurface=10;   typeOfSecondFixedSurface=255;}
-
+#echoTopInDBZ
+'sfc' = {typeOfFirstFixedSurface=25;   typeOfSecondFixedSurface=255;}
 
 
 
