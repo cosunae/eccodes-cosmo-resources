@@ -46,3 +46,5 @@
 236 236 Vertically-integrated zonal water flux (kg m-1 s-1)
 237 237 Vertically-integrated meridional water flux (kg m-1 s-1)
 238 238 Hail diameter (mm)
+239 239 Extreme weather index (EWI) of total precipitation rate (kg m-2 s-1)
+240 240 Extreme weather index (EWI) of snow precipitation rate (kg m-2 s-1)

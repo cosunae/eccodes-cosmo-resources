@@ -26,18 +26,22 @@ alias numberOfVerticalGridDescriptors=NV ;
 transient neitherPresent = 0;
 
 if (centre==7 || centre==46) {
-   alias disableGrib1LocalSection=one;
+   # geaendert mit 2.33.0: alias disableGrib1LocalSection=one;
+   alias disableGrib1LocalSection=true;
 }
 # DWD - neu mit 2.24.0 - Abschnitt hinzugefuegt
 # 2.25.0 --> Zeilen mit "tigge" und "s2s" Kommentar entfernt
+# 2.26.0 --> "fire" hinzugefuegt
 
 concept datasetForLocal(unknown) {
   "tigge"   = {productionStatusOfProcessedData=4;}
   "tigge"   = {productionStatusOfProcessedData=5;}
   "s2s"     = {productionStatusOfProcessedData=6;}
   "s2s"     = {productionStatusOfProcessedData=7;}
+  "era6"    = {marsClass="e6";} # for ERA6 parameters with constituentType
   "hydro"   = {marsClass="ce";} # EFAS/GLOFAS
   "hydro"   = {marsClass="ul";} #ULYSSES
+  "fire"    = {marsClass="gw";} # Global Wildfire awareness system
   "uerra"   = {productionStatusOfProcessedData=8;} # UERRA
   "uerra"   = {productionStatusOfProcessedData=9;} # UERRA
   "uerra"   = {productionStatusOfProcessedData=10;} # CARRA/CERRA
@@ -59,7 +63,8 @@ if (section2Used == 1) {
 }
 
 transient genVertHeightCoords = 0;
-template productDefinition "grib2/template.4.[productDefinitionTemplateNumber:l].def" ;
+
+template productDefinition "grib2/template.4.[productDefinitionTemplateNumber:l].def";
 
 if (defined(marsStream) && defined(marsType)) {
    template_nofail marsKeywords1 "mars/grib.[marsStream:s].[marsType:s].def";
